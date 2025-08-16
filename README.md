@@ -12,8 +12,6 @@
 ## 📷 Превью
 <img width="1115" height="634" alt="Превью сайта" src="https://github.com/user-attachments/assets/45051c5a-de08-4ddc-9d8d-0e022a911fdb" />
 
-*(замени `preview.png` на скриншот CV-сайта)*
-
 ## 🔗 Доступ
 CV доступно по адресу: [https://nikita-ursulenko.github.io/](https://nikita-ursulenko.github.io/)
 
