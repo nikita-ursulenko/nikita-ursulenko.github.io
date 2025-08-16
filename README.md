@@ -15,7 +15,7 @@
 *(замени `preview.png` на скриншот CV-сайта)*
 
 ## 🔗 Доступ
-CV доступно по адресу: [https://nikita-ursulenko.github.io/reponame](https://nikita-ursulenko.github.io/reponame)
+CV доступно по адресу: [https://nikita-ursulenko.github.io/](https://nikita-ursulenko.github.io/)
 
 ---
 
