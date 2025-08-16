@@ -37,9 +37,13 @@ nav {
 }
 
 .logo {
+    display: flex;
     font-size: 24px;
     font-weight: 700;
     color: #1f6feb;
+    img {
+        height: 72px;
+    }
 }
 
 .nav-links {
@@ -60,6 +64,11 @@ nav {
 }
 
 /* Language Switcher */
+.language-switcher-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 .language-switcher {
     display: flex;
     align-items: center;

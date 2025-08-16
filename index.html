@@ -4,16 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nikita Ursulenco - Full-stack Developer</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <meta property="og:title" content="Nikita Ursulenco — Full-stack Developer">
+    <meta property="og:description" content="Портфолио Никиты Урсуленко — Full-stack разработчик. Опыт в Python, Django, React, WordPress.">
+    <meta property="og:image" content="https://nikita-ursulenko.github.io/social-preview.png">
+    <meta property="og:url" content="https://nikita-ursulenko.github.io/">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nikita Ursulenco — Full-stack Developer">
+    <meta name="twitter:description" content="Портфолио Никиты Урсуленко — Full-stack разработчик. Опыт в Python, Django, React, WordPress.">
+    <meta name="twitter:image" content="https://nikita-ursulenko.github.io/social-preview.png">
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preload" href="assets/style/css/style.min.css" as="style">
     <link rel="stylesheet" href="assets/style/css/style.min.css">
+
+    <script src="assets/js/main.js" defer></script>
 </head>
 <body>
     <!-- Navigation -->
     <nav>
         <div class="container">
             <div class="nav-container">
-                <div class="logo">NU</div>
+                <div class="logo"><img src="assets/images/logo.png" alt="logo"></div>
                 <ul class="nav-links">
                     <li><a href="#home">Главная</a></li>
                     <li><a href="#about">Обо мне</a></li>
@@ -23,7 +48,7 @@
                     <li><a href="#education">Образование</a></li>
                     <li><a href="#contact">Контакты</a></li>
                 </ul>
-                <div style="display: flex; align-items: center; gap: 20px;">
+                <div class="language-switcher-wrapper">
                     <div class="language-switcher">
                         <button class="lang-btn active" onclick="switchLanguage('ru')">RU</button>
                         <span class="lang-separator">|</span>
@@ -823,5 +848,4 @@
     </footer>
 
 </body>
-<script src="assets/js/main.js"></script>
 </html>
