@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikita Ursulenco - Full-stack Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/style/css/style.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="nav-container">
+                <div class="logo">NU</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#experience">Опыт</a></li>
+                    <li><a href="#projects">Проекты</a></li>
+                    <li><a href="#skills">Навыки</a></li>
+                    <li><a href="#education">Образование</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+                <div style="display: flex; align-items: center; gap: 20px;">
+                    <div class="language-switcher">
+                        <button class="lang-btn active" onclick="switchLanguage('ru')">RU</button>
+                        <span class="lang-separator">|</span>
+                        <button class="lang-btn" onclick="switchLanguage('en')">EN</button>
+                    </div>
+                    <div class="mobile-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay">
+        <div class="mobile-nav-links">
+            <a href="#home">Главная</a>
+            <a href="#about">Обо мне</a>
+            <a href="#experience">Опыт</a>
+            <a href="#projects">Проекты</a>
+            <a href="#skills">Навыки</a>
+            <a href="#education">Образование</a>
+            <a href="#contact">Контакты</a>
+        </div>
+        <div class="mobile-language-switcher">
+            <button class="mobile-lang-btn active" onclick="switchLanguage('ru')">RU</button>
+            <button class="mobile-lang-btn" onclick="switchLanguage('en')">EN</button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2>Привет, я Никита Урсуленко</h2>
+                    <p>Full-stack разработчик | Python, JS, Django, WordPress</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Посмотреть проекты</a>
+                        <a href="#" class="btn btn-secondary" onclick="downloadCV()">Скачать резюме</a>
+                    </div>
+                </div>
+                <div class="hero-avatar">
+                    👨‍💻
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title fade-in">Обо мне</h2>
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <p>Привет! Я Никита Урсуленко, full-stack разработчик с более чем 3-летним опытом создания современных веб-приложений. Специализируюсь на Python/Django для backend-разработки и React/Next.js для frontend.</p>
+                    <br>
+                    <p>Мой опыт включает разработку корпоративных веб-сайтов на WordPress с использованием Advanced Custom Fields, создание REST API, интеграцию с внешними сервисами и разработку Telegram-ботов. Я стремлюсь к созданию качественного, масштабируемого кода и всегда изучаю новые технологии.</p>
+                    <br>
+                    <p>Когда не программирую, изучаю новые фреймворки, читаю техническую литературу или работаю над pet-проектами. Открыт для новых вызовов и интересных проектов!</p>
+                </div>
+                <div class="skills-card fade-in">
+                    <h3>Ключевые навыки</h3>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-python"></i></div>
+                        <span>Python & Django</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-react"></i></div>
+                        <span>React & Next.js</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-wordpress"></i></div>
+                        <span>WordPress & ACF</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-palette"></i></div>
+                        <span>Tailwind CSS</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-plug"></i></div>
+                        <span>API Integrations</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                        <span>Telegram Bots</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title fade-in">Опыт работы</h2>
+            <div class="experience-timeline">
+                <div class="experience-item fade-in">
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="experience-period">2025</div>
+                            <h3 class="experience-title">Web-разработчик (Проектная работа)</h3>
+                            <div class="experience-company">Blazar.io</div>
+                        </div>
+                        <div class="experience-responsibilities">
+                            <div class="responsibilities-title">Ключевые обязанности</div>
+                            <ul class="responsibilities-list">
+                                <li>Самостоятельно разработал дизайн и полностью сверстал государственный сайт для Молдовы</li>
+                                <li>Создал сайт на WordPress с использованием Advanced Custom Fields (ACF)</li>
+                                <li>Реализовал возможность добавления новых кастомных блоков, что упрощает управление контентом</li>
+                                <li>Выполнил весь цикл работ: от установки WordPress и подключения базы данных до финальной настройки</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item fade-in">
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="experience-period">2024 - 2025</div>
+                            <h3 class="experience-title">Full-Stack Developer</h3>
+                            <div class="experience-company">MoldExpo | Chişinău, Moldova</div>
+                        </div>
+                        <div class="experience-responsibilities">
+                            <div class="responsibilities-title">Ключевые обязанности</div>
+                            <ul class="responsibilities-list">
+                                <li>Разработано веб-приложение «Меню ресторана» с использованием Angular и TypeScript</li>
+                                <li>Разработал архитектуру приложения, работая с компонентами и модулями</li>
+                                <li>Интегрирован с базой данных и REST API</li>
+                                <li>Реализован адаптивный макет, оптимизация производительности и улучшения UX/UI</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item fade-in">
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="experience-period">2023</div>
+                            <h3 class="experience-title">Full-Stack Developer</h3>
+                            <div class="experience-company">TechNova Solutions | Moscow</div>
+                        </div>
+                        <div class="experience-responsibilities">
+                            <div class="responsibilities-title">Ключевые обязанности</div>
+                            <ul class="responsibilities-list">
+                                <li>Разработаны веб-приложения с использованием React (Next.js), Angular и TypeScript</li>
+                                <li>Построенные серверные решения с Django, FastAPI и REST API</li>
+                                <li>Интегрированные стратегии торговли криптовалютой и автоматизация</li>
+                                <li>Оптимизированный UI/UX, реализованный адаптивный дизайн и повышенная производительность</li>
+                                <li>Разработаны мобильные приложения с использованием React Native и Expo</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item fade-in">
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="experience-period">2022 - 2023</div>
+                            <h3 class="experience-title">Frontend Developer</h3>
+                            <div class="experience-company">DigitalWave Agency | Minsk</div>
+                        </div>
+                        <div class="experience-responsibilities">
+                            <div class="responsibilities-title">Ключевые обязанности</div>
+                            <ul class="responsibilities-list">
+                                <li>Разработаны интерфейсы для целевых страниц и маркетинговых платформ с использованием React и Tailwind CSS</li>
+                                <li>Оптимизированный SEO и UX/UI, повышение скорости загрузки страницы</li>
+                                <li>Интегрированные API, настроенные анимации и интерактивные компоненты</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item fade-in">
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="experience-period">2021 - 2022</div>
+                            <h3 class="experience-title">Web Developer</h3>
+                            <div class="experience-company">WebCore Technologies | Novosibirsk</div>
+                        </div>
+                        <div class="experience-responsibilities">
+                            <div class="responsibilities-title">Ключевые обязанности</div>
+                            <ul class="responsibilities-list">
+                                <li>Разработанные и поддерживаемые веб-сайты на WordPress (PHP, SCSS, SEO)</li>
+                                <li>Оптимизированная скорость загрузки и реализованный адаптивный дизайн для всех устройств</li>
+                                <li>Индивидуальные темы и плагины, разработка уникальной функциональности</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item fade-in">
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="experience-period">2021</div>
+                            <h3 class="experience-title">Backend Developer</h3>
+                            <div class="experience-company">DataFlow Systems | Moscow</div>
+                        </div>
+                        <div class="experience-responsibilities">
+                            <div class="responsibilities-title">Ключевые обязанности</div>
+                            <ul class="responsibilities-list">
+                                <li>Разработаны парсеры Telegram, боты и автоматизацию с использованием Python (Selenium, BeautifulSoup, Scrapy)</li>
+                                <li>Интегрированные API, работа с PostgreSQL и MySQL и обработанные данные</li>
+                                <li>Построены финансовые системы и платформы для криптовалютного арбитража</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title fade-in">Мои проекты</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <h3 class="project-title">
+                            <div class="project-icon"><i class="fab fa-wordpress"></i></div>
+                            MDED
+                        </h3>
+                        <p class="project-description">Кастомная WordPress-тема с современной архитектурой. Использует Timber/Twig для чистого кода и Tailwind CSS для стилизации.</p>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tech">
+                            <div class="tech-title">Технологии</div>
+                            <div class="project-tags">
+                                <span class="tag">WordPress</span>
+                                <span class="tag">Timber/Twig</span>
+                                <span class="tag">Tailwind CSS</span>
+                                <span class="tag">ACF</span>
+                            </div>
+                        </div>
+                        <div class="project-features">
+                            <div class="features-title">Ключевые фишки</div>
+                            <ul class="features-list">
+                                <li>Чистая архитектура с разделением логики</li>
+                                <li>Быстрая разработка с готовыми компонентами</li>
+                                <li>Полная адаптивность под все устройства</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/nikitaursulenco/mded" class="project-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <h3 class="project-title">
+                            <div class="project-icon"><i class="fas fa-newspaper"></i></div>
+                            NomadsNews
+                        </h3>
+                        <p class="project-description">Адаптивный лендинг на WordPress с интерактивными формами и слайдерами. Оптимизирован для быстрой загрузки и SEO.</p>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tech">
+                            <div class="tech-title">Технологии</div>
+                            <div class="project-tags">
+                                <span class="tag">WordPress</span>
+                                <span class="tag">PHP</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">CSS3</span>
+                            </div>
+                        </div>
+                        <div class="project-features">
+                            <div class="features-title">Ключевые фишки</div>
+                            <ul class="features-list">
+                                <li>Лёгкое редактирование контента через админку</li>
+                                <li>Адаптивный дизайн для всех экранов</li>
+                                <li>Интерактивные формы и слайдеры</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/nikitaursulenco/nomadsnews" class="project-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <h3 class="project-title">
+                            <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+                            venvArbitrage
+                        </h3>
+                        <p class="project-description">Python-бот для автоматического криптоарбитража между биржами. Анализирует спреды и выполняет прибыльные сделки.</p>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tech">
+                            <div class="tech-title">Технологии</div>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">asyncio</span>
+                                <span class="tag">Tkinter</span>
+                                <span class="tag">API</span>
+                            </div>
+                        </div>
+                        <div class="project-features">
+                            <div class="features-title">Ключевые фишки</div>
+                            <ul class="features-list">
+                                <li>Асинхронная обработка данных с бирж</li>
+                                <li>Удобный GUI для мониторинга</li>
+                                <li>Автоматический учёт комиссий и спредов</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/nikitaursulenco/venvarbitrage" class="project-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <h3 class="project-title">
+                            <div class="project-icon"><i class="fas fa-calendar-alt"></i></div>
+                            Calendar Task
+                        </h3>
+                        <p class="project-description">Веб-календарь с системой авторизации и админ-панелью. Поддерживает различные виды отображения и управление задачами.</p>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tech">
+                            <div class="tech-title">Технологии</div>
+                            <div class="project-tags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">PHP</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">Bootstrap</span>
+                            </div>
+                        </div>
+                        <div class="project-features">
+                            <div class="features-title">Ключевые фишки</div>
+                            <ul class="features-list">
+                                <li>Виды: день, неделя, месяц</li>
+                                <li>Система ролей пользователей</li>
+                                <li>Интерактивное управление событиями</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/nikitaursulenco/calendar-task" class="project-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <h3 class="project-title">
+                            <div class="project-icon"><i class="fas fa-home"></i></div>
+                            KOTLIN-SaleOfApartments
+                        </h3>
+                        <p class="project-description">Android-приложение для продажи квартир с удобной системой поиска. Включает фильтрацию и управление заявками.</p>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tech">
+                            <div class="tech-title">Технологии</div>
+                            <div class="project-tags">
+                                <span class="tag">Kotlin</span>
+                                <span class="tag">Android</span>
+                                <span class="tag">SQLite</span>
+                                <span class="tag">Material Design</span>
+                            </div>
+                        </div>
+                        <div class="project-features">
+                            <div class="features-title">Ключевые фишки</div>
+                            <ul class="features-list">
+                                <li>Продвинутая фильтрация объектов</li>
+                                <li>Система управления заявками</li>
+                                <li>Интуитивный мобильный интерфейс</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/nikitaursulenco/kotlin-saleofapartments" class="project-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <h3 class="project-title">
+                            <div class="project-icon"><i class="fab fa-telegram-plane"></i></div>
+                            Python-Parser-Telegram
+                        </h3>
+                        <p class="project-description">Парсер участников Telegram-групп с возможностью сохранения данных. Удобный GUI для настройки и мониторинга процесса.</p>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tech">
+                            <div class="tech-title">Технологии</div>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Telethon</span>
+                                <span class="tag">Tkinter</span>
+                                <span class="tag">SQLite</span>
+                            </div>
+                        </div>
+                        <div class="project-features">
+                            <div class="features-title">Ключевые фишки</div>
+                            <ul class="features-list">
+                                <li>Автоматическое сохранение данных</li>
+                                <li>Графический интерфейс для управления</li>
+                                <li>Экспорт результатов в различные форматы</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/nikitaursulenco/python-parser-telegram" class="project-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <h3 class="project-title">
+                            <div class="project-icon"><i class="fab fa-tiktok"></i></div>
+                            Django-TikTok-SMM-Web
+                        </h3>
+                        <p class="project-description">Веб-платформа для продвижения TikTok видео через Django. Система заказов, API интеграции и приём платежей.</p>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tech">
+                            <div class="tech-title">Технологии</div>
+                            <div class="project-tags">
+                                <span class="tag">Django</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">REST API</span>
+                            </div>
+                        </div>
+                        <div class="project-features">
+                            <div class="features-title">Ключевые фишки</div>
+                            <ul class="features-list">
+                                <li>Система заказа продвижения</li>
+                                <li>Интеграция с внешними API</li>
+                                <li>Встроенная система платежей</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/nikitaursulenco/django-tiktok-smm-web" class="project-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <h3 class="project-title">
+                            <div class="project-icon"><i class="fas fa-calculator"></i></div>
+                            React-MathNails
+                        </h3>
+                        <p class="project-description">React-приложение для расчётов мастеров ногтевого сервиса. Помогает вести учёт материалов и рассчитывать стоимость услуг.</p>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tech">
+                            <div class="tech-title">Технологии</div>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">LocalStorage</span>
+                            </div>
+                        </div>
+                        <div class="project-features">
+                            <div class="features-title">Ключевые фишки</div>
+                            <ul class="features-list">
+                                <li>Генерация детальных отчётов</li>
+                                <li>История всех операций</li>
+                                <li>Калькулятор стоимости услуг</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/nikitaursulenco/react-mathnails" class="project-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <h3 class="project-title">
+                            <div class="project-icon"><i class="fas fa-paw"></i></div>
+                            MyPawsCharity
+                        </h3>
+                        <p class="project-description">Сайт приюта для животных с системой пожертвований. Адаптивный дизайн, форма доната и галерея питомцев.</p>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tech">
+                            <div class="tech-title">Технологии</div>
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">PHP</span>
+                            </div>
+                        </div>
+                        <div class="project-features">
+                            <div class="features-title">Ключевые фишки</div>
+                            <ul class="features-list">
+                                <li>Полная адаптивность под все устройства</li>
+                                <li>Интегрированная форма пожертвований</li>
+                                <li>Интерактивная галерея животных</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/nikitaursulenco/mypawscharity" class="project-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="skills" class="tech-stack">
+        <div class="container">
+            <h2 class="section-title fade-in">Технологический стек</h2>
+            <div class="tech-grid">
+                <div class="tech-item fade-in">
+                    <div class="tech-icon"><i class="fab fa-python"></i></div>
+                    <div class="tech-name">Python</div>
+                </div>
+                <div class="tech-item fade-in">
+                    <div class="tech-icon"><i class="fas fa-code"></i></div>
+                    <div class="tech-name">Django</div>
+                </div>
+                <div class="tech-item fade-in">
+                    <div class="tech-icon"><i class="fab fa-react"></i></div>
+                    <div class="tech-name">React</div>
+                </div>
+                <div class="tech-item fade-in">
+                    <div class="tech-icon"><i class="fas fa-bolt"></i></div>
+                    <div class="tech-name">Next.js</div>
+                </div>
+                <div class="tech-item fade-in">
+                    <div class="tech-icon"><i class="fab fa-wordpress"></i></div>
+                    <div class="tech-name">WordPress</div>
+                </div>
+                <div class="tech-item fade-in">
+                    <div class="tech-icon"><i class="fas fa-palette"></i></div>
+                    <div class="tech-name">Tailwind</div>
+                </div>
+                <div class="tech-item fade-in">
+                    <div class="tech-icon"><i class="fas fa-database"></i></div>
+                    <div class="tech-name">PostgreSQL</div>
+                </div>
+                <div class="tech-item fade-in">
+                    <div class="tech-icon"><i class="fab fa-docker"></i></div>
+                    <div class="tech-name">Docker</div>
+                </div>
+                <div class="tech-item fade-in">
+                    <div class="tech-icon"><i class="fas fa-fire"></i></div>
+                    <div class="tech-name">Redis</div>
+                </div>
+                <div class="tech-item fade-in">
+                    <div class="tech-icon"><i class="fas fa-rocket"></i></div>
+                    <div class="tech-name">FastAPI</div>
+                </div>
+                <div class="tech-item fade-in">
+                    <div class="tech-icon"><i class="fas fa-leaf"></i></div>
+                    <div class="tech-name">MongoDB</div>
+                </div>
+                <div class="tech-item fade-in">
+                    <div class="tech-icon"><i class="fab fa-node-js"></i></div>
+                    <div class="tech-name">Node.js</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title fade-in">Education & Certifications</h2>
+            <div class="education-grid">
+                <div class="education-card fade-in">
+                    <div class="education-header">
+                        <div class="education-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
+                            </svg>
+                        </div>
+                        <div class="education-content">
+                            <h3 class="education-title">Bachelor of Computer Science</h3>
+                            <p class="education-institution">Technical University of Moldova</p>
+                        </div>
+                        <div class="education-date">2019 - 2023</div>
+                    </div>
+                </div>
+
+                <div class="education-card fade-in">
+                    <div class="education-header">
+                        <div class="education-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <div class="education-content">
+                            <h3 class="education-title">Python for Data Science Specialization</h3>
+                            <p class="education-institution">Coursera - University of Michigan</p>
+                        </div>
+                        <div class="education-date">
+                            <span>Aug 2022</span>
+                            <a href="#" class="verify-link" title="Verify Certificate">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H6.9C4.29 7 2.2 9.09 2.2 11.7v.6c0 2.61 2.09 4.7 4.7 4.7H11v-2H6.9c-1.71 0-3.1-1.39-3.1-3.1v-.6zm4.1 1h8v-2H8v2zm9.1-6H13v2h4.1c1.71 0 3.1 1.39 3.1 3.1v.6c0 1.71-1.39 3.1-3.1 3.1H13v2h4.1c2.61 0 4.7-2.09 4.7-4.7v-.6C21.8 9.09 19.71 7 17.1 7z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-card fade-in">
+                    <div class="education-header">
+                        <div class="education-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <div class="education-content">
+                            <h3 class="education-title">Full Stack Web Development</h3>
+                            <p class="education-institution">Udemy - The Complete Web Developer Course</p>
+                        </div>
+                        <div class="education-date">
+                            <span>Mar 2021</span>
+                            <a href="#" class="verify-link" title="Verify Certificate">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H6.9C4.29 7 2.2 9.09 2.2 11.7v.6c0 2.61 2.09 4.7 4.7 4.7H11v-2H6.9c-1.71 0-3.1-1.39-3.1-3.1v-.6zm4.1 1h8v-2H8v2zm9.1-6H13v2h4.1c1.71 0 3.1 1.39 3.1 3.1v.6c0 1.71-1.39 3.1-3.1 3.1H13v2h4.1c2.61 0 4.7-2.09 4.7-4.7v-.6C21.8 9.09 19.71 7 17.1 7z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-card fade-in">
+                    <div class="education-header">
+                        <div class="education-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <div class="education-content">
+                            <h3 class="education-title">Django for Everybody Specialization</h3>
+                            <p class="education-institution">Coursera - University of Michigan</p>
+                        </div>
+                        <div class="education-date">
+                            <span>Dec 2021</span>
+                            <a href="#" class="verify-link" title="Verify Certificate">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H6.9C4.29 7 2.2 9.09 2.2 11.7v.6c0 2.61 2.09 4.7 4.7 4.7H11v-2H6.9c-1.71 0-3.1-1.39-3.1-3.1v-.6zm4.1 1h8v-2H8v2zm9.1-6H13v2h4.1c1.71 0 3.1 1.39 3.1 3.1v.6c0 1.71-1.39 3.1-3.1 3.1H13v2h4.1c2.61 0 4.7-2.09 4.7-4.7v-.6C21.8 9.09 19.71 7 17.1 7z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-card fade-in">
+                    <div class="education-header">
+                        <div class="education-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <div class="education-content">
+                            <h3 class="education-title">React - The Complete Guide</h3>
+                            <p class="education-institution">Udemy - Maximilian Schwarzmüller</p>
+                        </div>
+                        <div class="education-date">
+                            <span>Jun 2022</span>
+                            <a href="#" class="verify-link" title="Verify Certificate">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H6.9C4.29 7 2.2 9.09 2.2 11.7v.6c0 2.61 2.09 4.7 4.7 4.7H11v-2H6.9c-1.71 0-3.1-1.39-3.1-3.1v-.6zm4.1 1h8v-2H8v2zm9.1-6H13v2h4.1c1.71 0 3.1 1.39 3.1 3.1v.6c0 1.71-1.39 3.1-3.1 3.1H13v2h4.1c2.61 0 4.7-2.09 4.7-4.7v-.6C21.8 9.09 19.71 7 17.1 7z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-card fade-in">
+                    <div class="education-header">
+                        <div class="education-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <div class="education-content">
+                            <h3 class="education-title">AWS Cloud Practitioner</h3>
+                            <p class="education-institution">Amazon Web Services</p>
+                        </div>
+                        <div class="education-date">
+                            <span>Sep 2023</span>
+                            <a href="#" class="verify-link" title="Verify Certificate">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H6.9C4.29 7 2.2 9.09 2.2 11.7v.6c0 2.61 2.09 4.7 4.7 4.7H11v-2H6.9c-1.71 0-3.1-1.39-3.1-3.1v-.6zm4.1 1h8v-2H8v2zm9.1-6H13v2h4.1c1.71 0 3.1 1.39 3.1 3.1v.6c0 1.71-1.39 3.1-3.1 3.1H13v2h4.1c2.61 0 4.7-2.09 4.7-4.7v-.6C21.8 9.09 19.71 7 17.1 7z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title fade-in">Get in Touch</h2>
+            <div class="contact-content">
+                <form class="contact-form fade-in" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="https://github.com/nikitaursulenco" class="social-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/in/nikitaursulenco" class="social-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="https://t.me/nikitaursulenco" class="social-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:nikita@ursulenco.dev" class="social-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.749L12 10.724l9.615-6.903h.749c.904 0 1.636.732 1.636 1.636z"/>
+                        </svg>
+                    </a>
+                </div>
+                <p>© 2025 Nikita Ursulenco — All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="assets/js/main.js"></script>
+</html>
