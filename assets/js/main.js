@@ -17,6 +17,7 @@
                 heroSubtitle: 'Full-stack разработчик | Python, JS, Django, WordPress',
                 viewProjects: 'Посмотреть проекты',
                 downloadCV: 'Скачать резюме',
+                cvPath: 'assets/docs/Nikita_Ursulenco_RU.pdf',
                 
                 // About Section
                 aboutTitle: 'Обо мне',
@@ -168,6 +169,7 @@
                 heroSubtitle: 'Full-stack Developer | Python, JS, Django, WordPress',
                 viewProjects: 'View Projects',
                 downloadCV: 'Download CV',
+                cvPath: 'assets/docs/Nikita_Ursulenco_EN.pdf',
                 
                 // About Section
                 aboutTitle: 'About Me',
@@ -339,6 +341,14 @@
             document.querySelector('.hero-text p').textContent = t.heroSubtitle;
             document.querySelector('.btn-primary').textContent = t.viewProjects;
             document.querySelector('.btn-secondary').textContent = t.downloadCV;
+            const downloadCvBtn = document.querySelector('.btn-secondary'); // Или по id #downloadCvBtn
+
+            // Обновляем текст и ссылку на кнопку скачивания CV
+            if (downloadCvBtn) {
+                downloadCvBtn.textContent = t.downloadCV;
+                downloadCvBtn.href = t.cvPath;
+                downloadCvBtn.setAttribute('download', 'Nikita_Ursulenco_CV.pdf'); // Это позволит браузеру сразу скачать файл, а не открывать его в новой вкладке. Имя файла можно задать тут.
+            }    
             
             // Update section titles
             document.querySelector('#about .section-title').textContent = t.aboutTitle;
@@ -693,11 +703,7 @@
             event.target.reset();
         }
 
-        // CV download
-        function downloadCV() {
-            // Simulate CV download
-            alert('CV будет загружен в ближайшее время. Пока что вы можете связаться со мной через контакты ниже.');
-        }
+        
 
         // Navbar background on scroll
         window.addEventListener('scroll', () => {
