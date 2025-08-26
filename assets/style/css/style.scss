@@ -49,7 +49,7 @@ nav {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 20px;
 }
 
 .nav-links a {
@@ -174,7 +174,8 @@ nav {
 .mobile-nav-links {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    justify-content: space-around;
+    height: 100%;
     text-align: center;
 }
 
@@ -417,10 +418,12 @@ nav {
     background: #161b22;
     border-radius: 8px;
     transition: all 0.3s ease;
+    border: 1px solid transparent;
 }
 
 .skill-item:hover {
     background: #21262d;
+    border-color: #1f6feb;
     transform: translateX(5px);
 }
 
@@ -449,7 +452,7 @@ nav {
     margin-top: 60px;
 }
 
-.project-card {
+.project-card .project-card-inner {
     background: #161b22;
     border-radius: 16px;
     border: 1px solid #30363d;
@@ -461,7 +464,7 @@ nav {
     flex-direction: column;
 }
 
-.project-card::before {
+.project-card::before .project-card-inner {
     content: "";
     position: absolute;
     top: 0;
@@ -475,16 +478,16 @@ nav {
     pointer-events: none;
 }
 
-.project-card:hover {
+.project-card:hover .project-card-inner {
     transform: translateY(-8px);
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 20px 40px rgba(255, 255, 255, 0.1);
     border: 1px solid transparent;
     background:
         linear-gradient(#161b22, #161b22) padding-box,
         linear-gradient(135deg, #1f6feb, #a371f7) border-box;
 }
 
-.project-card:hover::before {
+.project-card:hover::before .project-card-inner {
     opacity: 1;
 }
 
@@ -1292,7 +1295,7 @@ footer {
 
 .fade-in.visible {
     opacity: 1;
-    transform: translateY(0);
+    transform: none;
 }
 /* Modal Styles */
 .modal {
@@ -1373,9 +1376,8 @@ footer {
 
 .slider-container {
     position: relative;
-    width: 800px;
     height: 500px;
-    max-width: 85vw;
+    width: 100%;
     max-height: 60vh;
     overflow: hidden;
 }
@@ -1542,7 +1544,6 @@ footer {
     background: #0d1117;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.08);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     height: 100%;
@@ -1566,8 +1567,12 @@ footer {
 
 .preview-image {
     width: 100%;
-    height: 100%;
     transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; // как cover для image
+    }
 }
 
 .preview-card:hover .preview-image {

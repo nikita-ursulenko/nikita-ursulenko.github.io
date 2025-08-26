@@ -8,6 +8,7 @@
                 about: 'Обо мне',
                 experience: 'Опыт',
                 projects: 'Проекты',
+                preview: 'Сайты',
                 skills: 'Навыки',
                 education: 'Образование',
                 contact: 'Контакты',
@@ -138,6 +139,10 @@
                 project9Feature2: 'Интегрированная форма пожертвований',
                 project9Feature3: 'Интерактивная галерея животных',
                 
+                // "Website Previews",
+                preview10Title: "Превью сайтов",
+                preview10Desc: "Государственный портал Министерства экономического развития Молдовы",
+                preview10OverlayText: "Посмотреть превью",
                 // Tech Stack Section
                 techStackTitle: 'Технологический стек',
                 
@@ -160,6 +165,7 @@
                 about: 'About',
                 experience: 'Experience',
                 projects: 'Projects',
+                preview: 'Sites',
                 skills: 'Skills',
                 education: 'Education',
                 contact: 'Contact',
@@ -293,6 +299,11 @@
                 // Tech Stack Section
                 techStackTitle: 'Tech Stack',
                 
+
+
+                preview10Title: "Website Previews",
+                preview10Desc: "State portal of the Ministry of Economic Development of Moldova",
+                preview10OverlayText: "View Preview",
                 // Education Section
                 educationTitle: 'Education & Certifications',
                 
@@ -308,21 +319,7 @@
             }
         };
 
-        function switchLanguage(lang) {
-            currentLanguage = lang;
-            
-            // Update language buttons
-            document.querySelectorAll('.lang-btn, .mobile-lang-btn').forEach(btn => {
-                btn.classList.remove('active');
-            });
-            
-            document.querySelectorAll(`[onclick="switchLanguage('${lang}')"]`).forEach(btn => {
-                btn.classList.add('active');
-            });
-            
-            // Update content
-            updateContent(lang);
-        }
+        
 
         function updateContent(lang) {
             const t = translations[lang];
@@ -332,6 +329,7 @@
             document.querySelectorAll('a[href="#about"]').forEach(el => el.textContent = t.about);
             document.querySelectorAll('a[href="#experience"]').forEach(el => el.textContent = t.experience);
             document.querySelectorAll('a[href="#projects"]').forEach(el => el.textContent = t.projects);
+            document.querySelectorAll('a[href="#previews"]').forEach(el => el.textContent = t.preview);
             document.querySelectorAll('a[href="#skills"]').forEach(el => el.textContent = t.skills);
             document.querySelectorAll('a[href="#education"]').forEach(el => el.textContent = t.education);
             document.querySelectorAll('a[href="#contact"]').forEach(el => el.textContent = t.contact);
@@ -357,6 +355,7 @@
             document.querySelector('#skills .section-title').textContent = t.techStackTitle;
             document.querySelector('#education .section-title').textContent = t.educationTitle;
             document.querySelector('#contact .section-title').textContent = t.contactTitle;
+            document.querySelector('#previews .section-title').textContent = t.preview10Title;
             
             // Update about section
             const aboutTexts = document.querySelectorAll('.about-text p');
@@ -555,6 +554,22 @@
                     project9Features[2].textContent = t.project9Feature3;
                 }
             }
+            const previewCards = document.querySelectorAll('.preview-card');
+
+            if (previewCards.length > 0) {
+                // Project 10 - MDED
+                previewCards[0].querySelector('.preview-title').textContent = previewData.mded.title[lang];
+                previewCards[1].querySelector('.preview-description').textContent = previewData.nomadsnews.description[lang];
+                previewCards[0].querySelector('.preview-description').textContent = t.preview10Desc;
+            }
+            document.querySelectorAll('.preview-overlay-text').forEach((el, index) => {
+                // Можно подставлять по индексу, если разные карточки имеют разные тексты
+                if (lang === 'en') {
+                    el.textContent = translations.en[`preview${index + 1}OverlayText`] || "View Preview";
+                } else {
+                    el.textContent = translations.ru[`preview${index + 1}OverlayText`] || "Посмотреть превью";
+                }
+            });
             
             // Update contact form
             const nameLabel = document.querySelector('label[for="name"]');
@@ -718,55 +733,99 @@
 // Preview Modal functionality
         let currentSlide = 0;
         let totalSlides = 0;
-
+        
+        // Многоязычные данные
         const previewData = {
-            'mded': {
-                title: 'MDED Government Portal',
-                description: 'Государственный портал Министерства экономического развития Молдовы с современным дизайном и удобной навигацией',
+            mded: {
+                title: {
+                    ru: 'MDED Портал Правительства',
+                    en: 'MDED Government Portal'
+                },
+                description: {
+                    ru: 'Государственный портал Министерства экономического развития Молдовы с современным дизайном и удобной навигацией',
+                    en: 'Government portal of the Ministry of Economic Development of Moldova with modern design and user-friendly navigation'
+                },
                 images: [
-                    'assets//images/site1.png',
-                    'assets//images/slide1.png',
+                    'assets/images/site/mded/site.png',
+                    'assets/images/site/mded/slide1.png',
+                    'assets/images/site/mded/slide2.png',
+                    'assets/images/site/mded/slide3.png',
+                    'assets/images/site/mded/slide4.png',
                 ]
             },
-            'nomadsnews': {
-                title: 'NomadsNews',
-                description: 'Новостной портал с адаптивным дизайном, системой категорий и современным интерфейсом для чтения статей',
+            nomadsnews: {
+                title: {
+                    ru: 'NomadsNews',
+                    en: 'NomadsNews'
+                },
+                description: {
+                    ru: 'Новостной портал с адаптивным дизайном, системой категорий и современным интерфейсом для чтения статей',
+                    en: 'News portal with responsive design, category system, and modern interface for reading articles'
+                },
                 images: [
-                    'https://via.placeholder.com/800x500/A371F7/FFFFFF?text=NomadsNews+Main',
-                    'https://via.placeholder.com/800x500/A371F7/FFFFFF?text=Article+Page',
-                    'https://via.placeholder.com/800x500/A371F7/FFFFFF?text=Category+View'
+                    'assets/images/site/nomads/site.png',
+                    'assets/images/site/nomads/slide2.png',
+                    'assets/images/site/nomads/slide3.png',
+                    'assets/images/site/nomads/slide4.png',
+                    'assets/images/site/nomads/slide5.png',
+                    'assets/images/site/nomads/slide6.png',
+                    'assets/images/site/nomads/slide7.png',
                 ]
             },
-            'mypawscharity': {
-                title: 'MyPawsCharity',
-                description: 'Сайт приюта для животных с галереей питомцев, системой пожертвований и информацией о волонтёрстве',
+            mypawscharity: {
+                title: {
+                    ru: 'MyPawsCharity',
+                    en: 'MyPawsCharity'
+                },
+                description: {
+                    ru: 'Сайт приюта для животных с галереей питомцев, системой пожертвований и информацией о волонтёрстве',
+                    en: 'Animal shelter website with pet gallery, donation system, and volunteer information'
+                },
                 images: [
                     'https://via.placeholder.com/800x500/FF6B6B/FFFFFF?text=Charity+Homepage',
                     'https://via.placeholder.com/800x500/FF6B6B/FFFFFF?text=Animals+Gallery',
                     'https://via.placeholder.com/800x500/FF6B6B/FFFFFF?text=Donation+Form'
                 ]
             },
-            'calendar': {
-                title: 'Calendar Task Manager',
-                description: 'Веб-календарь с системой управления задачами, различными видами отображения и уведомлениями',
+            calendar: {
+                title: {
+                    ru: 'Календарь задач',
+                    en: 'Calendar Task Manager'
+                },
+                description: {
+                    ru: 'Веб-календарь с системой управления задачами, различными видами отображения и уведомлениями',
+                    en: 'Web calendar with task management system, multiple views, and notifications'
+                },
                 images: [
                     'https://via.placeholder.com/800x500/4ECDC4/FFFFFF?text=Calendar+Month',
                     'https://via.placeholder.com/800x500/4ECDC4/FFFFFF?text=Task+Details',
                     'https://via.placeholder.com/800x500/4ECDC4/FFFFFF?text=Week+View'
                 ]
             },
-            'mathnails': {
-                title: 'MathNails Calculator',
-                description: 'React-приложение для мастеров ногтевого сервиса с калькулятором стоимости услуг и учётом материалов',
+            mathnails: {
+                title: {
+                    ru: 'Калькулятор MathNails',
+                    en: 'MathNails Calculator'
+                },
+                description: {
+                    ru: 'React-приложение для мастеров ногтевого сервиса с калькулятором стоимости услуг и учётом материалов',
+                    en: 'React app for nail technicians with service cost calculator and material tracking'
+                },
                 images: [
                     'https://via.placeholder.com/800x500/FFD93D/000000?text=Calculator+Main',
                     'https://via.placeholder.com/800x500/FFD93D/000000?text=Price+List',
                     'https://via.placeholder.com/800x500/FFD93D/000000?text=Reports'
                 ]
             },
-            'tiktok': {
-                title: 'TikTok SMM Platform',
-                description: 'Django-платформа для продвижения в TikTok с системой заказов, аналитикой и интеграцией с API',
+            tiktok: {
+                title: {
+                    ru: 'TikTok SMM Платформа',
+                    en: 'TikTok SMM Platform'
+                },
+                description: {
+                    ru: 'Django-платформа для продвижения в TikTok с системой заказов, аналитикой и интеграцией с API',
+                    en: 'Django platform for TikTok promotion with order system, analytics, and API integration'
+                },
                 images: [
                     'https://via.placeholder.com/800x500/9B59B6/FFFFFF?text=SMM+Dashboard',
                     'https://via.placeholder.com/800x500/9B59B6/FFFFFF?text=Order+System',
@@ -774,6 +833,7 @@
                 ]
             }
         };
+
 
         function openPreviewModal(projectId) {
             const modal = document.getElementById('previewModal');
@@ -785,8 +845,8 @@
             const project = previewData[projectId];
             if (!project) return;
             
-            modalTitle.textContent = project.title;
-            modalDescription.textContent = project.description;
+            modalTitle.textContent = project.title[currentLanguage];
+            modalDescription.textContent = project.description[currentLanguage];
             
             // Clear existing slides and dots
             sliderWrapper.innerHTML = '';
@@ -796,7 +856,10 @@
             project.images.forEach((image, index) => {
                 const slide = document.createElement('div');
                 slide.className = 'slide';
-                slide.innerHTML = `<img src="${image}" alt="${project.title} - Slide ${index + 1}" onerror="this.src=''; this.style.display='none';">`;
+                slide.innerHTML = `<img src="${image}" 
+                alt="${project.title[currentLanguage]} - Slide ${index + 1}" 
+                onerror="this.src=''; this.style.display='none';" 
+                style="padding:1%;">`;
                 sliderWrapper.appendChild(slide);
                 
                 // Create dot
@@ -870,10 +933,20 @@
                 closeModal();
             }
         });
-const testImg = new Image();
-testImg.src = "./assets/images/site1.png";
 
-testImg.onload = () => console.log("✅ Загружено:", testImg.src);
-testImg.onerror = () => console.error("❌ Ошибка загрузки:", testImg.src);
 
-document.body.appendChild(testImg);
+        function switchLanguage(lang) {
+            currentLanguage = lang;
+            
+            // Update language buttons
+            document.querySelectorAll('.lang-btn, .mobile-lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            document.querySelectorAll(`[onclick="switchLanguage('${lang}')"]`).forEach(btn => {
+                btn.classList.add('active');
+            });
+            
+            // Update content
+            updateContent(lang);
+        }
