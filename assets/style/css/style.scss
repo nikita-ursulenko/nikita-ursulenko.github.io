@@ -90,6 +90,7 @@ nav {
 }
 
 .lang-btn:hover {
+    box-shadow: 0 0px 20px rgba(255, 255, 255, 0.2);
     color: #ffffff;
     background: rgba(31, 111, 235, 0.1);
 }
@@ -344,6 +345,7 @@ nav {
 .btn-primary:hover {
     background: #1a5bd8;
     transform: translateY(-2px);
+    box-shadow: 0 0px 20px rgba(255, 255, 255, 0.3);
 }
 
 .btn-secondary {
@@ -355,6 +357,7 @@ nav {
 .btn-secondary:hover {
     border-color: #1f6feb;
     color: #1f6feb;
+    box-shadow: 0 0px 20px rgba(255, 255, 255, 0.3);
     transform: translateY(-2px);
 }
 
@@ -480,7 +483,7 @@ nav {
 
 .project-card:hover .project-card-inner {
     transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0px 40px rgba(255, 255, 255, 0.1);
     border: 1px solid transparent;
     background:
         linear-gradient(#161b22, #161b22) padding-box,
@@ -667,6 +670,7 @@ nav {
 .tech-item:hover {
     transform: translateY(-5px);
     border-color: #1f6feb;
+    box-shadow: 0 0px 40px rgba(255, 255, 255, 0.1);
 }
 
 .tech-icon {
@@ -761,7 +765,7 @@ nav {
 
 .experience-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0px 40px rgba(255, 255, 255, 0.1);
     border: 1px solid transparent;
     background:
         linear-gradient(#0d1117, #0d1117) padding-box,
@@ -879,7 +883,7 @@ nav {
 
 .education-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0px 40px rgba(255, 255, 255, 0.1);
     border: 1px solid transparent;
     background:
         linear-gradient(#161b22, #161b22) padding-box,
@@ -1091,6 +1095,7 @@ footer {
 }
 
 .social-link:hover {
+    box-shadow: 0 0px 40px rgba(255, 255, 255, 0.15);
     background: #1f6feb;
     color: #ffffff;
     transform: translateY(-2px);
@@ -1554,7 +1559,7 @@ footer {
 
 .preview-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0px 40px rgba(255, 255, 255, 0.15);
     border-color: #1f6feb;
 }
 
