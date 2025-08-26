@@ -141,7 +141,7 @@
             </div>
         </div>
     </section>
-
+    
     <!-- Experience Section -->
     <section id="experience" class="experience">
         <div class="container">
@@ -602,7 +602,225 @@
             </div>
         </div>
     </section>
+    <!-- Modal for Website Previews -->
+    <div class="modal" id="previewModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modalTitle">Превью сайта</h3>
+                <button class="modal-close" onclick="closeModal()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="slider-container">
+                <div class="slider-wrapper" id="sliderWrapper">
+                    <!-- Slides will be dynamically inserted here -->
+                </div>
+                <button class="slider-nav prev" id="prevBtn" onclick="prevSlide()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                    </svg>
+                </button>
+                <button class="slider-nav next" id="nextBtn" onclick="nextSlide()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                    </svg>
+                </button>
+                <div class="slider-dots" id="sliderDots">
+                    <!-- Dots will be dynamically inserted here -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <p class="modal-description" id="modalDescription">Описание проекта</p>
+            </div>
+        </div>
+    </div>
 
+    <!-- Website Previews Section -->
+    <section id="previews" class="website-previews">
+        <div class="container">
+            <h2 class="section-title">Website Previews</h2>
+            <p class="section-subtitle">Мои работы и проекты</p>
+            <div class="previews-grid">
+                <div class="preview-card">
+                    <div class="preview-image-container">
+                        <div class="preview-image">
+                            <img src="assets/images/site1.png" alt="">
+                        </div>
+                        <div class="preview-overlay">
+                            <button class="preview-btn" onclick="openPreviewModal('mded')">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"/>
+                                </svg>
+                                Посмотреть превью
+                            </button>
+                        </div>
+                    </div>
+                    <div class="preview-content">
+                        <h3 class="preview-title">MDED Government Portal</h3>
+                        <p class="preview-description">Государственный портал Министерства экономического развития Молдовы</p>
+                    </div>
+                </div>
+
+                <div class="preview-card">
+                    <div class="preview-image-container">
+                        <div class="preview-image">
+                            <svg width="100%" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="200" fill="#A371F7"/>
+                                <rect x="20" y="20" width="360" height="30" rx="6" fill="white" opacity="0.9"/>
+                                <rect x="30" y="25" width="60" height="20" rx="4" fill="#A371F7"/>
+                                <rect x="320" y="25" width="50" height="20" rx="10" fill="#A371F7"/>
+                                <rect x="20" y="70" width="360" height="60" rx="12" fill="white" opacity="0.8"/>
+                                <rect x="40" y="85" width="120" height="30" rx="6" fill="#A371F7"/>
+                                <rect x="200" y="85" width="160" height="12" rx="6" fill="#A371F7" opacity="0.6"/>
+                                <rect x="200" y="105" width="140" height="12" rx="6" fill="#A371F7" opacity="0.4"/>
+                                <rect x="20" y="150" width="110" height="30" rx="8" fill="white" opacity="0.7"/>
+                                <rect x="145" y="150" width="110" height="30" rx="8" fill="white" opacity="0.7"/>
+                                <rect x="270" y="150" width="110" height="30" rx="8" fill="white" opacity="0.7"/>
+                            </svg>
+                        </div>
+                        <div class="preview-overlay">
+                            <button class="preview-btn" onclick="openPreviewModal('nomadsnews')">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"/>
+                                </svg>
+                                Посмотреть превью
+                            </button>
+                        </div>
+                    </div>
+                    <div class="preview-content">
+                        <h3 class="preview-title">NomadsNews</h3>
+                        <p class="preview-description">Новостной портал с адаптивным дизайном и современным интерфейсом</p>
+                    </div>
+                </div>
+
+                <div class="preview-card">
+                    <div class="preview-image-container">
+                        <div class="preview-image">
+                            <svg width="100%" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="200" fill="#FF6B6B"/>
+                                <rect x="20" y="20" width="360" height="35" rx="8" fill="white" opacity="0.9"/>
+                                <circle cx="50" cy="37" r="8" fill="#FF6B6B"/>
+                                <rect x="70" y="32" width="80" height="10" rx="5" fill="#FF6B6B"/>
+                                <rect x="300" y="30" width="70" height="15" rx="7" fill="#FF6B6B"/>
+                                <rect x="20" y="75" width="170" height="105" rx="12" fill="white" opacity="0.8"/>
+                                <rect x="210" y="75" width="170" height="50" rx="8" fill="white" opacity="0.7"/>
+                                <rect x="210" y="135" width="80" height="20" rx="10" fill="white" opacity="0.6"/>
+                                <rect x="300" y="135" width="80" height="20" rx="10" fill="white" opacity="0.6"/>
+                                <rect x="210" y="165" width="170" height="15" rx="7" fill="white" opacity="0.5"/>
+                            </svg>
+                        </div>
+                        <div class="preview-overlay">
+                            <button class="preview-btn" onclick="openPreviewModal('mypawscharity')">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"/>
+                                </svg>
+                                Посмотреть превью
+                            </button>
+                        </div>
+                    </div>
+                    <div class="preview-content">
+                        <h3 class="preview-title">MyPawsCharity</h3>
+                        <p class="preview-description">Сайт приюта для животных с системой пожертвований и галереей</p>
+                    </div>
+                </div>
+
+                <div class="preview-card">
+                    <div class="preview-image-container">
+                        <div class="preview-image">
+                            <svg width="100%" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="200" fill="#4ECDC4"/>
+                                <rect x="20" y="20" width="360" height="30" rx="6" fill="white" opacity="0.9"/>
+                                <rect x="30" y="25" width="100" height="20" rx="4" fill="#4ECDC4"/>
+                                <rect x="300" y="25" width="70" height="20" rx="10" fill="#4ECDC4"/>
+                                <rect x="20" y="70" width="80" height="110" rx="12" fill="white" opacity="0.8"/>
+                                <rect x="120" y="70" width="80" height="110" rx="12" fill="white" opacity="0.8"/>
+                                <rect x="220" y="70" width="80" height="110" rx="12" fill="white" opacity="0.8"/>
+                                <rect x="320" y="70" width="60" height="110" rx="12" fill="white" opacity="0.8"/>
+                                <circle cx="60" cy="90" r="15" fill="#4ECDC4"/>
+                                <circle cx="160" cy="90" r="15" fill="#4ECDC4"/>
+                                <circle cx="260" cy="90" r="15" fill="#4ECDC4"/>
+                            </svg>
+                        </div>
+                        <div class="preview-overlay">
+                            <button class="preview-btn" onclick="openPreviewModal('calendar')">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"/>
+                                </svg>
+                                Посмотреть превью
+                            </button>
+                        </div>
+                    </div>
+                    <div class="preview-content">
+                        <h3 class="preview-title">Calendar Task Manager</h3>
+                        <p class="preview-description">Веб-календарь с системой управления задачами и событиями</p>
+                    </div>
+                </div>
+
+                <div class="preview-card">
+                    <div class="preview-image-container">
+                        <div class="preview-image">
+                            <svg width="100%" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="200" fill="#FFD93D"/>
+                                <rect x="20" y="20" width="360" height="35" rx="8" fill="white" opacity="0.9"/>
+                                <rect x="30" y="30" width="120" height="15" rx="7" fill="#FFD93D"/>
+                                <rect x="320" y="27" width="50" height="20" rx="10" fill="#FFD93D"/>
+                                <rect x="20" y="75" width="360" height="50" rx="12" fill="white" opacity="0.8"/>
+                                <rect x="40" y="90" width="200" height="20" rx="10" fill="#FFD93D"/>
+                                <rect x="260" y="85" width="100" height="30" rx="15" fill="#FFD93D"/>
+                                <rect x="20" y="145" width="110" height="35" rx="8" fill="white" opacity="0.7"/>
+                                <rect x="145" y="145" width="110" height="35" rx="8" fill="white" opacity="0.7"/>
+                                <rect x="270" y="145" width="110" height="35" rx="8" fill="white" opacity="0.7"/>
+                            </svg>
+                        </div>
+                        <div class="preview-overlay">
+                            <button class="preview-btn" onclick="openPreviewModal('mathnails')">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"/>
+                                </svg>
+                                Посмотреть превью
+                            </button>
+                        </div>
+                    </div>
+                    <div class="preview-content">
+                        <h3 class="preview-title">MathNails Calculator</h3>
+                        <p class="preview-description">React-приложение для расчётов мастеров ногтевого сервиса</p>
+                    </div>
+                </div>
+
+                <div class="preview-card">
+                    <div class="preview-image-container">
+                        <div class="preview-image">
+                            <svg width="100%" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="200" fill="#9B59B6"/>
+                                <rect x="20" y="20" width="360" height="30" rx="6" fill="white" opacity="0.9"/>
+                                <rect x="30" y="25" width="80" height="20" rx="4" fill="#9B59B6"/>
+                                <rect x="300" y="25" width="70" height="20" rx="10" fill="#9B59B6"/>
+                                <rect x="20" y="70" width="170" height="80" rx="12" fill="white" opacity="0.8"/>
+                                <rect x="210" y="70" width="170" height="35" rx="8" fill="white" opacity="0.7"/>
+                                <rect x="210" y="115" width="170" height="35" rx="8" fill="white" opacity="0.7"/>
+                                <rect x="20" y="160" width="360" height="20" rx="10" fill="white" opacity="0.6"/>
+                                <circle cx="100" cy="110" r="25" fill="#9B59B6" opacity="0.3"/>
+                            </svg>
+                        </div>
+                        <div class="preview-overlay">
+                            <button class="preview-btn" onclick="openPreviewModal('tiktok')">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"/>
+                                </svg>
+                                Посмотреть превью
+                            </button>
+                        </div>
+                    </div>
+                    <div class="preview-content">
+                        <h3 class="preview-title">TikTok SMM Platform</h3>
+                        <p class="preview-description">Django-платформа для продвижения в социальных сетях</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Tech Stack Section -->
     <section id="skills" class="tech-stack">
         <div class="container">

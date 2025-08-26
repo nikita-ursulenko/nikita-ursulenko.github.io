@@ -715,3 +715,165 @@
             }
         });
 
+// Preview Modal functionality
+        let currentSlide = 0;
+        let totalSlides = 0;
+
+        const previewData = {
+            'mded': {
+                title: 'MDED Government Portal',
+                description: 'Государственный портал Министерства экономического развития Молдовы с современным дизайном и удобной навигацией',
+                images: [
+                    'assets//images/site1.png',
+                    'assets//images/slide1.png',
+                ]
+            },
+            'nomadsnews': {
+                title: 'NomadsNews',
+                description: 'Новостной портал с адаптивным дизайном, системой категорий и современным интерфейсом для чтения статей',
+                images: [
+                    'https://via.placeholder.com/800x500/A371F7/FFFFFF?text=NomadsNews+Main',
+                    'https://via.placeholder.com/800x500/A371F7/FFFFFF?text=Article+Page',
+                    'https://via.placeholder.com/800x500/A371F7/FFFFFF?text=Category+View'
+                ]
+            },
+            'mypawscharity': {
+                title: 'MyPawsCharity',
+                description: 'Сайт приюта для животных с галереей питомцев, системой пожертвований и информацией о волонтёрстве',
+                images: [
+                    'https://via.placeholder.com/800x500/FF6B6B/FFFFFF?text=Charity+Homepage',
+                    'https://via.placeholder.com/800x500/FF6B6B/FFFFFF?text=Animals+Gallery',
+                    'https://via.placeholder.com/800x500/FF6B6B/FFFFFF?text=Donation+Form'
+                ]
+            },
+            'calendar': {
+                title: 'Calendar Task Manager',
+                description: 'Веб-календарь с системой управления задачами, различными видами отображения и уведомлениями',
+                images: [
+                    'https://via.placeholder.com/800x500/4ECDC4/FFFFFF?text=Calendar+Month',
+                    'https://via.placeholder.com/800x500/4ECDC4/FFFFFF?text=Task+Details',
+                    'https://via.placeholder.com/800x500/4ECDC4/FFFFFF?text=Week+View'
+                ]
+            },
+            'mathnails': {
+                title: 'MathNails Calculator',
+                description: 'React-приложение для мастеров ногтевого сервиса с калькулятором стоимости услуг и учётом материалов',
+                images: [
+                    'https://via.placeholder.com/800x500/FFD93D/000000?text=Calculator+Main',
+                    'https://via.placeholder.com/800x500/FFD93D/000000?text=Price+List',
+                    'https://via.placeholder.com/800x500/FFD93D/000000?text=Reports'
+                ]
+            },
+            'tiktok': {
+                title: 'TikTok SMM Platform',
+                description: 'Django-платформа для продвижения в TikTok с системой заказов, аналитикой и интеграцией с API',
+                images: [
+                    'https://via.placeholder.com/800x500/9B59B6/FFFFFF?text=SMM+Dashboard',
+                    'https://via.placeholder.com/800x500/9B59B6/FFFFFF?text=Order+System',
+                    'https://via.placeholder.com/800x500/9B59B6/FFFFFF?text=Analytics'
+                ]
+            }
+        };
+
+        function openPreviewModal(projectId) {
+            const modal = document.getElementById('previewModal');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalDescription = document.getElementById('modalDescription');
+            const sliderWrapper = document.getElementById('sliderWrapper');
+            const sliderDots = document.getElementById('sliderDots');
+            
+            const project = previewData[projectId];
+            if (!project) return;
+            
+            modalTitle.textContent = project.title;
+            modalDescription.textContent = project.description;
+            
+            // Clear existing slides and dots
+            sliderWrapper.innerHTML = '';
+            sliderDots.innerHTML = '';
+            
+            // Create slides
+            project.images.forEach((image, index) => {
+                const slide = document.createElement('div');
+                slide.className = 'slide';
+                slide.innerHTML = `<img src="${image}" alt="${project.title} - Slide ${index + 1}" onerror="this.src=''; this.style.display='none';">`;
+                sliderWrapper.appendChild(slide);
+                
+                // Create dot
+                const dot = document.createElement('div');
+                dot.className = `slider-dot ${index === 0 ? 'active' : ''}`;
+                dot.onclick = () => goToSlide(index);
+                sliderDots.appendChild(dot);
+            });
+            
+            totalSlides = project.images.length;
+            currentSlide = 0;
+            updateSlider();
+            
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('previewModal');
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) {
+                currentSlide--;
+                updateSlider();
+            }
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides - 1) {
+                currentSlide++;
+                updateSlider();
+            }
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateSlider();
+        }
+
+        function updateSlider() {
+            const sliderWrapper = document.getElementById('sliderWrapper');
+            const dots = document.querySelectorAll('.slider-dot');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            
+            sliderWrapper.style.transform = `translateX(-${currentSlide * 100}%)`;
+            
+            // Update dots
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentSlide);
+            });
+            
+            // Update navigation buttons
+            prevBtn.disabled = currentSlide === 0;
+            nextBtn.disabled = currentSlide === totalSlides - 1;
+        }
+
+        // Close modal on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        // Close modal when clicking outside
+        document.getElementById('previewModal').addEventListener('click', (e) => {
+            if (e.target.id === 'previewModal') {
+                closeModal();
+            }
+        });
+const testImg = new Image();
+testImg.src = "./assets/images/site1.png";
+
+testImg.onload = () => console.log("✅ Загружено:", testImg.src);
+testImg.onerror = () => console.error("❌ Ошибка загрузки:", testImg.src);
+
+document.body.appendChild(testImg);
