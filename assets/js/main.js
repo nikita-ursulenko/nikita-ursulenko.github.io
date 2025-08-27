@@ -557,10 +557,11 @@
             const previewCards = document.querySelectorAll('.preview-card');
 
             if (previewCards.length > 0) {
-                // Project 10 - MDED
+                // Preview cards translate text
                 previewCards[0].querySelector('.preview-title').textContent = previewData.mded.title[lang];
-                previewCards[1].querySelector('.preview-description').textContent = previewData.nomadsnews.description[lang];
                 previewCards[0].querySelector('.preview-description').textContent = t.preview10Desc;
+                previewCards[1].querySelector('.preview-description').textContent = previewData.nomadsnews.description[lang];
+                previewCards[2].querySelector('.preview-description').textContent = previewData.mypawscharity.description[lang];
             }
             document.querySelectorAll('.preview-overlay-text').forEach((el, index) => {
                 // Можно подставлять по индексу, если разные карточки имеют разные тексты
@@ -759,7 +760,7 @@
                     en: 'NomadsNews'
                 },
                 description: {
-                    ru: 'Новостной портал с адаптивным дизайном, системой категорий и современным интерфейсом для чтения статей',
+                    ru: 'Новостной портал с адаптивным дизайном и современным интерфейсом',
                     en: 'News portal with responsive design, category system, and modern interface for reading articles'
                 },
                 images: [
@@ -782,9 +783,11 @@
                     en: 'Animal shelter website with pet gallery, donation system, and volunteer information'
                 },
                 images: [
-                    'https://via.placeholder.com/800x500/FF6B6B/FFFFFF?text=Charity+Homepage',
-                    'https://via.placeholder.com/800x500/FF6B6B/FFFFFF?text=Animals+Gallery',
-                    'https://via.placeholder.com/800x500/FF6B6B/FFFFFF?text=Donation+Form'
+                    'assets/images/site/mypawscharity/slide1.png',
+                    'assets/images/site/mypawscharity/slide2.png',
+                    'assets/images/site/mypawscharity/slide3.png',
+                    'assets/images/site/mypawscharity/slide4.png',
+                    'assets/images/site/mypawscharity/slide5.png',
                 ]
             },
             calendar: {

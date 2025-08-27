@@ -12,8 +12,12 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-TileColor" content="#0D1117">
+    <!-- Для Chrome, Edge, Firefox, Safari -->
+    <meta name="theme-color" content="#0D1117">
+    
+    <!-- Для Safari iOS (чтобы шторка тоже была в цвет) -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <link rel="shortcut icon" href="/favicon.ico">
 
@@ -715,18 +719,7 @@
                 <div class="preview-card">
                     <div class="preview-image-container">
                         <div class="preview-image">
-                            <svg width="100%" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="400" height="200" fill="#FF6B6B"/>
-                                <rect x="20" y="20" width="360" height="35" rx="8" fill="white" opacity="0.9"/>
-                                <circle cx="50" cy="37" r="8" fill="#FF6B6B"/>
-                                <rect x="70" y="32" width="80" height="10" rx="5" fill="#FF6B6B"/>
-                                <rect x="300" y="30" width="70" height="15" rx="7" fill="#FF6B6B"/>
-                                <rect x="20" y="75" width="170" height="105" rx="12" fill="white" opacity="0.8"/>
-                                <rect x="210" y="75" width="170" height="50" rx="8" fill="white" opacity="0.7"/>
-                                <rect x="210" y="135" width="80" height="20" rx="10" fill="white" opacity="0.6"/>
-                                <rect x="300" y="135" width="80" height="20" rx="10" fill="white" opacity="0.6"/>
-                                <rect x="210" y="165" width="170" height="15" rx="7" fill="white" opacity="0.5"/>
-                            </svg>
+                            <img src="assets/images/site/mypawscharity/slide1.png" alt="" style="width: 100%;">
                         </div>
                         <div class="preview-overlay">
                             <button class="preview-btn" onclick="openPreviewModal('mypawscharity')">
@@ -737,7 +730,7 @@
                                 <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/>
                                 <circle cx="12" cy="12" r="3"/>
                                 </svg>
-                                Посмотреть превью
+                                <p class="preview-overlay-text">Посмотреть превью</p>
                             </button>
                         </div>
                     </div>
@@ -773,7 +766,7 @@
                                 <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/>
                                 <circle cx="12" cy="12" r="3"/>
                                 </svg>
-                                Посмотреть превью
+                                <p class="preview-overlay-text">Посмотреть превью</p>
                             </button>
                         </div>
                     </div>
@@ -808,7 +801,7 @@
                                 <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/>
                                 <circle cx="12" cy="12" r="3"/>
                                 </svg>
-                                Посмотреть превью
+                                <p class="preview-overlay-text">Посмотреть превью</p>
                             </button>
                         </div>
                     </div>
@@ -842,7 +835,7 @@
                                 <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/>
                                 <circle cx="12" cy="12" r="3"/>
                                 </svg>
-                                Посмотреть превью
+                                <p class="preview-overlay-text">Посмотреть превью</p>
                             </button>
                         </div>
                     </div>
