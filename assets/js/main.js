@@ -91,7 +91,7 @@
                 project1Feature2: 'Быстрая разработка с готовыми компонентами',
                 project1Feature3: 'Полная адаптивность под все устройства',
                 
-                project2Title: 'NomadsNews',
+                project2Title: 'Nomads',
                 project2Desc: 'Адаптивный лендинг на WordPress с интерактивными формами и слайдерами. Оптимизирован для быстрой загрузки и SEO.',
                 project2Feature1: 'Лёгкое редактирование контента через админку',
                 project2Feature2: 'Адаптивный дизайн для всех экранов',
@@ -248,7 +248,7 @@
                 project1Feature2: 'Fast development with ready-made components',
                 project1Feature3: 'Full responsiveness for all devices',
                 
-                project2Title: 'NomadsNews',
+                project2Title: 'Nomads',
                 project2Desc: 'Responsive WordPress landing page with interactive forms and sliders. Optimized for fast loading and SEO.',
                 project2Feature1: 'Easy content editing through admin panel',
                 project2Feature2: 'Responsive design for all screens',
@@ -756,8 +756,8 @@
             },
             nomadsnews: {
                 title: {
-                    ru: 'NomadsNews',
-                    en: 'NomadsNews'
+                    ru: 'Nomads',
+                    en: 'Nomads'
                 },
                 description: {
                     ru: 'Новостной портал с адаптивным дизайном и современным интерфейсом',
