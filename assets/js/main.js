@@ -805,6 +805,7 @@
                     'https://via.placeholder.com/800x500/4ECDC4/FFFFFF?text=Week+View'
                 ]
             },
+            
             mathnails: {
                 title: {
                     ru: 'Калькулятор MathNails',
@@ -953,3 +954,40 @@
             // Update content
             updateContent(lang);
         }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const previewCards = document.querySelectorAll(".preview-card");
+
+  const updateHoverActive = () => {
+    if (window.innerWidth > 769) {
+      // Для экранов меньше 769px сбрасываем hover
+      previewCards.forEach(card => card.classList.remove("hover-active"));
+      return;
+    }
+
+    // Получаем все карточки, которые видны >= 70%
+    const visibleCards = Array.from(previewCards).filter(card => {
+      const rect = card.getBoundingClientRect();
+      const visibleHeight = Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, 0);
+      return visibleHeight / rect.height >= 0.7;
+    });
+
+    // Сбрасываем hover у всех
+    previewCards.forEach(card => card.classList.remove("hover-active"));
+
+    // Если есть видимые, активируем последнюю (нижнюю) карточку
+    if (visibleCards.length > 0) {
+      const lastCard = visibleCards[visibleCards.length - 1];
+      lastCard.classList.add("hover-active");
+    }
+  };
+
+  const observer = new IntersectionObserver(() => {
+    updateHoverActive();
+  }, { threshold: [0.7] });
+
+  previewCards.forEach(card => observer.observe(card));
+
+  window.addEventListener("scroll", updateHoverActive);
+  window.addEventListener("resize", updateHoverActive);
+});
