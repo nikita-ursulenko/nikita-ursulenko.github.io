@@ -834,21 +834,6 @@
                     'assets/images/site/atelier_md/slide7.png'
                 ]
             },
-            tiktok: {
-                title: {
-                    ru: 'TikTok SMM Платформа',
-                    en: 'TikTok SMM Platform'
-                },
-                description: {
-                    ru: 'Django-платформа для продвижения в TikTok с системой заказов, аналитикой и интеграцией с API',
-                    en: 'Django platform for TikTok promotion with order system, analytics, and API integration'
-                },
-                images: [
-                    'https://via.placeholder.com/800x500/9B59B6/FFFFFF?text=SMM+Dashboard',
-                    'https://via.placeholder.com/800x500/9B59B6/FFFFFF?text=Order+System',
-                    'https://via.placeholder.com/800x500/9B59B6/FFFFFF?text=Analytics'
-                ]
-            }
         };
 
 
