@@ -562,6 +562,8 @@
                 previewCards[0].querySelector('.preview-description').textContent = t.preview10Desc;
                 previewCards[1].querySelector('.preview-description').textContent = previewData.nomadsnews.description[lang];
                 previewCards[2].querySelector('.preview-description').textContent = previewData.mypawscharity.description[lang];
+                previewCards[3].querySelector('.preview-description').textContent = previewData.viktoriia.description[lang];
+                previewCards[3].querySelector('.preview-description').textContent = previewData.atelier_md.description[lang];
             }
             document.querySelectorAll('.preview-overlay-text').forEach((el, index) => {
                 // Можно подставлять по индексу, если разные карточки имеют разные тексты
@@ -779,7 +781,7 @@
                     en: 'MyPawsCharity'
                 },
                 description: {
-                    ru: 'Сайт приюта для животных с галереей питомцев, системой пожертвований и информацией о волонтёрстве',
+                    ru: 'Сайт приюта для животных с системой пожертвований и галереей',
                     en: 'Animal shelter website with pet gallery, donation system, and volunteer information'
                 },
                 images: [
@@ -790,35 +792,45 @@
                     'assets/images/site/mypawscharity/slide5.png',
                 ]
             },
-            calendar: {
+            viktoriia: {
                 title: {
-                    ru: 'Календарь задач',
-                    en: 'Calendar Task Manager'
+                    ru: 'Viktoriia Lakatosh Nails',
+                    en: 'Viktoriia Lakatosh Nails'
                 },
                 description: {
-                    ru: 'Веб-календарь с системой управления задачами, различными видами отображения и уведомлениями',
-                    en: 'Web calendar with task management system, multiple views, and notifications'
+                    ru: 'Сайт маникюра: услуги, галерея работ, контакты для записи онлайн.',
+                    en: 'Manicure website: services, portfolio gallery, contact page for booking.'
                 },
                 images: [
-                    'https://via.placeholder.com/800x500/4ECDC4/FFFFFF?text=Calendar+Month',
-                    'https://via.placeholder.com/800x500/4ECDC4/FFFFFF?text=Task+Details',
-                    'https://via.placeholder.com/800x500/4ECDC4/FFFFFF?text=Week+View'
+                    'assets/images/site/viktoriia/slide1.png',
+                    'assets/images/site/viktoriia/slide2.png',
+                    'assets/images/site/viktoriia/slide3.png',
+                    'assets/images/site/viktoriia/slide4.png',
+                    'assets/images/site/viktoriia/slide5.png',
+                    'assets/images/site/viktoriia/slide6.png',
+                    'assets/images/site/viktoriia/slide7.png',
+                    'assets/images/site/viktoriia/slide8.png',
+                    'assets/images/site/viktoriia/slide9.png',
+                    'assets/images/site/viktoriia/slide10.png'
                 ]
             },
-            
-            mathnails: {
+            atelier_md: {
                 title: {
-                    ru: 'Калькулятор MathNails',
-                    en: 'MathNails Calculator'
+                    ru: 'Atelier MD',
+                    en: 'Atelier MD'
                 },
                 description: {
-                    ru: 'React-приложение для мастеров ногтевого сервиса с калькулятором стоимости услуг и учётом материалов',
-                    en: 'React app for nail technicians with service cost calculator and material tracking'
+                    ru: 'Сайт ателье: услуги пошива, портфолио, контакты для заказов.',
+                    en: 'Atelier website: tailoring services, portfolio, contact page for orders.'
                 },
                 images: [
-                    'https://via.placeholder.com/800x500/FFD93D/000000?text=Calculator+Main',
-                    'https://via.placeholder.com/800x500/FFD93D/000000?text=Price+List',
-                    'https://via.placeholder.com/800x500/FFD93D/000000?text=Reports'
+                     'assets/images/site/atelier_md/slide1.png',
+                    'assets/images/site/atelier_md/slide2.png',
+                    'assets/images/site/atelier_md/slide3.png',
+                    'assets/images/site/atelier_md/slide4.png',
+                    'assets/images/site/atelier_md/slide5.png',
+                    'assets/images/site/atelier_md/slide6.png',
+                    'assets/images/site/atelier_md/slide7.png'
                 ]
             },
             tiktok: {
