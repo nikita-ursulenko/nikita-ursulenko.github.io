@@ -754,6 +754,7 @@
                     'assets/images/site/mded/slide2.png',
                     'assets/images/site/mded/slide3.png',
                     'assets/images/site/mded/slide4.png',
+                    'assets/images/site/mded/slide5.png',
                 ]
             },
             nomadsnews: {
