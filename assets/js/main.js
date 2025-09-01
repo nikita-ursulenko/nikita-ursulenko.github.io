@@ -563,7 +563,8 @@
                 previewCards[1].querySelector('.preview-description').textContent = previewData.nomadsnews.description[lang];
                 previewCards[2].querySelector('.preview-description').textContent = previewData.mypawscharity.description[lang];
                 previewCards[3].querySelector('.preview-description').textContent = previewData.viktoriia.description[lang];
-                previewCards[3].querySelector('.preview-description').textContent = previewData.atelier_md.description[lang];
+                previewCards[4].querySelector('.preview-description').textContent = previewData.atelier_md.description[lang];
+                previewCards[5].querySelector('.preview-description').textContent = previewData.nailshop.description[lang];
             }
             document.querySelectorAll('.preview-overlay-text').forEach((el, index) => {
                 // Можно подставлять по индексу, если разные карточки имеют разные тексты
@@ -834,6 +835,29 @@
                     'assets/images/site/atelier_md/slide7.png'
                 ]
             },
+            nailshop: {
+                title: {
+                    ru: 'Nail Shop',
+                    en: 'Nail Shop'
+                },
+                description: {
+                    ru: 'Сайт магазина ногтевых товаров: каталог, корзина, контактная страница.',
+                    en: 'Nail shop website: product catalog, shopping cart, contact page.'
+                },
+                images: [
+                    'assets/images/site/nailshop/slide1.png',
+                    'assets/images/site/nailshop/slide2.png',
+                    'assets/images/site/nailshop/slide3.png',
+                    'assets/images/site/nailshop/slide4.png',
+                    'assets/images/site/nailshop/slide5.png',
+                    'assets/images/site/nailshop/slide6.png',
+                    'assets/images/site/nailshop/slide7.png',
+                    'assets/images/site/nailshop/slide8.png',
+                    'assets/images/site/nailshop/slide9.png',
+                    'assets/images/site/nailshop/slide10.png',
+                ]
+            },
+
         };
 
 
