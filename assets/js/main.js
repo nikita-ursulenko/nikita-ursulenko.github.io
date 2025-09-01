@@ -565,6 +565,8 @@
                 previewCards[3].querySelector('.preview-description').textContent = previewData.viktoriia.description[lang];
                 previewCards[4].querySelector('.preview-description').textContent = previewData.atelier_md.description[lang];
                 previewCards[5].querySelector('.preview-description').textContent = previewData.nailshop.description[lang];
+                previewCards[6].querySelector('.preview-description').textContent = previewData.django_tiktok.description[lang];
+                previewCards[7].querySelector('.preview-description').textContent = previewData.calendar_task.description[lang];
             }
             document.querySelectorAll('.preview-overlay-text').forEach((el, index) => {
                 // Можно подставлять по индексу, если разные карточки имеют разные тексты
@@ -855,6 +857,40 @@
                     'assets/images/site/nailshop/slide8.png',
                     'assets/images/site/nailshop/slide9.png',
                     'assets/images/site/nailshop/slide10.png',
+                ]
+            },
+            django_tiktok: {
+                title: {
+                    ru: 'Django TikTok',
+                    en: 'Django TikTok'
+                },
+                description: {
+                    ru: 'Веб-приложение для продвижения в TikTok с оплатой и автоматизацией.',
+                    en: 'Web app for TikTok promotion with payments and automation.'
+                },
+                images: [
+                    'assets/images/site/django_tiktok/slide1.png',
+                    'assets/images/site/django_tiktok/slide2.png',
+                ]
+            },
+            calendar_task: {
+                title: {
+                    ru: 'Calendar Task',
+                    en: 'Calendar Task'
+                },
+                description: {
+                    ru: 'Веб-приложение для создания и управления событиями с поддержкой календаря и системы пользователей.',
+                    en: 'A web application for creating and managing events with calendar support and a user system.'
+                },
+                images: [
+                    'assets/images/site/calendar_task/slide1.png',
+                    'assets/images/site/calendar_task/slide2.png',
+                    'assets/images/site/calendar_task/slide3.png',
+                    'assets/images/site/calendar_task/slide4.png',
+                    'assets/images/site/calendar_task/slide5.png',
+                    'assets/images/site/calendar_task/slide6.png',
+                    'assets/images/site/calendar_task/slide7.png',
+                    'assets/images/site/calendar_task/slide8.png',
                 ]
             },
 
