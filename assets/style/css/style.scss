@@ -18,6 +18,37 @@ body {
     padding: 0 20px;
 }
 
+.matrix-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    overflow: hidden;
+}
+
+.matrix-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.content-block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #00ff41;
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 600px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 30px rgba(0, 255, 65, 0.3);
+}
+
 /* Navigation */
 nav {
     position: fixed;
@@ -290,7 +321,7 @@ nav {
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
-    padding: 120px 0 80px;
+    padding: 120px 0px 0px 0px;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -482,7 +513,7 @@ nav {
     pointer-events: none;
 }
 
-.project-card:hover .project-card-inner {
+.project-card.mobile-active .project-card-inner {
     transform: translateY(-8px);
     box-shadow: 0 0px 40px rgba(255, 255, 255, 0.1);
     border: 1px solid transparent;
@@ -730,7 +761,7 @@ nav {
 .experience-item::before {
     content: "";
     position: absolute;
-    left: 21px;
+    left: 19px;
     top: 25px;
     width: 18px;
     height: 18px;
@@ -1160,7 +1191,9 @@ footer {
     .mobile-menu {
         display: flex;
     }
-
+    .about {
+        padding: 1%;
+    }
     .hero-content {
         grid-template-columns: 1fr;
         text-align: center;
@@ -1177,12 +1210,47 @@ footer {
         font-size: 80px;
         margin: 0 auto;
     }
-
+    .about {
+        .section-title {
+            margin: 0;
+        }
+    }
     .about-content {
         grid-template-columns: 1fr;
         gap: 40px;
     }
-
+    .experience {
+        padding: 1%;
+        .section-title {
+            margin: 0;
+        }
+        .experience-timeline {
+            margin-top: 20px;
+        }
+    }
+    #projects {
+        padding: 5% 0;
+    }
+    .website-previews {
+        padding: 5% 0;
+    }
+    #skills {
+        padding: 5% 0;
+    }
+    #previews {
+        padding: 5% 0;
+    }
+    #education {
+        padding: 5% 0;
+    }
+    .social-link {
+        width: 48px;
+        height: 48px;
+    }
+    h2.section-title {
+        line-height: normal;
+        font-size: 34px;
+    }
     .contact-content {
         grid-template-columns: 1fr;
         gap: 40px;

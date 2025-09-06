@@ -3,33 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Previews - Nikita Ursulenco</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Matrix Animation Block</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+
+        .matrix-container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background: #000;
+            overflow: hidden;
         }
 
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #0D1117;
-            color: #FFFFFF;
-            line-height: 1.6;
-            overflow-x: hidden;
+        .matrix-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
+        .content-block {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid #00ff41;
+            border-radius: 15px;
+            padding: 40px;
+            max-width: 600px;
+            text-align: center;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 0 30px rgba(0, 255, 65, 0.3);
         }
 
-        
     </style>
 </head>
 <body>
-    
+    <div class="matrix-container">
+        <canvas class="matrix-canvas" id="matrixCanvas"></canvas>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('matrixCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Настройка размеров canvas
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        // Символы для матрицы (кириллица, латиница, цифры, японские символы)
+        const matrixChars = 'АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン';
+        
+        const fontSize = 14;
+        const columns = Math.floor(canvas.width / fontSize);
+        const drops = [];
+
+        // Инициализация капель
+        for (let i = 0; i < columns; i++) {
+            drops[i] = Math.random() * canvas.height / fontSize;
+        }
+
+        function drawMatrix() {
+            // Полупрозрачный черный фон для эффекта следа
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.font = fontSize + 'px monospace';
+
+            for (let i = 0; i < drops.length; i++) {
+                // Случайный символ
+                const text = matrixChars[Math.floor(Math.random() * matrixChars.length)];
+                
+                // Позиция символа
+                const x = i * fontSize;
+                const y = drops[i] * fontSize;
+
+                // Создаем градиент для каждого символа
+                const gradient = ctx.createLinearGradient(x, y - fontSize, x + fontSize, y);
+                gradient.addColorStop(0, '#1f6feb');
+                gradient.addColorStop(1, '#a371f7');
+                ctx.fillStyle = gradient;
+
+                // Рисуем символ
+                ctx.fillText(text, x, y);
+
+                // Сброс капли наверх с небольшой вероятностью
+                if (y > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+
+                // Движение капли вниз
+                drops[i]++;
+            }
+        }
+
+        // Запуск анимации
+        setInterval(drawMatrix, 50);
+
+        // Функция для кнопки
+        function pulseEffect() {
+            const btn = document.querySelector('.matrix-btn');
+            const block = document.querySelector('.content-block');
+            
+            // Эффект пульсации
+            btn.style.transform = 'scale(0.95)';
+            block.style.boxShadow = '0 0 50px rgba(0, 255, 65, 0.8)';
+            
+            setTimeout(() => {
+                btn.style.transform = 'scale(1)';
+                block.style.boxShadow = '0 0 30px rgba(0, 255, 65, 0.3)';
+            }, 150);
+            
+            // Можно добавить здесь логику перехода на другую страницу
+            console.log('Вход в систему активирован!');
+        }
+
+        // Обновление размеров при изменении окна
+        window.addEventListener('resize', () => {
+            resizeCanvas();
+            // Пересчет количества колонок
+            const newColumns = Math.floor(canvas.width / fontSize);
+            if (newColumns !== columns) {
+                drops.length = newColumns;
+                for (let i = columns; i < newColumns; i++) {
+                    drops[i] = Math.random() * canvas.height / fontSize;
+                }
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97a7d8dd63df03d0',t:'MTc1NzA5NzU0My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>

@@ -1049,3 +1049,89 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", updateHoverActive);
   window.addEventListener("resize", updateHoverActive);
 });
+
+
+ const canvas = document.getElementById('matrixCanvas');
+        const ctx = canvas.getContext('2d');
+
+        function resizeCanvas() {
+        // Находим первый (верхний) <section> на странице
+        const firstSection = document.querySelector('section');
+
+         if (firstSection) {
+            const sectionRect = firstSection.getBoundingClientRect();
+            // Высота секции вместе с padding
+            canvas.width = sectionRect.width;
+            canvas.height = sectionRect.height;
+        } else {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+
+
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        // Символы для матрицы (кириллица, латиница, цифры, японские символы)
+        const matrixChars = 'АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン';
+        
+        const fontSize = 16;
+        let columns = Math.floor(canvas.width / fontSize);
+        const drops = [];
+        
+        // Предварительно созданные цвета для оптимизации (градиент от синего к фиолетовому)
+        const colors = ['#1f6feb', '#3574fc', '#4b82fd', '#6190fe', '#779eff', '#8dacff', '#a3baff', '#b9c8ff', '#cfd6ff', '#e5e4ff', '#a371f7'];
+        
+        // Инициализация капель
+        for (let i = 0; i < columns; i++) {
+            drops[i] = Math.random() * canvas.height / fontSize;
+        }
+
+        function drawMatrix() {
+            // Полупрозрачный черный фон для эффекта следа
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.font = fontSize + 'px monospace';
+
+            for (let i = 0; i < drops.length; i++) {
+                // Случайный символ
+                const text = matrixChars[Math.floor(Math.random() * matrixChars.length)];
+                
+                // Позиция символа
+                const x = i * fontSize;
+                const y = drops[i] * fontSize;
+
+                // Используем цвет из массива в зависимости от позиции
+                const colorIndex = Math.floor(Math.random() * colors.length);
+                ctx.fillStyle = colors[colorIndex];
+
+                // Рисуем символ
+                ctx.fillText(text, x, y);
+
+                // Сброс капли наверх с небольшой вероятностью
+                if (y > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+
+                // Движение капли вниз
+                drops[i]++;
+            }
+        }
+
+        // Запуск анимации
+        setInterval(drawMatrix, 50);
+
+        // Обновление размеров при изменении окна
+        window.addEventListener('resize', () => {
+            resizeCanvas();
+            // Пересчет количества колонок
+            columns = Math.floor(canvas.width / fontSize);
+            drops.length = columns;
+            for (let i = 0; i < columns; i++) {
+                if (drops[i] === undefined) {
+                    drops[i] = Math.random() * canvas.height / fontSize;
+                }
+            }
+        });
