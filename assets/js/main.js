@@ -1068,7 +1068,7 @@ function initMatrix(canvasId) {
     }
     resizeCanvas();
 
-    const matrixChars = 'АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789アイウエオ...';
+    const matrixChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
     const fontSize = 16;
     let columns = Math.floor(canvas.width / fontSize);
     const drops = [];
