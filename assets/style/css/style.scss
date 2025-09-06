@@ -1718,9 +1718,13 @@ footer {
 
 .preview-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 0px 40px rgba(255, 255, 255, 0.15);
-    border-color: #1f6feb;
+    box-shadow: 0 0px 40px hsla(0, 0%, 100%, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0);
+    background:
+        linear-gradient(#161b22, #161b22) padding-box,
+        linear-gradient(135deg, #1f6feb, #a371f7) border-box;
 }
+
 .hover-active {
     transform: translateY(-8px);
     box-shadow: 0 0px 40px rgba(255, 255, 255, 0.15);
