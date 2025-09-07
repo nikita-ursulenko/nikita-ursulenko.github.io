@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nikita-ursulenko.github.io/sitemap.xml
