@@ -593,15 +593,26 @@
             if (footerText) footerText.textContent = t.allRightsReserved;
         }
 
-        // Smooth scrolling for navigation links
+        // Smooth scrolling for navigation links, with fixed header offset
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
+
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    const header = document.querySelector('nav'); // Make sure this selector matches your header
+                    const headerHeight = header.offsetHeight; // Get the header's height
+
+                    // Calculate the new scroll position
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                    const scrollPosition = targetPosition - headerHeight;
+
+                    // Scroll to the new position
+                    window.scrollTo({
+                        top: scrollPosition,
+                        behavior: 'smooth'
                     });
                 }
             });

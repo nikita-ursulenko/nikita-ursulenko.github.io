@@ -471,14 +471,14 @@ nav {
 /* About Section */
 .about {
     background: #161b22;
-    padding: 80px 0;
+    padding: 20px 0;
 }
 
 .section-title {
     text-align: center;
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 60px;
+
     color: #ffffff;
 }
 
@@ -495,7 +495,13 @@ nav {
     line-height: 1.8;
     padding: 5%;
 }
-
+#skills {
+    .container {
+        .section-title {
+            margin-bottom: 20px;
+        }
+    }
+}
 .skills-card {
     background: #0d1117;
     padding: 30px;
@@ -546,14 +552,14 @@ nav {
 /* Projects Section */
 .projects {
     background: #0d1117;
-    padding: 80px 0;
+    padding: 20px 0;
 }
 
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     gap: 30px;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .project-card .project-card-inner {
@@ -746,7 +752,7 @@ nav {
 /* Tech Stack Section */
 .tech-stack {
     background: #161b22;
-    padding: 80px 0;
+    padding: 20px 0;
     overflow: hidden;
 }
 .tech-slider {
@@ -770,7 +776,7 @@ nav {
     flex-direction: column;
     align-items: center;
 
-    min-width: 180px;
+    min-width: 100px;
     transition: all 0.3s ease;
     flex-shrink: 0;
 }
@@ -778,7 +784,6 @@ nav {
 .tech-item:hover {
     transform: translateY(-5px);
     border-color: #1f6feb;
-    box-shadow: 0 0px 40px rgba(255, 255, 255, 0.1);
 }
 
 .tech-icon {
@@ -833,13 +838,13 @@ nav {
 /* Experience Section */
 .experience {
     background: #161b22;
-    padding: 80px 0;
+    padding: 20px 0;
 }
 
 .experience-timeline {
     position: relative;
     max-width: 900px;
-    margin: 60px auto 0;
+    margin: 20px auto 0;
 }
 
 .experience-timeline::before {
@@ -895,7 +900,7 @@ nav {
     pointer-events: none;
 }
 
-.experience-card:hover {
+.experience-card.mobile-active {
     transform: translateY(-5px);
     box-shadow: 0 0px 40px rgba(255, 255, 255, 0.1);
     border: 1px solid transparent;
@@ -979,7 +984,7 @@ nav {
 /* Education Section */
 .education {
     background: #0d1117;
-    padding: 80px 0;
+    padding: 20px 0;
 }
 
 .education-grid {
@@ -1100,7 +1105,7 @@ nav {
 /* Contact Section */
 .contact {
     background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
-    padding: 80px 0;
+    padding: 20px 0;
 }
 
 .contact-content {
@@ -1678,14 +1683,14 @@ footer {
 /* Website Previews Section */
 .website-previews {
     background: #161b22;
-    padding: 80px 0;
+    padding: 20px 0;
 }
 
 .section-title {
     text-align: center;
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 60px;
+
     color: #ffffff;
 }
 
@@ -1701,7 +1706,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 30px;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .preview-card {
