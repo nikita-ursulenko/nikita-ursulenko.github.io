@@ -322,10 +322,8 @@ const translations = {
 
 function updateContent(lang) {
     const t = translations[lang];
-    
     // Update navigation
     document.querySelectorAll('a[href="#home"]').forEach(el => el.textContent = t.home);
-    console.log(`Nav link "home" updated to: ${t.home}`);
     document.querySelectorAll('a[href="#about"]').forEach(el => el.textContent = t.about);
     document.querySelectorAll('a[href="#experience"]').forEach(el => el.textContent = t.experience);
     document.querySelectorAll('a[href="#projects"]').forEach(el => el.textContent = t.projects);
@@ -335,16 +333,8 @@ function updateContent(lang) {
     document.querySelectorAll('a[href="#contact"]').forEach(el => el.textContent = t.contact);
     
     // Update hero section
+    document.querySelector('.hero-text h1').textContent = t.heroTitle;
 
-    // Находим элемент и сохраняем его в переменную
-    const heroTitleElement = document.querySelector('.hero-text h1');
-    // Проверяем, существует ли элемент, прежде чем обновлять его
-    if (heroTitleElement) {
-        heroTitleElement.textContent = t.heroTitle;
-        console.log(`Hero title updated to: ${t.heroTitle}`); // Опциональный лог для отладки
-    } else {
-        console.warn('Hero title element not found. Skipping update.'); // Лог-предупреждение
-    }
     document.querySelector('.hero-text p').textContent = t.heroSubtitle;
     document.querySelector('.btn-primary').textContent = t.viewProjects;
     document.querySelector('.btn-secondary').textContent = t.downloadCV;
