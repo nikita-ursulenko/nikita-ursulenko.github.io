@@ -1147,3 +1147,28 @@ initMatrix('matrixCanvas2');
         slider.addEventListener('mouseleave', () => {
             track.style.animationPlayState = 'running';
         });
+
+
+
+document.querySelectorAll('.verify-link').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const certUrl = link.dataset.certificate;
+    const modal = document.getElementById('certificateModal');
+    const frame = document.getElementById('certificateFrame');
+    frame.src = certUrl;
+    modal.style.display = 'flex';
+  });
+});
+
+// закрытие
+document.querySelector('#certificateModal .close').onclick = () => {
+  document.getElementById('certificateModal').style.display = 'none';
+  document.getElementById('certificateFrame').src = '';
+};
+window.onclick = e => {
+  if (e.target.id === 'certificateModal') {
+    document.getElementById('certificateModal').style.display = 'none';
+    document.getElementById('certificateFrame').src = '';
+  }
+};

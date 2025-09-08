@@ -229,7 +229,7 @@ nav {
 .mobile-nav-links a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 3.5rem;
+    font-size: 2rem;
     font-weight: bold;
     padding: 15px 30px;
     transition: all 0.3s ease;
@@ -595,6 +595,10 @@ nav {
     background:
         linear-gradient(#161b22, #161b22) padding-box,
         linear-gradient(135deg, #1f6feb, #a371f7) border-box;
+    .tag {
+        background: #30363d;
+        border-color: #1f6feb;
+    }
 }
 
 .project-card:hover::before .project-card-inner {
@@ -673,11 +677,6 @@ nav {
     font-weight: 500;
     border: 1px solid #30363d;
     transition: all 0.3s ease;
-}
-
-.project-card:hover .tag {
-    background: #30363d;
-    border-color: #1f6feb;
 }
 
 .project-features {
@@ -1053,7 +1052,7 @@ nav {
 }
 
 .education-card:hover .education-icon {
-    transform: scale(1.05);
+    transform: scale(1.2);
 }
 
 .education-content {
@@ -1091,15 +1090,21 @@ nav {
     text-decoration: none;
     transition: all 0.3s ease;
     display: flex;
+    border: 1px solid transparent;
     align-items: center;
     padding: 4px;
-    border-radius: 4px;
+    margin: 4px;
+    border-radius: 30px;
 }
 
-.verify-link:hover {
+.education-card:hover .verify-link {
     color: #a371f7;
     background: rgba(31, 111, 235, 0.1);
     transform: scale(1.1);
+
+    background:
+        linear-gradient(#161b22, #161b22) padding-box,
+        linear-gradient(135deg, #1f6feb, #a371f7) border-box;
 }
 
 /* Contact Section */
