@@ -677,6 +677,10 @@
         document.querySelectorAll('.experience-card').forEach(card => {
             experienceObserver.observe(card);
         });
+        // Observe experience cards for mobile hover effect
+        document.querySelectorAll('.education-card').forEach(card => {
+            experienceObserver.observe(card);
+        });
 
         // Mobile menu toggle
         const mobileMenu = document.querySelector('.mobile-menu');
