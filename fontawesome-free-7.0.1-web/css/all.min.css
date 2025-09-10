@@ -5163,6 +5163,7 @@
     font-weight: 400;
     font-display: block;
     src: url(../webfonts/fa-brands-400.woff2);
+    font-display: swap;
 }
 .fa-brands,
 .fa-classic.fa-brands,
@@ -6755,6 +6756,7 @@
     font-weight: 400;
     font-display: block;
     src: url(../webfonts/fa-regular-400.woff2);
+    font-display: swap;
 }
 .far {
     --fa-family: var(--fa-family-classic);
@@ -6775,6 +6777,7 @@
     font-weight: 900;
     font-display: block;
     src: url(../webfonts/fa-solid-900.woff2);
+    font-display: swap;
 }
 .fas {
     --fa-style: 900;
@@ -6791,33 +6794,39 @@
     font-display: block;
     font-weight: 400;
     src: url(../webfonts/fa-brands-400.woff2) format("woff2");
+    font-display: swap;
 }
 @font-face {
     font-family: "Font Awesome 5 Free";
     font-display: block;
     font-weight: 900;
     src: url(../webfonts/fa-solid-900.woff2) format("woff2");
+    font-display: swap;
 }
 @font-face {
     font-family: "Font Awesome 5 Free";
     font-display: block;
     font-weight: 400;
     src: url(../webfonts/fa-regular-400.woff2) format("woff2");
+    font-display: swap;
 }
 @font-face {
     font-family: "FontAwesome";
     font-display: block;
     src: url(../webfonts/fa-solid-900.woff2) format("woff2");
+    font-display: swap;
 }
 @font-face {
     font-family: "FontAwesome";
     font-display: block;
     src: url(../webfonts/fa-brands-400.woff2) format("woff2");
+    font-display: swap;
 }
 @font-face {
     font-family: "FontAwesome";
     font-display: block;
     src: url(../webfonts/fa-regular-400.woff2) format("woff2");
+    font-display: swap;
     unicode-range:
         u+f003, u+f006, u+f014, u+f016-f017, u+f01a-f01b, u+f01d, u+f022, u+f03e, u+f044, u+f046, u+f05c-f05d, u+f06e,
         u+f070, u+f087-f088, u+f08a, u+f094, u+f096-f097, u+f09d, u+f0a0, u+f0a2, u+f0a4-f0a7, u+f0c5, u+f0c7,
