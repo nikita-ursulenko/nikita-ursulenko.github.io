@@ -949,7 +949,7 @@ function openPreviewModal(projectId) {
         slide.innerHTML = `<img src="${image}" 
         alt="${project.title[currentLanguage]} - Slide ${index + 1}" 
         onerror="this.src=''; this.style.display='none';" 
-        style="padding:1%;">`;
+        style="padding:1%;" loading="lazy">`;
         sliderWrapper.appendChild(slide);
         
         // Create dot
