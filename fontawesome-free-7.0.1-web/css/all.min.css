@@ -5156,6 +5156,7 @@
 :root {
     --fa-family-brands: "Font Awesome 7 Brands";
     --fa-font-brands: normal 400 1em/1 var(--fa-family-brands);
+    font-display: swap;
 }
 @font-face {
     font-family: "Font Awesome 7 Brands";
@@ -6838,6 +6839,7 @@
 @font-face {
     font-family: "FontAwesome";
     font-display: block;
+    font-display: swap;
     src: url(../webfonts/fa-v4compatibility.woff2) format("woff2");
     unicode-range:
         u+f041, u+f047, u+f065-f066, u+f07d-f07e, u+f080, u+f08b, u+f08e, u+f090, u+f09a, u+f0ac, u+f0ae, u+f0b2,
