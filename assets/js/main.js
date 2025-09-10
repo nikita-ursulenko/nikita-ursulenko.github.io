@@ -780,12 +780,12 @@ const previewData = {
             en: 'Government portal of the Ministry of Economic Development of Moldova with modern design and user-friendly navigation'
         },
         images: [
-            'assets/images/site/mded/site.png',
-            'assets/images/site/mded/slide1.png',
-            'assets/images/site/mded/slide2.png',
-            'assets/images/site/mded/slide3.png',
-            'assets/images/site/mded/slide4.png',
-            'assets/images/site/mded/slide5.png',
+            'assets/images/site/mded/site.webp',
+            'assets/images/site/mded/slide1.webp',
+            'assets/images/site/mded/slide2.webp',
+            'assets/images/site/mded/slide3.webp',
+            'assets/images/site/mded/slide4.webp',
+            'assets/images/site/mded/slide5.webp',
         ]
     },
     nomadsnews: {
@@ -798,13 +798,13 @@ const previewData = {
             en: 'News portal with responsive design, category system, and modern interface for reading articles'
         },
         images: [
-            'assets/images/site/nomads/site.png',
-            'assets/images/site/nomads/slide2.png',
-            'assets/images/site/nomads/slide3.png',
-            'assets/images/site/nomads/slide4.png',
-            'assets/images/site/nomads/slide5.png',
-            'assets/images/site/nomads/slide6.png',
-            'assets/images/site/nomads/slide7.png',
+            'assets/images/site/nomads/site.webp',
+            'assets/images/site/nomads/slide2.webp',
+            'assets/images/site/nomads/slide3.webp',
+            'assets/images/site/nomads/slide4.webp',
+            'assets/images/site/nomads/slide5.webp',
+            'assets/images/site/nomads/slide6.webp',
+            'assets/images/site/nomads/slide7.webp',
         ]
     },
     mypawscharity: {
@@ -817,11 +817,11 @@ const previewData = {
             en: 'Animal shelter website with pet gallery, donation system, and volunteer information'
         },
         images: [
-            'assets/images/site/mypawscharity/slide1.png',
-            'assets/images/site/mypawscharity/slide2.png',
-            'assets/images/site/mypawscharity/slide3.png',
-            'assets/images/site/mypawscharity/slide4.png',
-            'assets/images/site/mypawscharity/slide5.png',
+            'assets/images/site/mypawscharity/slide1.webp',
+            'assets/images/site/mypawscharity/slide2.webp',
+            'assets/images/site/mypawscharity/slide3.webp',
+            'assets/images/site/mypawscharity/slide4.webp',
+            'assets/images/site/mypawscharity/slide5.webp',
         ]
     },
     viktoriia: {
@@ -834,16 +834,16 @@ const previewData = {
             en: 'Manicure website: services, portfolio gallery, contact page for booking.'
         },
         images: [
-            'assets/images/site/viktoriia/slide1.png',
-            'assets/images/site/viktoriia/slide2.png',
-            'assets/images/site/viktoriia/slide3.png',
-            'assets/images/site/viktoriia/slide4.png',
-            'assets/images/site/viktoriia/slide5.png',
-            'assets/images/site/viktoriia/slide6.png',
-            'assets/images/site/viktoriia/slide7.png',
-            'assets/images/site/viktoriia/slide8.png',
-            'assets/images/site/viktoriia/slide9.png',
-            'assets/images/site/viktoriia/slide10.png'
+            'assets/images/site/viktoriia/slide1.webp',
+            'assets/images/site/viktoriia/slide2.webp',
+            'assets/images/site/viktoriia/slide3.webp',
+            'assets/images/site/viktoriia/slide4.webp',
+            'assets/images/site/viktoriia/slide5.webp',
+            'assets/images/site/viktoriia/slide6.webp',
+            'assets/images/site/viktoriia/slide7.webp',
+            'assets/images/site/viktoriia/slide8.webp',
+            'assets/images/site/viktoriia/slide9.webp',
+            'assets/images/site/viktoriia/slide10.webp'
         ]
     },
     atelier_md: {
@@ -856,13 +856,13 @@ const previewData = {
             en: 'Atelier website: tailoring services, portfolio, contact page for orders.'
         },
         images: [
-                'assets/images/site/atelier_md/slide1.png',
-            'assets/images/site/atelier_md/slide2.png',
-            'assets/images/site/atelier_md/slide3.png',
-            'assets/images/site/atelier_md/slide4.png',
-            'assets/images/site/atelier_md/slide5.png',
-            'assets/images/site/atelier_md/slide6.png',
-            'assets/images/site/atelier_md/slide7.png'
+                'assets/images/site/atelier_md/slide1.webp',
+            'assets/images/site/atelier_md/slide2.webp',
+            'assets/images/site/atelier_md/slide3.webp',
+            'assets/images/site/atelier_md/slide4.webp',
+            'assets/images/site/atelier_md/slide5.webp',
+            'assets/images/site/atelier_md/slide6.webp',
+            'assets/images/site/atelier_md/slide7.webp'
         ]
     },
     nailshop: {
@@ -875,16 +875,16 @@ const previewData = {
             en: 'Nail shop website: product catalog, shopping cart, contact page.'
         },
         images: [
-            'assets/images/site/nailshop/slide1.png',
-            'assets/images/site/nailshop/slide2.png',
-            'assets/images/site/nailshop/slide3.png',
-            'assets/images/site/nailshop/slide4.png',
-            'assets/images/site/nailshop/slide5.png',
-            'assets/images/site/nailshop/slide6.png',
-            'assets/images/site/nailshop/slide7.png',
-            'assets/images/site/nailshop/slide8.png',
-            'assets/images/site/nailshop/slide9.png',
-            'assets/images/site/nailshop/slide10.png',
+            'assets/images/site/nailshop/slide1.webp',
+            'assets/images/site/nailshop/slide2.webp',
+            'assets/images/site/nailshop/slide3.webp',
+            'assets/images/site/nailshop/slide4.webp',
+            'assets/images/site/nailshop/slide5.webp',
+            'assets/images/site/nailshop/slide6.webp',
+            'assets/images/site/nailshop/slide7.webp',
+            'assets/images/site/nailshop/slide8.webp',
+            'assets/images/site/nailshop/slide9.webp',
+            'assets/images/site/nailshop/slide10.webp',
         ]
     },
     django_tiktok: {
@@ -897,8 +897,8 @@ const previewData = {
             en: 'Web app for TikTok promotion with payments and automation.'
         },
         images: [
-            'assets/images/site/django_tiktok/slide1.png',
-            'assets/images/site/django_tiktok/slide2.png',
+            'assets/images/site/django_tiktok/slide1.webp',
+            'assets/images/site/django_tiktok/slide2.webp',
         ]
     },
     calendar_task: {
@@ -911,14 +911,14 @@ const previewData = {
             en: 'A web application for creating and managing events with calendar support and a user system.'
         },
         images: [
-            'assets/images/site/calendar_task/slide1.png',
-            'assets/images/site/calendar_task/slide2.png',
-            'assets/images/site/calendar_task/slide3.png',
-            'assets/images/site/calendar_task/slide4.png',
-            'assets/images/site/calendar_task/slide5.png',
-            'assets/images/site/calendar_task/slide6.png',
-            'assets/images/site/calendar_task/slide7.png',
-            'assets/images/site/calendar_task/slide8.png',
+            'assets/images/site/calendar_task/slide1.webp',
+            'assets/images/site/calendar_task/slide2.webp',
+            'assets/images/site/calendar_task/slide3.webp',
+            'assets/images/site/calendar_task/slide4.webp',
+            'assets/images/site/calendar_task/slide5.webp',
+            'assets/images/site/calendar_task/slide6.webp',
+            'assets/images/site/calendar_task/slide7.webp',
+            'assets/images/site/calendar_task/slide8.webp',
         ]
     },
 
