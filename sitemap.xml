@@ -1,8 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Main page -->
   <url>
     <loc>https://nikita-ursulenko.github.io/</loc>
-    <lastmod>2025-09-07</lastmod>
+    <lastmod>2025-01-23</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://nikita-ursulenko.github.io/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://nikita-ursulenko.github.io/" />
+    
+    <!-- Images -->
+    <image:image>
+      <image:loc>https://nikita-ursulenko.github.io/assets/images/logo.webp</image:loc>
+      <image:title>Nikita Ursulenco - Full-stack Developer Logo</image:title>
+      <image:caption>Logo of Nikita Ursulenco, Full-stack Developer</image:caption>
+    </image:image>
   </url>
+
+  <!-- CV Downloads -->
+  <url>
+    <loc>https://nikita-ursulenko.github.io/assets/docs/Nikita_Ursulenco_RU.pdf</loc>
+    <lastmod>2025-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://nikita-ursulenko.github.io/assets/docs/Nikita_Ursulenco_EN.pdf</loc>
+    <lastmod>2025-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Project Images -->
+  <url>
+    <loc>https://nikita-ursulenko.github.io/assets/images/site/mded/site.webp</loc>
+    <lastmod>2025-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://nikita-ursulenko.github.io/assets/images/site/mded/site.webp</image:loc>
+      <image:title>MDED Government Portal Website</image:title>
+      <image:caption>Preview of MDED Government Portal - WordPress website developed by Nikita Ursulenco</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://nikita-ursulenko.github.io/assets/images/site/nomads/site.webp</loc>
+    <lastmod>2025-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://nikita-ursulenko.github.io/assets/images/site/nomads/site.webp</image:loc>
+      <image:title>Nomads News Portal Website</image:title>
+      <image:caption>Preview of Nomads News Portal - WordPress website with responsive design</image:caption>
+    </image:image>
+  </url>
+
 </urlset>
