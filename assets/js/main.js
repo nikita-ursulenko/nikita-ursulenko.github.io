@@ -22,7 +22,7 @@ const translations = {
         
         // About Section
         aboutTitle: 'Обо мне',
-        aboutText1: 'Привет! Я Никита Урсуленко, full-stack разработчик с более чем 3-летним опытом создания современных веб-приложений. Специализируюсь на Python/Django для backend-разработки и React/Next.js для frontend.',
+        aboutText1: 'Привет! Я Никита Урсуленко, full-stack разработчик с более чем 4-летним опытом создания современных веб-приложений. Специализируюсь на Python/Django для backend-разработки и React/Next.js для frontend.',
         aboutText2: 'Мой опыт включает разработку корпоративных веб-сайтов на WordPress с использованием Advanced Custom Fields, создание REST API, интеграцию с внешними сервисами и разработку Telegram-ботов. Я стремлюсь к созданию качественного, масштабируемого кода и всегда изучаю новые технологии.',
         aboutText3: 'Когда не программирую, изучаю новые фреймворки, читаю техническую литературу или работаю над pet-проектами. Открыт для новых вызовов и интересных проектов!',
         keySkills: 'Ключевые навыки',
@@ -32,6 +32,14 @@ const translations = {
         responsibilities: 'Ключевые обязанности',
         
         // Experience Jobs
+        job0Period: 'NOW',
+        job0Title: 'Fullstack-разработчик (Frontend/Backend)',
+        job0Company: 'SykorsMedia | Кишинёв, Молдова',
+        job0Resp1: 'Улучшил и расширил возможности веб-платформы: обновил UI/UX и реализовал новый функционал',
+        job0Resp2: 'Разработал backend-часть на PHP/Laravel (обработка данных, создание моделей, работа с API)',
+        job0Resp3: 'Создал и интегрировал компоненты Vue.js с backend-логикой',
+        job0Resp4: 'Работал с PostgreSQL и Docker в рамках ежедневного процесса разработки',
+        
         job1Period: '2025',
         job1Title: 'Web-разработчик (Проектная работа)',
         job1Company: 'Blazar.io',
@@ -139,6 +147,30 @@ const translations = {
         project9Feature2: 'Интегрированная форма пожертвований',
         project9Feature3: 'Интерактивная галерея животных',
         
+        project10Title: 'MutUmzug',
+        project10Desc: 'Веб-сайт для компании MUT Umzüge & Transport - профессиональные услуги переезда в Германии. Модульная архитектура с PHP компонентами и админ-панелью.',
+        project10Feature1: 'Модульная архитектура с переиспользуемыми компонентами',
+        project10Feature2: 'Админ-панель для управления конфигурацией',
+        project10Feature3: 'SEO-оптимизация и адаптивный дизайн',
+        
+        project11Title: 'CVFlow Buddy',
+        project11Desc: 'Автоматизированная система для отправки CV на вакансии. AI-анализ резюме, автоматическая авторизация и массовая отправка CV на IT вакансии с помощью Playwright и Groq AI.',
+        project11Feature1: 'AI-анализ резюме с помощью Groq AI (Llama 3.3 70B)',
+        project11Feature2: 'Автоматическая авторизация и отправка CV на вакансии',
+        project11Feature3: 'Планировщик задач и статистика отправок',
+        
+        project12Title: 'Nail Mastery Hub',
+        project12Desc: 'Онлайн-платформа для обучения маникюру и nail-дизайну. Полнофункциональная система управления курсами с интеграцией платежей Stripe, админ-панелью с dashboard и личным кабинетом для студентов.',
+        project12Feature1: 'Система управления курсами с интеграцией платежей Stripe',
+        project12Feature2: 'Полнофункциональная админ-панель с dashboard и статистикой',
+        project12Feature3: 'Личный кабинет студентов с отслеживанием прогресса и сертификатами',
+        
+        project13Title: 'PHP Multilang Template',
+        project13Desc: 'Простой PHP шаблон для создания многоязычных веб-сайтов с поддержкой SEO оптимизации. Автоматическая генерация мета-тегов, Open Graph, Twitter Cards и JSON-LD структурированных данных.',
+        project13Feature1: 'Поддержка неограниченного количества языков с красивыми URL',
+        project13Feature2: 'Автоматическая генерация SEO мета-тегов и структурированных данных',
+        project13Feature3: 'Безопасный вывод данных с защитой от XSS атак',
+        
         // "Website Previews",
         preview10Title: "Превью сайтов",
         preview10Desc: "Государственный портал Министерства экономического развития Молдовы",
@@ -179,7 +211,7 @@ const translations = {
         
         // About Section
         aboutTitle: 'About Me',
-        aboutText1: 'Hello! I\'m Nikita Ursulenco, a full-stack developer with over 3 years of experience creating modern web applications. I specialize in Python/Django for backend development and React/Next.js for frontend.',
+        aboutText1: 'Hello! I\'m Nikita Ursulenco, a full-stack developer with over 4 years of experience creating modern web applications. I specialize in Python/Django for backend development and React/Next.js for frontend.',
         aboutText2: 'My experience includes developing corporate websites on WordPress using Advanced Custom Fields, creating REST APIs, integrating with external services, and developing Telegram bots. I strive to create quality, scalable code and am always learning new technologies.',
         aboutText3: 'When I\'m not coding, I study new frameworks, read technical literature, or work on pet projects. I\'m open to new challenges and interesting projects!',
         keySkills: 'Key Skills',
@@ -189,6 +221,14 @@ const translations = {
         responsibilities: 'Key Responsibilities',
         
         // Experience Jobs
+        job0Period: 'NOW',
+        job0Title: 'Frontend-Backend Developer',
+        job0Company: 'SykorsMedia | Chişinău, Moldova',
+        job0Resp1: 'Improved and extended web platforms: updated UI/UX and implemented new features',
+        job0Resp2: 'Developed backend functionality with PHP/Laravel (data handling, models, APIs)',
+        job0Resp3: 'Built and integrated Vue.js components with backend logic',
+        job0Resp4: 'Worked with PostgreSQL and Docker as part of the daily development process',
+        
         job1Period: '2025',
         job1Title: 'Web Developer (Project Work)',
         job1Company: 'Blazar.io',
@@ -296,6 +336,30 @@ const translations = {
         project9Feature2: 'Integrated donation form',
         project9Feature3: 'Interactive animal gallery',
         
+        project10Title: 'MutUmzug',
+        project10Desc: 'Website for MUT Umzüge & Transport company - professional moving services in Germany. Modular architecture with PHP components and admin panel.',
+        project10Feature1: 'Modular architecture with reusable components',
+        project10Feature2: 'Admin panel for configuration management',
+        project10Feature3: 'SEO optimization and responsive design',
+        
+        project11Title: 'CVFlow Buddy',
+        project11Desc: 'Automated system for CV submission on job vacancies. AI resume analysis, automatic authorization and bulk CV submission on IT vacancies using Playwright and Groq AI.',
+        project11Feature1: 'AI resume analysis with Groq AI (Llama 3.3 70B)',
+        project11Feature2: 'Automatic authorization and CV submission on vacancies',
+        project11Feature3: 'Task scheduler and submission statistics',
+        
+        project12Title: 'Nail Mastery Hub',
+        project12Desc: 'Online platform for nail art and nail design education. Full-featured course management system with Stripe payment integration, admin panel with dashboard and student personal account.',
+        project12Feature1: 'Course management system with Stripe payment integration',
+        project12Feature2: 'Full-featured admin panel with dashboard and statistics',
+        project12Feature3: 'Student personal account with progress tracking and certificates',
+        
+        project13Title: 'PHP Multilang Template',
+        project13Desc: 'Simple PHP template for creating multilingual websites with SEO optimization support. Automatic generation of meta tags, Open Graph, Twitter Cards and JSON-LD structured data.',
+        project13Feature1: 'Support for unlimited languages with beautiful URLs',
+        project13Feature2: 'Automatic generation of SEO meta tags and structured data',
+        project13Feature3: 'Safe data output with XSS attack protection',
+        
         // Tech Stack Section
         techStackTitle: 'Tech Stack',
         
@@ -374,12 +438,24 @@ function updateContent(lang) {
     
     // Update experience jobs
     const experienceItems = document.querySelectorAll('.experience-item');
-    if (experienceItems.length >= 6) {
-        // Job 1
-        experienceItems[0].querySelector('.experience-period').textContent = t.job1Period;
-        experienceItems[0].querySelector('.experience-title').textContent = t.job1Title;
-        experienceItems[0].querySelector('.experience-company').textContent = t.job1Company;
-        const job1Resps = experienceItems[0].querySelectorAll('.responsibilities-list li');
+    if (experienceItems.length >= 7) {
+        // Job 0 (SykorsMedia - newest)
+        experienceItems[0].querySelector('.experience-period').textContent = t.job0Period;
+        experienceItems[0].querySelector('.experience-title').textContent = t.job0Title;
+        experienceItems[0].querySelector('.experience-company').textContent = t.job0Company;
+        const job0Resps = experienceItems[0].querySelectorAll('.responsibilities-list li');
+        if (job0Resps.length >= 4) {
+            job0Resps[0].textContent = t.job0Resp1;
+            job0Resps[1].textContent = t.job0Resp2;
+            job0Resps[2].textContent = t.job0Resp3;
+            job0Resps[3].textContent = t.job0Resp4;
+        }
+        
+        // Job 1 (Blazar.io)
+        experienceItems[1].querySelector('.experience-period').textContent = t.job1Period;
+        experienceItems[1].querySelector('.experience-title').textContent = t.job1Title;
+        experienceItems[1].querySelector('.experience-company').textContent = t.job1Company;
+        const job1Resps = experienceItems[1].querySelectorAll('.responsibilities-list li');
         if (job1Resps.length >= 4) {
             job1Resps[0].textContent = t.job1Resp1;
             job1Resps[1].textContent = t.job1Resp2;
@@ -387,11 +463,11 @@ function updateContent(lang) {
             job1Resps[3].textContent = t.job1Resp4;
         }
         
-        // Job 2
-        experienceItems[1].querySelector('.experience-period').textContent = t.job2Period;
-        experienceItems[1].querySelector('.experience-title').textContent = t.job2Title;
-        experienceItems[1].querySelector('.experience-company').textContent = t.job2Company;
-        const job2Resps = experienceItems[1].querySelectorAll('.responsibilities-list li');
+        // Job 2 (MoldExpo)
+        experienceItems[2].querySelector('.experience-period').textContent = t.job2Period;
+        experienceItems[2].querySelector('.experience-title').textContent = t.job2Title;
+        experienceItems[2].querySelector('.experience-company').textContent = t.job2Company;
+        const job2Resps = experienceItems[2].querySelectorAll('.responsibilities-list li');
         if (job2Resps.length >= 4) {
             job2Resps[0].textContent = t.job2Resp1;
             job2Resps[1].textContent = t.job2Resp2;
@@ -399,11 +475,11 @@ function updateContent(lang) {
             job2Resps[3].textContent = t.job2Resp4;
         }
         
-        // Job 3
-        experienceItems[2].querySelector('.experience-period').textContent = t.job3Period;
-        experienceItems[2].querySelector('.experience-title').textContent = t.job3Title;
-        experienceItems[2].querySelector('.experience-company').textContent = t.job3Company;
-        const job3Resps = experienceItems[2].querySelectorAll('.responsibilities-list li');
+        // Job 3 (TechNova Solutions)
+        experienceItems[3].querySelector('.experience-period').textContent = t.job3Period;
+        experienceItems[3].querySelector('.experience-title').textContent = t.job3Title;
+        experienceItems[3].querySelector('.experience-company').textContent = t.job3Company;
+        const job3Resps = experienceItems[3].querySelectorAll('.responsibilities-list li');
         if (job3Resps.length >= 5) {
             job3Resps[0].textContent = t.job3Resp1;
             job3Resps[1].textContent = t.job3Resp2;
@@ -412,33 +488,33 @@ function updateContent(lang) {
             job3Resps[4].textContent = t.job3Resp5;
         }
         
-        // Job 4
-        experienceItems[3].querySelector('.experience-period').textContent = t.job4Period;
-        experienceItems[3].querySelector('.experience-title').textContent = t.job4Title;
-        experienceItems[3].querySelector('.experience-company').textContent = t.job4Company;
-        const job4Resps = experienceItems[3].querySelectorAll('.responsibilities-list li');
+        // Job 4 (DigitalWave Agency)
+        experienceItems[4].querySelector('.experience-period').textContent = t.job4Period;
+        experienceItems[4].querySelector('.experience-title').textContent = t.job4Title;
+        experienceItems[4].querySelector('.experience-company').textContent = t.job4Company;
+        const job4Resps = experienceItems[4].querySelectorAll('.responsibilities-list li');
         if (job4Resps.length >= 3) {
             job4Resps[0].textContent = t.job4Resp1;
             job4Resps[1].textContent = t.job4Resp2;
             job4Resps[2].textContent = t.job4Resp3;
         }
         
-        // Job 5
-        experienceItems[4].querySelector('.experience-period').textContent = t.job5Period;
-        experienceItems[4].querySelector('.experience-title').textContent = t.job5Title;
-        experienceItems[4].querySelector('.experience-company').textContent = t.job5Company;
-        const job5Resps = experienceItems[4].querySelectorAll('.responsibilities-list li');
+        // Job 5 (WebCore Technologies)
+        experienceItems[5].querySelector('.experience-period').textContent = t.job5Period;
+        experienceItems[5].querySelector('.experience-title').textContent = t.job5Title;
+        experienceItems[5].querySelector('.experience-company').textContent = t.job5Company;
+        const job5Resps = experienceItems[5].querySelectorAll('.responsibilities-list li');
         if (job5Resps.length >= 3) {
             job5Resps[0].textContent = t.job5Resp1;
             job5Resps[1].textContent = t.job5Resp2;
             job5Resps[2].textContent = t.job5Resp3;
         }
         
-        // Job 6
-        experienceItems[5].querySelector('.experience-period').textContent = t.job6Period;
-        experienceItems[5].querySelector('.experience-title').textContent = t.job6Title;
-        experienceItems[5].querySelector('.experience-company').textContent = t.job6Company;
-        const job6Resps = experienceItems[5].querySelectorAll('.responsibilities-list li');
+        // Job 6 (DataFlow Systems)
+        experienceItems[6].querySelector('.experience-period').textContent = t.job6Period;
+        experienceItems[6].querySelector('.experience-title').textContent = t.job6Title;
+        experienceItems[6].querySelector('.experience-company').textContent = t.job6Company;
+        const job6Resps = experienceItems[6].querySelectorAll('.responsibilities-list li');
         if (job6Resps.length >= 3) {
             job6Resps[0].textContent = t.job6Resp1;
             job6Resps[1].textContent = t.job6Resp2;
@@ -462,110 +538,181 @@ function updateContent(lang) {
     
     // Update project cards
     const projectCards = document.querySelectorAll('.project-card');
-    if (projectCards.length >= 9) {
-        // Project 1 - MDED
-        projectCards[0].querySelector('.project-title').lastChild.textContent = t.project1Title;
-        projectCards[0].querySelector('.project-description').textContent = t.project1Desc;
-        const project1Features = projectCards[0].querySelectorAll('.features-list li');
+    if (projectCards.length >= 13) {
+        // Project 1 - Nail Mastery Hub (newest)
+        projectCards[0].querySelector('.project-title').lastChild.textContent = t.project12Title;
+        projectCards[0].querySelector('.project-description').textContent = t.project12Desc;
+        const project12Features = projectCards[0].querySelectorAll('.features-list li');
+        if (project12Features.length >= 3) {
+            project12Features[0].textContent = t.project12Feature1;
+            project12Features[1].textContent = t.project12Feature2;
+            project12Features[2].textContent = t.project12Feature3;
+        }
+        
+        // Project 2 - CVFlow Buddy
+        projectCards[1].querySelector('.project-title').lastChild.textContent = t.project11Title;
+        projectCards[1].querySelector('.project-description').textContent = t.project11Desc;
+        const project11Features = projectCards[1].querySelectorAll('.features-list li');
+        if (project11Features.length >= 3) {
+            project11Features[0].textContent = t.project11Feature1;
+            project11Features[1].textContent = t.project11Feature2;
+            project11Features[2].textContent = t.project11Feature3;
+        }
+        
+        // Project 3 - MutUmzug
+        projectCards[2].querySelector('.project-title').lastChild.textContent = t.project10Title;
+        projectCards[2].querySelector('.project-description').textContent = t.project10Desc;
+        const project10Features = projectCards[2].querySelectorAll('.features-list li');
+        if (project10Features.length >= 3) {
+            project10Features[0].textContent = t.project10Feature1;
+            project10Features[1].textContent = t.project10Feature2;
+            project10Features[2].textContent = t.project10Feature3;
+        }
+        
+        // Project 4 - PHP Multilang Template
+        projectCards[3].querySelector('.project-title').lastChild.textContent = t.project13Title;
+        projectCards[3].querySelector('.project-description').textContent = t.project13Desc;
+        const project13Features = projectCards[3].querySelectorAll('.features-list li');
+        if (project13Features.length >= 3) {
+            project13Features[0].textContent = t.project13Feature1;
+            project13Features[1].textContent = t.project13Feature2;
+            project13Features[2].textContent = t.project13Feature3;
+        }
+        
+        // Project 5 - MDED
+        projectCards[4].querySelector('.project-title').lastChild.textContent = t.project1Title;
+        projectCards[4].querySelector('.project-description').textContent = t.project1Desc;
+        const project1Features = projectCards[4].querySelectorAll('.features-list li');
         if (project1Features.length >= 3) {
             project1Features[0].textContent = t.project1Feature1;
             project1Features[1].textContent = t.project1Feature2;
             project1Features[2].textContent = t.project1Feature3;
         }
         
-        // Project 2 - NomadsNews
-        projectCards[1].querySelector('.project-title').lastChild.textContent = t.project2Title;
-        projectCards[1].querySelector('.project-description').textContent = t.project2Desc;
-        const project2Features = projectCards[1].querySelectorAll('.features-list li');
+        // Project 6 - NomadsNews
+        projectCards[5].querySelector('.project-title').lastChild.textContent = t.project2Title;
+        projectCards[5].querySelector('.project-description').textContent = t.project2Desc;
+        const project2Features = projectCards[5].querySelectorAll('.features-list li');
         if (project2Features.length >= 3) {
             project2Features[0].textContent = t.project2Feature1;
             project2Features[1].textContent = t.project2Feature2;
             project2Features[2].textContent = t.project2Feature3;
         }
         
-        // Project 3 - venvArbitrage
-        projectCards[2].querySelector('.project-title').lastChild.textContent = t.project3Title;
-        projectCards[2].querySelector('.project-description').textContent = t.project3Desc;
-        const project3Features = projectCards[2].querySelectorAll('.features-list li');
+        // Project 7 - venvArbitrage
+        projectCards[6].querySelector('.project-title').lastChild.textContent = t.project3Title;
+        projectCards[6].querySelector('.project-description').textContent = t.project3Desc;
+        const project3Features = projectCards[6].querySelectorAll('.features-list li');
         if (project3Features.length >= 3) {
             project3Features[0].textContent = t.project3Feature1;
             project3Features[1].textContent = t.project3Feature2;
             project3Features[2].textContent = t.project3Feature3;
         }
         
-        // Project 4 - Calendar Task
-        projectCards[3].querySelector('.project-title').lastChild.textContent = t.project4Title;
-        projectCards[3].querySelector('.project-description').textContent = t.project4Desc;
-        const project4Features = projectCards[3].querySelectorAll('.features-list li');
+        // Project 8 - Calendar Task
+        projectCards[7].querySelector('.project-title').lastChild.textContent = t.project4Title;
+        projectCards[7].querySelector('.project-description').textContent = t.project4Desc;
+        const project4Features = projectCards[7].querySelectorAll('.features-list li');
         if (project4Features.length >= 3) {
             project4Features[0].textContent = t.project4Feature1;
             project4Features[1].textContent = t.project4Feature2;
             project4Features[2].textContent = t.project4Feature3;
         }
         
-        // Project 5 - KOTLIN-SaleOfApartments
-        projectCards[4].querySelector('.project-title').lastChild.textContent = t.project5Title;
-        projectCards[4].querySelector('.project-description').textContent = t.project5Desc;
-        const project5Features = projectCards[4].querySelectorAll('.features-list li');
+        // Project 9 - KOTLIN-SaleOfApartments
+        projectCards[8].querySelector('.project-title').lastChild.textContent = t.project5Title;
+        projectCards[8].querySelector('.project-description').textContent = t.project5Desc;
+        const project5Features = projectCards[8].querySelectorAll('.features-list li');
         if (project5Features.length >= 3) {
             project5Features[0].textContent = t.project5Feature1;
             project5Features[1].textContent = t.project5Feature2;
             project5Features[2].textContent = t.project5Feature3;
         }
         
-        // Project 6 - Python-Parser-Telegram
-        projectCards[5].querySelector('.project-title').lastChild.textContent = t.project6Title;
-        projectCards[5].querySelector('.project-description').textContent = t.project6Desc;
-        const project6Features = projectCards[5].querySelectorAll('.features-list li');
+        // Project 10 - Python-Parser-Telegram
+        projectCards[9].querySelector('.project-title').lastChild.textContent = t.project6Title;
+        projectCards[9].querySelector('.project-description').textContent = t.project6Desc;
+        const project6Features = projectCards[9].querySelectorAll('.features-list li');
         if (project6Features.length >= 3) {
             project6Features[0].textContent = t.project6Feature1;
             project6Features[1].textContent = t.project6Feature2;
             project6Features[2].textContent = t.project6Feature3;
         }
         
-        // Project 7 - Django-TikTok-SMM-Web
-        projectCards[6].querySelector('.project-title').lastChild.textContent = t.project7Title;
-        projectCards[6].querySelector('.project-description').textContent = t.project7Desc;
-        const project7Features = projectCards[6].querySelectorAll('.features-list li');
+        // Project 11 - Django-TikTok-SMM-Web
+        projectCards[10].querySelector('.project-title').lastChild.textContent = t.project7Title;
+        projectCards[10].querySelector('.project-description').textContent = t.project7Desc;
+        const project7Features = projectCards[10].querySelectorAll('.features-list li');
         if (project7Features.length >= 3) {
             project7Features[0].textContent = t.project7Feature1;
             project7Features[1].textContent = t.project7Feature2;
             project7Features[2].textContent = t.project7Feature3;
         }
         
-        // Project 8 - React-MathNails
-        projectCards[7].querySelector('.project-title').lastChild.textContent = t.project8Title;
-        projectCards[7].querySelector('.project-description').textContent = t.project8Desc;
-        const project8Features = projectCards[7].querySelectorAll('.features-list li');
+        // Project 12 - React-MathNails
+        projectCards[11].querySelector('.project-title').lastChild.textContent = t.project8Title;
+        projectCards[11].querySelector('.project-description').textContent = t.project8Desc;
+        const project8Features = projectCards[11].querySelectorAll('.features-list li');
         if (project8Features.length >= 3) {
             project8Features[0].textContent = t.project8Feature1;
             project8Features[1].textContent = t.project8Feature2;
             project8Features[2].textContent = t.project8Feature3;
         }
         
-        // Project 9 - MyPawsCharity
-        projectCards[8].querySelector('.project-title').lastChild.textContent = t.project9Title;
-        projectCards[8].querySelector('.project-description').textContent = t.project9Desc;
-        const project9Features = projectCards[8].querySelectorAll('.features-list li');
-        if (project9Features.length >= 3) {
-            project9Features[0].textContent = t.project9Feature1;
-            project9Features[1].textContent = t.project9Feature2;
-            project9Features[2].textContent = t.project9Feature3;
+        // Project 13 - MyPawsCharity
+        if (projectCards[12]) {
+            projectCards[12].querySelector('.project-title').lastChild.textContent = t.project9Title;
+            projectCards[12].querySelector('.project-description').textContent = t.project9Desc;
+            const project9Features = projectCards[12].querySelectorAll('.features-list li');
+            if (project9Features.length >= 3) {
+                project9Features[0].textContent = t.project9Feature1;
+                project9Features[1].textContent = t.project9Feature2;
+                project9Features[2].textContent = t.project9Feature3;
+            }
         }
     }
     const previewCards = document.querySelectorAll('.preview-card');
 
     if (previewCards.length > 0) {
         // Preview cards translate text
-        previewCards[0].querySelector('.preview-title').textContent = previewData.mded.title[lang];
-        previewCards[0].querySelector('.preview-description').textContent = t.preview10Desc;
-        previewCards[1].querySelector('.preview-description').textContent = previewData.nomadsnews.description[lang];
-        previewCards[2].querySelector('.preview-description').textContent = previewData.mypawscharity.description[lang];
-        previewCards[3].querySelector('.preview-description').textContent = previewData.viktoriia.description[lang];
-        previewCards[4].querySelector('.preview-description').textContent = previewData.atelier_md.description[lang];
-        previewCards[5].querySelector('.preview-description').textContent = previewData.nailshop.description[lang];
-        previewCards[6].querySelector('.preview-description').textContent = previewData.django_tiktok.description[lang];
-        previewCards[7].querySelector('.preview-description').textContent = previewData.calendar_task.description[lang];
+        previewCards[0].querySelector('.preview-title').textContent = previewData.nails_course.title[lang];
+        previewCards[0].querySelector('.preview-description').textContent = previewData.nails_course.description[lang];
+        previewCards[1].querySelector('.preview-title').textContent = previewData.sv_send.title[lang];
+        previewCards[1].querySelector('.preview-description').textContent = previewData.sv_send.description[lang];
+        previewCards[2].querySelector('.preview-title').textContent = previewData.mutumzug.title[lang];
+        previewCards[2].querySelector('.preview-description').textContent = previewData.mutumzug.description[lang];
+        previewCards[3].querySelector('.preview-title').textContent = previewData.template_translate.title[lang];
+        previewCards[3].querySelector('.preview-description').textContent = previewData.template_translate.description[lang];
+        previewCards[4].querySelector('.preview-title').textContent = previewData.mded.title[lang];
+        previewCards[4].querySelector('.preview-description').textContent = t.preview10Desc;
+        if (previewCards[5]) {
+            previewCards[5].querySelector('.preview-title').textContent = previewData.nomadsnews.title[lang];
+            previewCards[5].querySelector('.preview-description').textContent = previewData.nomadsnews.description[lang];
+        }
+        if (previewCards[6]) {
+            previewCards[6].querySelector('.preview-title').textContent = previewData.mypawscharity.title[lang];
+            previewCards[6].querySelector('.preview-description').textContent = previewData.mypawscharity.description[lang];
+        }
+        if (previewCards[7]) {
+            previewCards[7].querySelector('.preview-title').textContent = previewData.viktoriia.title[lang];
+            previewCards[7].querySelector('.preview-description').textContent = previewData.viktoriia.description[lang];
+        }
+        if (previewCards[8]) {
+            previewCards[8].querySelector('.preview-title').textContent = previewData.atelier_md.title[lang];
+            previewCards[8].querySelector('.preview-description').textContent = previewData.atelier_md.description[lang];
+        }
+        if (previewCards[9]) {
+            previewCards[9].querySelector('.preview-title').textContent = previewData.nailshop.title[lang];
+            previewCards[9].querySelector('.preview-description').textContent = previewData.nailshop.description[lang];
+        }
+        if (previewCards[10]) {
+            previewCards[10].querySelector('.preview-title').textContent = previewData.django_tiktok.title[lang];
+            previewCards[10].querySelector('.preview-description').textContent = previewData.django_tiktok.description[lang];
+        }
+        if (previewCards[11]) {
+            previewCards[11].querySelector('.preview-title').textContent = previewData.calendar_task.title[lang];
+            previewCards[11].querySelector('.preview-description').textContent = previewData.calendar_task.description[lang];
+        }
     }
     document.querySelectorAll('.preview-overlay-text').forEach((el, index) => {
         // Можно подставлять по индексу, если разные карточки имеют разные тексты
@@ -605,6 +752,9 @@ function switchLanguage(lang) {
     
     // Update content
     updateContent(lang);
+    
+    // Обновляем изображения в превью карточках после смены языка
+    updatePreviewCardImages();
 }
 // Smooth scrolling for navigation links, with fixed header offset
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -768,6 +918,55 @@ window.addEventListener('scroll', () => {
 let currentSlide = 0;
 let totalSlides = 0;
 
+// Загружаем список изображений автоматически
+let imagesList = {};
+let imagesListLoaded = false;
+
+// Функция для загрузки списка изображений
+async function loadImagesList() {
+    if (imagesListLoaded) return imagesList;
+    
+    try {
+        // Определяем базовый путь - для GitHub Pages это может быть пусто или имя репозитория
+        // Для локальной разработки используем относительный путь
+        const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || window.location.hostname === '';
+        const pathParts = window.location.pathname.split('/').filter(p => p);
+        const basePath = isLocal ? '' : (pathParts.length > 0 && pathParts[0] !== 'index.html' ? '/' + pathParts[0] : '');
+        
+        // Пробуем разные пути для JSON файла
+        const paths = [
+            basePath ? `${basePath}/assets/js/images-list.json` : '/assets/js/images-list.json',  // GitHub Pages с базовым путем
+            '/assets/js/images-list.json',  // Абсолютный путь от корня
+            './assets/js/images-list.json',  // Локальная разработка (относительный)
+            'assets/js/images-list.json'    // Относительный путь от корня
+        ];
+        
+        let loaded = false;
+        for (const jsonPath of paths) {
+            try {
+                const response = await fetch(jsonPath);
+                if (response.ok) {
+                    imagesList = await response.json();
+                    imagesListLoaded = true;
+                    loaded = true;
+                    return imagesList;
+                }
+            } catch (e) {
+                // Пробуем следующий путь
+                continue;
+            }
+        }
+        
+        if (!loaded) {
+            throw new Error('Не удалось загрузить ни по одному из путей: ' + paths.join(', '));
+        }
+        
+        return imagesList;
+    } catch (error) {
+        return {};
+    }
+}
+
 // Многоязычные данные
 const previewData = {
     mded: {
@@ -779,14 +978,7 @@ const previewData = {
             ru: 'Государственный портал Министерства экономического развития Молдовы с современным дизайном и удобной навигацией',
             en: 'Government portal of the Ministry of Economic Development of Moldova with modern design and user-friendly navigation'
         },
-        images: [
-            'assets/images/site/mded/site.webp',
-            'assets/images/site/mded/slide1.webp',
-            'assets/images/site/mded/slide2.webp',
-            'assets/images/site/mded/slide3.webp',
-            'assets/images/site/mded/slide4.webp',
-            'assets/images/site/mded/slide5.webp',
-        ]
+        images: [] // Автоматически из images-list.json
     },
     nomadsnews: {
         title: {
@@ -797,15 +989,7 @@ const previewData = {
             ru: 'Новостной портал с адаптивным дизайном и современным интерфейсом',
             en: 'News portal with responsive design, category system, and modern interface for reading articles'
         },
-        images: [
-            'assets/images/site/nomads/site.webp',
-            'assets/images/site/nomads/slide2.webp',
-            'assets/images/site/nomads/slide3.webp',
-            'assets/images/site/nomads/slide4.webp',
-            'assets/images/site/nomads/slide5.webp',
-            'assets/images/site/nomads/slide6.webp',
-            'assets/images/site/nomads/slide7.webp',
-        ]
+        images: [] // Автоматически из images-list.json (папка nomads)
     },
     mypawscharity: {
         title: {
@@ -816,13 +1000,7 @@ const previewData = {
             ru: 'Сайт приюта для животных с системой пожертвований и галереей',
             en: 'Animal shelter website with pet gallery, donation system, and volunteer information'
         },
-        images: [
-            'assets/images/site/mypawscharity/slide1.webp',
-            'assets/images/site/mypawscharity/slide2.webp',
-            'assets/images/site/mypawscharity/slide3.webp',
-            'assets/images/site/mypawscharity/slide4.webp',
-            'assets/images/site/mypawscharity/slide5.webp',
-        ]
+        images: [] // Автоматически из images-list.json
     },
     viktoriia: {
         title: {
@@ -833,18 +1011,7 @@ const previewData = {
             ru: 'Сайт маникюра: услуги, галерея работ, контакты для записи онлайн.',
             en: 'Manicure website: services, portfolio gallery, contact page for booking.'
         },
-        images: [
-            'assets/images/site/viktoriia/slide1.webp',
-            'assets/images/site/viktoriia/slide2.webp',
-            'assets/images/site/viktoriia/slide3.webp',
-            'assets/images/site/viktoriia/slide4.webp',
-            'assets/images/site/viktoriia/slide5.webp',
-            'assets/images/site/viktoriia/slide6.webp',
-            'assets/images/site/viktoriia/slide7.webp',
-            'assets/images/site/viktoriia/slide8.webp',
-            'assets/images/site/viktoriia/slide9.webp',
-            'assets/images/site/viktoriia/slide10.webp'
-        ]
+        images: [] // Автоматически из images-list.json
     },
     atelier_md: {
         title: {
@@ -855,15 +1022,7 @@ const previewData = {
             ru: 'Сайт ателье: услуги пошива, портфолио, контакты для заказов.',
             en: 'Atelier website: tailoring services, portfolio, contact page for orders.'
         },
-        images: [
-                'assets/images/site/atelier_md/slide1.webp',
-            'assets/images/site/atelier_md/slide2.webp',
-            'assets/images/site/atelier_md/slide3.webp',
-            'assets/images/site/atelier_md/slide4.webp',
-            'assets/images/site/atelier_md/slide5.webp',
-            'assets/images/site/atelier_md/slide6.webp',
-            'assets/images/site/atelier_md/slide7.webp'
-        ]
+        images: [] // Автоматически из images-list.json
     },
     nailshop: {
         title: {
@@ -874,18 +1033,7 @@ const previewData = {
             ru: 'Сайт магазина ногтевых товаров: каталог, корзина, контактная страница.',
             en: 'Nail shop website: product catalog, shopping cart, contact page.'
         },
-        images: [
-            'assets/images/site/nailshop/slide1.webp',
-            'assets/images/site/nailshop/slide2.webp',
-            'assets/images/site/nailshop/slide3.webp',
-            'assets/images/site/nailshop/slide4.webp',
-            'assets/images/site/nailshop/slide5.webp',
-            'assets/images/site/nailshop/slide6.webp',
-            'assets/images/site/nailshop/slide7.webp',
-            'assets/images/site/nailshop/slide8.webp',
-            'assets/images/site/nailshop/slide9.webp',
-            'assets/images/site/nailshop/slide10.webp',
-        ]
+        images: [] // Автоматически из images-list.json
     },
     django_tiktok: {
         title: {
@@ -896,10 +1044,7 @@ const previewData = {
             ru: 'Веб-приложение для продвижения в TikTok с оплатой и автоматизацией.',
             en: 'Web app for TikTok promotion with payments and automation.'
         },
-        images: [
-            'assets/images/site/django_tiktok/slide1.webp',
-            'assets/images/site/django_tiktok/slide2.webp',
-        ]
+        images: [] // Автоматически из images-list.json
     },
     calendar_task: {
         title: {
@@ -910,22 +1055,82 @@ const previewData = {
             ru: 'Веб-приложение для создания и управления событиями с поддержкой календаря и системы пользователей.',
             en: 'A web application for creating and managing events with calendar support and a user system.'
         },
-        images: [
-            'assets/images/site/calendar_task/slide1.webp',
-            'assets/images/site/calendar_task/slide2.webp',
-            'assets/images/site/calendar_task/slide3.webp',
-            'assets/images/site/calendar_task/slide4.webp',
-            'assets/images/site/calendar_task/slide5.webp',
-            'assets/images/site/calendar_task/slide6.webp',
-            'assets/images/site/calendar_task/slide7.webp',
-            'assets/images/site/calendar_task/slide8.webp',
-        ]
+        images: [] // Автоматически из images-list.json
+    },
+    mutumzug: {
+        title: {
+            ru: 'MUT Umzüge & Transport',
+            en: 'MUT Umzüge & Transport'
+        },
+        description: {
+            ru: 'Веб-сайт для компании переездов в Германии с модульной архитектурой и админ-панелью.',
+            en: 'Website for moving company in Germany with modular architecture and admin panel.'
+        },
+        images: [] // Будет заполнено автоматически из images-list.json
+    },
+    sv_send: {
+        title: {
+            ru: 'CVFlow Buddy',
+            en: 'CVFlow Buddy'
+        },
+        description: {
+            ru: 'Автоматизированная система для отправки CV на вакансии с AI-анализом резюме и автоматической авторизацией.',
+            en: 'Automated system for CV submission on job vacancies with AI resume analysis and automatic authorization.'
+        },
+        images: [] // Автоматически из images-list.json
+    },
+    nails_course: {
+        title: {
+            ru: 'Nail Mastery Hub',
+            en: 'Nail Mastery Hub'
+        },
+        description: {
+            ru: 'Онлайн-платформа для обучения маникюру и nail-дизайну с системой управления курсами, интеграцией платежей и админ-панелью.',
+            en: 'Online platform for nail art and nail design education with course management system, payment integration and admin panel.'
+        },
+        images: [] // Автоматически из images-list.json
+    },
+    template_translate: {
+        title: {
+            ru: 'PHP Multilang Template',
+            en: 'PHP Multilang Template'
+        },
+        description: {
+            ru: 'Простой PHP шаблон для создания многоязычных веб-сайтов с поддержкой SEO оптимизации и автоматической генерацией мета-тегов.',
+            en: 'Simple PHP template for creating multilingual websites with SEO optimization support and automatic meta tag generation.'
+        },
+        images: [] // Автоматически из images-list.json
     },
 
 };
 
+// Функция для получения изображений проекта (автоматически из JSON или из previewData)
+function getProjectImages(projectId) {
+    // Маппинг названий проектов на папки (если названия не совпадают)
+    const folderMapping = {
+        'nomadsnews': 'nomads' // nomadsnews в previewData, но папка называется nomads
+    };
+    
+    const folderName = folderMapping[projectId] || projectId;
+    
+    // Если есть автоматически загруженный список, используем его
+    if (imagesList && imagesList[folderName] && imagesList[folderName].length > 0) {
+        return imagesList[folderName];
+    }
+    
+    // Иначе используем встроенные данные из previewData (fallback)
+    if (previewData[projectId] && previewData[projectId].images && previewData[projectId].images.length > 0) {
+        return previewData[projectId].images;
+    }
+    
+    return [];
+}
 
-function openPreviewModal(projectId) {
+
+async function openPreviewModal(projectId) {
+    // Загружаем список изображений, если еще не загружен
+    await loadImagesList();
+    
     const modal = document.getElementById('previewModal');
     const modalTitle = document.getElementById('modalTitle');
     const modalDescription = document.getElementById('modalDescription');
@@ -938,12 +1143,19 @@ function openPreviewModal(projectId) {
     modalTitle.textContent = project.title[currentLanguage];
     modalDescription.textContent = project.description[currentLanguage];
     
+    // Получаем изображения автоматически
+    const images = getProjectImages(projectId);
+    
+    if (images.length === 0) {
+        return;
+    }
+    
     // Clear existing slides and dots
     sliderWrapper.innerHTML = '';
     sliderDots.innerHTML = '';
     
     // Create slides
-    project.images.forEach((image, index) => {
+    images.forEach((image, index) => {
         const slide = document.createElement('div');
         slide.className = 'slide';
         slide.innerHTML = `<img src="${image}" 
@@ -959,7 +1171,7 @@ function openPreviewModal(projectId) {
         sliderDots.appendChild(dot);
     });
     
-    totalSlides = project.images.length;
+    totalSlides = images.length;
     currentSlide = 0;
     updateSlider();
     
@@ -1027,7 +1239,61 @@ document.getElementById('previewModal').addEventListener('click', (e) => {
 
 
 
-document.addEventListener("DOMContentLoaded", () => {
+// Функция для обновления изображений в превью карточках
+function updatePreviewCardImages() {
+    const previewCards = document.querySelectorAll(".preview-card");
+    
+    if (previewCards.length === 0) {
+        return;
+    }
+    
+    // Маппинг projectId на индексы карточек (в порядке появления в HTML)
+    const projectMapping = [
+        'nails_course',
+        'sv_send',
+        'mutumzug',
+        'template_translate',
+        'mded',
+        'nomadsnews',
+        'mypawscharity',
+        'viktoriia',
+        'atelier_md',
+        'nailshop',
+        'django_tiktok',
+        'calendar_task'
+    ];
+    
+    previewCards.forEach((card, index) => {
+        if (index < projectMapping.length) {
+            const projectId = projectMapping[index];
+            const images = getProjectImages(projectId);
+            
+            if (images.length > 0) {
+                const img = card.querySelector('.preview-image img');
+                if (img) {
+                    const oldSrc = img.src;
+                    img.src = images[0];
+                    // Обновляем alt текст
+                    const project = previewData[projectId];
+                    if (project) {
+                        img.alt = `${project.title[currentLanguage]} - Website preview`;
+                    }
+                }
+            }
+        }
+    });
+}
+
+// Загружаем список изображений при загрузке страницы
+document.addEventListener("DOMContentLoaded", async () => {
+  // Предзагружаем список изображений
+  const loaded = await loadImagesList();
+  
+  // Обновляем изображения в превью карточках после загрузки
+  if (loaded && Object.keys(imagesList).length > 0) {
+    updatePreviewCardImages();
+  }
+  
   const previewCards = document.querySelectorAll(".preview-card");
 
   const updateHoverActive = () => {

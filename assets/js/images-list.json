@@ -1,0 +1,123 @@
+{
+  "atelier_md": [
+    "assets/images/site/atelier_md/slide1.webp",
+    "assets/images/site/atelier_md/slide2.webp",
+    "assets/images/site/atelier_md/slide3.webp",
+    "assets/images/site/atelier_md/slide4.webp",
+    "assets/images/site/atelier_md/slide5.webp",
+    "assets/images/site/atelier_md/slide6.webp",
+    "assets/images/site/atelier_md/slide7.webp"
+  ],
+  "calendar_task": [
+    "assets/images/site/calendar_task/slide1.webp",
+    "assets/images/site/calendar_task/slide2.webp",
+    "assets/images/site/calendar_task/slide3.webp",
+    "assets/images/site/calendar_task/slide4.webp",
+    "assets/images/site/calendar_task/slide5.webp",
+    "assets/images/site/calendar_task/slide6.webp",
+    "assets/images/site/calendar_task/slide7.webp",
+    "assets/images/site/calendar_task/slide8.webp"
+  ],
+  "django_tiktok": [
+    "assets/images/site/django_tiktok/slide1.webp",
+    "assets/images/site/django_tiktok/slide2.webp"
+  ],
+  "mded": [
+    "assets/images/site/mded/site.webp",
+    "assets/images/site/mded/slide1.webp",
+    "assets/images/site/mded/slide2.webp",
+    "assets/images/site/mded/slide3.webp",
+    "assets/images/site/mded/slide4.webp",
+    "assets/images/site/mded/slide5.webp"
+  ],
+  "mutumzug": [
+    "assets/images/site/mutumzug/localhost_8000_.png",
+    "assets/images/site/mutumzug/localhost_8000_config-admin__action=contacts.webp",
+    "assets/images/site/mutumzug/localhost_8000_config-admin__action=edit&page=%2Flagerhaus%2Fnationaler-umzug-wiesbaden%2F.webp",
+    "assets/images/site/mutumzug/localhost_8000_config-admin__action=pages_management.webp",
+    "assets/images/site/mutumzug/localhost_8000_config-admin__action=pages_management&page_slug=europa-umzug.webp",
+    "assets/images/site/mutumzug/localhost_8000_config-admin__action=pages.webp",
+    "assets/images/site/mutumzug/localhost_8000_config-admin__action=settings.webp",
+    "assets/images/site/mutumzug/localhost_8000_config-admin_.webp",
+    "assets/images/site/mutumzug/localhost_8000_config-admin.webp",
+    "assets/images/site/mutumzug/localhost_8000_kontakt_.webp",
+    "assets/images/site/mutumzug/localhost_8000_lagerhaus_.webp",
+    "assets/images/site/mutumzug/localhost_8000_location_.webp",
+    "assets/images/site/mutumzug/localhost_8000_ueber-uns_.webp"
+  ],
+  "mypawscharity": [
+    "assets/images/site/mypawscharity/slide1.webp",
+    "assets/images/site/mypawscharity/slide2.webp",
+    "assets/images/site/mypawscharity/slide3.webp",
+    "assets/images/site/mypawscharity/slide4.webp",
+    "assets/images/site/mypawscharity/slide5.webp"
+  ],
+  "nails_course": [
+    "assets/images/site/nails_course/localhost_8080_ (1).webp",
+    "assets/images/site/nails_course/localhost_8080_ (2).webp",
+    "assets/images/site/nails_course/localhost_8080_ (3).webp",
+    "assets/images/site/nails_course/localhost_8080_ (4).webp",
+    "assets/images/site/nails_course/localhost_8080_ (5).webp",
+    "assets/images/site/nails_course/localhost_8080_ (6).webp",
+    "assets/images/site/nails_course/localhost_8080_ (7).webp",
+    "assets/images/site/nails_course/localhost_8080_ (8).webp",
+    "assets/images/site/nails_course/localhost_8080_ (9).webp",
+    "assets/images/site/nails_course/localhost_8080_.webp",
+    "assets/images/site/nails_course/localhost_8080_admin_dashboard (1).webp",
+    "assets/images/site/nails_course/localhost_8080_admin_dashboard (2).webp",
+    "assets/images/site/nails_course/localhost_8080_admin_dashboard (3).webp",
+    "assets/images/site/nails_course/localhost_8080_admin_dashboard (4).webp",
+    "assets/images/site/nails_course/localhost_8080_admin_dashboard (5).webp",
+    "assets/images/site/nails_course/localhost_8080_admin_dashboard (6).webp",
+    "assets/images/site/nails_course/localhost_8080_admin_dashboard (7).webp",
+    "assets/images/site/nails_course/localhost_8080_admin_dashboard (8).webp",
+    "assets/images/site/nails_course/localhost_8080_admin_dashboard.webp"
+  ],
+  "nailshop": [
+    "assets/images/site/nailshop/slide1.webp",
+    "assets/images/site/nailshop/slide10.webp",
+    "assets/images/site/nailshop/slide2.webp",
+    "assets/images/site/nailshop/slide3.webp",
+    "assets/images/site/nailshop/slide4.webp",
+    "assets/images/site/nailshop/slide5.webp",
+    "assets/images/site/nailshop/slide6.webp",
+    "assets/images/site/nailshop/slide7.webp",
+    "assets/images/site/nailshop/slide8.webp",
+    "assets/images/site/nailshop/slide9.webp"
+  ],
+  "nomads": [
+    "assets/images/site/nomads/site.webp",
+    "assets/images/site/nomads/slide2.webp",
+    "assets/images/site/nomads/slide3.webp",
+    "assets/images/site/nomads/slide4.webp",
+    "assets/images/site/nomads/slide5.webp",
+    "assets/images/site/nomads/slide6.webp",
+    "assets/images/site/nomads/slide7.webp"
+  ],
+  "sv_send": [
+    "assets/images/site/sv_send/localhost_8000_ (1).webp",
+    "assets/images/site/sv_send/localhost_8000_ (2).webp",
+    "assets/images/site/sv_send/localhost_8000_ (3).webp",
+    "assets/images/site/sv_send/localhost_8000_ (4).webp",
+    "assets/images/site/sv_send/localhost_8000_.webp"
+  ],
+  "template_translate": [
+    "assets/images/site/template_translate/localhost_8000_ru_.webp",
+    "assets/images/site/template_translate/localhost_8000_ru_documentation.webp",
+    "assets/images/site/template_translate/localhost_8000_ru_examples.webp",
+    "assets/images/site/template_translate/localhost_8000_ru_installation.webp",
+    "assets/images/site/template_translate/localhost_8000_ru_route-faq.webp"
+  ],
+  "viktoriia": [
+    "assets/images/site/viktoriia/slide1.webp",
+    "assets/images/site/viktoriia/slide10.webp",
+    "assets/images/site/viktoriia/slide2.webp",
+    "assets/images/site/viktoriia/slide3.webp",
+    "assets/images/site/viktoriia/slide4.webp",
+    "assets/images/site/viktoriia/slide5.webp",
+    "assets/images/site/viktoriia/slide6.webp",
+    "assets/images/site/viktoriia/slide7.webp",
+    "assets/images/site/viktoriia/slide8.webp",
+    "assets/images/site/viktoriia/slide9.webp"
+  ]
+}
