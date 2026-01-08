@@ -171,6 +171,12 @@ const translations = {
         project13Feature2: 'Автоматическая генерация SEO мета-тегов и структурированных данных',
         project13Feature3: 'Безопасный вывод данных с защитой от XSS атак',
         
+        project14Title: 'Baumaster Frankfurt',
+        project14Desc: 'Современный корпоративный сайт строительной компании с интегрированной админ-панелью для управления контентом. Многоязычность, SEO оптимизация и интеграции с внешними сервисами.',
+        project14Feature1: 'Полнофункциональная админ-панель для управления контентом',
+        project14Feature2: 'Многоязычность (русский, немецкий, английский) и SEO оптимизация',
+        project14Feature3: 'Интеграции с Google Analytics, Maps и система тестирования',
+        
         // "Website Previews",
         preview10Title: "Превью сайтов",
         preview10Desc: "Государственный портал Министерства экономического развития Молдовы",
@@ -360,6 +366,12 @@ const translations = {
         project13Feature2: 'Automatic generation of SEO meta tags and structured data',
         project13Feature3: 'Safe data output with XSS attack protection',
         
+        project14Title: 'Baumaster Frankfurt',
+        project14Desc: 'Modern corporate website for a construction company with integrated admin panel for content management. Multilingual support, SEO optimization and integrations with external services.',
+        project14Feature1: 'Full-featured admin panel for content management',
+        project14Feature2: 'Multilingual support (Russian, German, English) and SEO optimization',
+        project14Feature3: 'Integrations with Google Analytics, Maps and testing system',
+        
         // Tech Stack Section
         techStackTitle: 'Tech Stack',
         
@@ -538,136 +550,146 @@ function updateContent(lang) {
     
     // Update project cards
     const projectCards = document.querySelectorAll('.project-card');
-    if (projectCards.length >= 13) {
-        // Project 1 - Nail Mastery Hub (newest)
-        projectCards[0].querySelector('.project-title').lastChild.textContent = t.project12Title;
-        projectCards[0].querySelector('.project-description').textContent = t.project12Desc;
-        const project12Features = projectCards[0].querySelectorAll('.features-list li');
+    if (projectCards.length >= 14) {
+        // Project 1 - Baumaster Frankfurt (newest)
+        projectCards[0].querySelector('.project-title').lastChild.textContent = t.project14Title;
+        projectCards[0].querySelector('.project-description').textContent = t.project14Desc;
+        const project14Features = projectCards[0].querySelectorAll('.features-list li');
+        if (project14Features.length >= 3) {
+            project14Features[0].textContent = t.project14Feature1;
+            project14Features[1].textContent = t.project14Feature2;
+            project14Features[2].textContent = t.project14Feature3;
+        }
+        
+        // Project 2 - Nail Mastery Hub
+        projectCards[1].querySelector('.project-title').lastChild.textContent = t.project12Title;
+        projectCards[1].querySelector('.project-description').textContent = t.project12Desc;
+        const project12Features = projectCards[1].querySelectorAll('.features-list li');
         if (project12Features.length >= 3) {
             project12Features[0].textContent = t.project12Feature1;
             project12Features[1].textContent = t.project12Feature2;
             project12Features[2].textContent = t.project12Feature3;
         }
         
-        // Project 2 - CVFlow Buddy
-        projectCards[1].querySelector('.project-title').lastChild.textContent = t.project11Title;
-        projectCards[1].querySelector('.project-description').textContent = t.project11Desc;
-        const project11Features = projectCards[1].querySelectorAll('.features-list li');
+        // Project 3 - CVFlow Buddy
+        projectCards[2].querySelector('.project-title').lastChild.textContent = t.project11Title;
+        projectCards[2].querySelector('.project-description').textContent = t.project11Desc;
+        const project11Features = projectCards[2].querySelectorAll('.features-list li');
         if (project11Features.length >= 3) {
             project11Features[0].textContent = t.project11Feature1;
             project11Features[1].textContent = t.project11Feature2;
             project11Features[2].textContent = t.project11Feature3;
         }
         
-        // Project 3 - MutUmzug
-        projectCards[2].querySelector('.project-title').lastChild.textContent = t.project10Title;
-        projectCards[2].querySelector('.project-description').textContent = t.project10Desc;
-        const project10Features = projectCards[2].querySelectorAll('.features-list li');
+        // Project 4 - MutUmzug
+        projectCards[3].querySelector('.project-title').lastChild.textContent = t.project10Title;
+        projectCards[3].querySelector('.project-description').textContent = t.project10Desc;
+        const project10Features = projectCards[3].querySelectorAll('.features-list li');
         if (project10Features.length >= 3) {
             project10Features[0].textContent = t.project10Feature1;
             project10Features[1].textContent = t.project10Feature2;
             project10Features[2].textContent = t.project10Feature3;
         }
         
-        // Project 4 - PHP Multilang Template
-        projectCards[3].querySelector('.project-title').lastChild.textContent = t.project13Title;
-        projectCards[3].querySelector('.project-description').textContent = t.project13Desc;
-        const project13Features = projectCards[3].querySelectorAll('.features-list li');
+        // Project 5 - PHP Multilang Template
+        projectCards[4].querySelector('.project-title').lastChild.textContent = t.project13Title;
+        projectCards[4].querySelector('.project-description').textContent = t.project13Desc;
+        const project13Features = projectCards[4].querySelectorAll('.features-list li');
         if (project13Features.length >= 3) {
             project13Features[0].textContent = t.project13Feature1;
             project13Features[1].textContent = t.project13Feature2;
             project13Features[2].textContent = t.project13Feature3;
         }
         
-        // Project 5 - MDED
-        projectCards[4].querySelector('.project-title').lastChild.textContent = t.project1Title;
-        projectCards[4].querySelector('.project-description').textContent = t.project1Desc;
-        const project1Features = projectCards[4].querySelectorAll('.features-list li');
+        // Project 6 - MDED
+        projectCards[5].querySelector('.project-title').lastChild.textContent = t.project1Title;
+        projectCards[5].querySelector('.project-description').textContent = t.project1Desc;
+        const project1Features = projectCards[5].querySelectorAll('.features-list li');
         if (project1Features.length >= 3) {
             project1Features[0].textContent = t.project1Feature1;
             project1Features[1].textContent = t.project1Feature2;
             project1Features[2].textContent = t.project1Feature3;
         }
         
-        // Project 6 - NomadsNews
-        projectCards[5].querySelector('.project-title').lastChild.textContent = t.project2Title;
-        projectCards[5].querySelector('.project-description').textContent = t.project2Desc;
-        const project2Features = projectCards[5].querySelectorAll('.features-list li');
+        // Project 7 - NomadsNews
+        projectCards[6].querySelector('.project-title').lastChild.textContent = t.project2Title;
+        projectCards[6].querySelector('.project-description').textContent = t.project2Desc;
+        const project2Features = projectCards[6].querySelectorAll('.features-list li');
         if (project2Features.length >= 3) {
             project2Features[0].textContent = t.project2Feature1;
             project2Features[1].textContent = t.project2Feature2;
             project2Features[2].textContent = t.project2Feature3;
         }
         
-        // Project 7 - venvArbitrage
-        projectCards[6].querySelector('.project-title').lastChild.textContent = t.project3Title;
-        projectCards[6].querySelector('.project-description').textContent = t.project3Desc;
-        const project3Features = projectCards[6].querySelectorAll('.features-list li');
+        // Project 8 - venvArbitrage
+        projectCards[7].querySelector('.project-title').lastChild.textContent = t.project3Title;
+        projectCards[7].querySelector('.project-description').textContent = t.project3Desc;
+        const project3Features = projectCards[7].querySelectorAll('.features-list li');
         if (project3Features.length >= 3) {
             project3Features[0].textContent = t.project3Feature1;
             project3Features[1].textContent = t.project3Feature2;
             project3Features[2].textContent = t.project3Feature3;
         }
         
-        // Project 8 - Calendar Task
-        projectCards[7].querySelector('.project-title').lastChild.textContent = t.project4Title;
-        projectCards[7].querySelector('.project-description').textContent = t.project4Desc;
-        const project4Features = projectCards[7].querySelectorAll('.features-list li');
+        // Project 9 - Calendar Task
+        projectCards[8].querySelector('.project-title').lastChild.textContent = t.project4Title;
+        projectCards[8].querySelector('.project-description').textContent = t.project4Desc;
+        const project4Features = projectCards[8].querySelectorAll('.features-list li');
         if (project4Features.length >= 3) {
             project4Features[0].textContent = t.project4Feature1;
             project4Features[1].textContent = t.project4Feature2;
             project4Features[2].textContent = t.project4Feature3;
         }
         
-        // Project 9 - KOTLIN-SaleOfApartments
-        projectCards[8].querySelector('.project-title').lastChild.textContent = t.project5Title;
-        projectCards[8].querySelector('.project-description').textContent = t.project5Desc;
-        const project5Features = projectCards[8].querySelectorAll('.features-list li');
+        // Project 10 - KOTLIN-SaleOfApartments
+        projectCards[9].querySelector('.project-title').lastChild.textContent = t.project5Title;
+        projectCards[9].querySelector('.project-description').textContent = t.project5Desc;
+        const project5Features = projectCards[9].querySelectorAll('.features-list li');
         if (project5Features.length >= 3) {
             project5Features[0].textContent = t.project5Feature1;
             project5Features[1].textContent = t.project5Feature2;
             project5Features[2].textContent = t.project5Feature3;
         }
         
-        // Project 10 - Python-Parser-Telegram
-        projectCards[9].querySelector('.project-title').lastChild.textContent = t.project6Title;
-        projectCards[9].querySelector('.project-description').textContent = t.project6Desc;
-        const project6Features = projectCards[9].querySelectorAll('.features-list li');
+        // Project 11 - Python-Parser-Telegram
+        projectCards[10].querySelector('.project-title').lastChild.textContent = t.project6Title;
+        projectCards[10].querySelector('.project-description').textContent = t.project6Desc;
+        const project6Features = projectCards[10].querySelectorAll('.features-list li');
         if (project6Features.length >= 3) {
             project6Features[0].textContent = t.project6Feature1;
             project6Features[1].textContent = t.project6Feature2;
             project6Features[2].textContent = t.project6Feature3;
         }
         
-        // Project 11 - Django-TikTok-SMM-Web
-        projectCards[10].querySelector('.project-title').lastChild.textContent = t.project7Title;
-        projectCards[10].querySelector('.project-description').textContent = t.project7Desc;
-        const project7Features = projectCards[10].querySelectorAll('.features-list li');
+        // Project 12 - Django-TikTok-SMM-Web
+        projectCards[11].querySelector('.project-title').lastChild.textContent = t.project7Title;
+        projectCards[11].querySelector('.project-description').textContent = t.project7Desc;
+        const project7Features = projectCards[11].querySelectorAll('.features-list li');
         if (project7Features.length >= 3) {
             project7Features[0].textContent = t.project7Feature1;
             project7Features[1].textContent = t.project7Feature2;
             project7Features[2].textContent = t.project7Feature3;
         }
         
-        // Project 12 - React-MathNails
-        projectCards[11].querySelector('.project-title').lastChild.textContent = t.project8Title;
-        projectCards[11].querySelector('.project-description').textContent = t.project8Desc;
-        const project8Features = projectCards[11].querySelectorAll('.features-list li');
+        // Project 13 - React-MathNails
+        projectCards[12].querySelector('.project-title').lastChild.textContent = t.project8Title;
+        projectCards[12].querySelector('.project-description').textContent = t.project8Desc;
+        const project8Features = projectCards[12].querySelectorAll('.features-list li');
         if (project8Features.length >= 3) {
             project8Features[0].textContent = t.project8Feature1;
             project8Features[1].textContent = t.project8Feature2;
             project8Features[2].textContent = t.project8Feature3;
         }
         
-        // Project 13 - MyPawsCharity
-        if (projectCards[12]) {
-            projectCards[12].querySelector('.project-title').lastChild.textContent = t.project9Title;
-            projectCards[12].querySelector('.project-description').textContent = t.project9Desc;
-            const project9Features = projectCards[12].querySelectorAll('.features-list li');
-            if (project9Features.length >= 3) {
-                project9Features[0].textContent = t.project9Feature1;
-                project9Features[1].textContent = t.project9Feature2;
-                project9Features[2].textContent = t.project9Feature3;
+        // Project 14 - MyPawsCharity
+        if (projectCards[13]) {
+            projectCards[13].querySelector('.project-title').lastChild.textContent = t.project9Title;
+            projectCards[13].querySelector('.project-description').textContent = t.project9Desc;
+            const project9Features = projectCards[13].querySelectorAll('.features-list li');
+        if (project9Features.length >= 3) {
+            project9Features[0].textContent = t.project9Feature1;
+            project9Features[1].textContent = t.project9Feature2;
+            project9Features[2].textContent = t.project9Feature3;
             }
         }
     }
@@ -690,28 +712,32 @@ function updateContent(lang) {
             previewCards[5].querySelector('.preview-description').textContent = previewData.nomadsnews.description[lang];
         }
         if (previewCards[6]) {
-            previewCards[6].querySelector('.preview-title').textContent = previewData.mypawscharity.title[lang];
-            previewCards[6].querySelector('.preview-description').textContent = previewData.mypawscharity.description[lang];
+            previewCards[6].querySelector('.preview-title').textContent = previewData.baumaster_frankfurt.title[lang];
+            previewCards[6].querySelector('.preview-description').textContent = previewData.baumaster_frankfurt.description[lang];
         }
         if (previewCards[7]) {
-            previewCards[7].querySelector('.preview-title').textContent = previewData.viktoriia.title[lang];
-            previewCards[7].querySelector('.preview-description').textContent = previewData.viktoriia.description[lang];
+            previewCards[7].querySelector('.preview-title').textContent = previewData.mypawscharity.title[lang];
+            previewCards[7].querySelector('.preview-description').textContent = previewData.mypawscharity.description[lang];
         }
         if (previewCards[8]) {
-            previewCards[8].querySelector('.preview-title').textContent = previewData.atelier_md.title[lang];
-            previewCards[8].querySelector('.preview-description').textContent = previewData.atelier_md.description[lang];
+            previewCards[8].querySelector('.preview-title').textContent = previewData.viktoriia.title[lang];
+            previewCards[8].querySelector('.preview-description').textContent = previewData.viktoriia.description[lang];
         }
         if (previewCards[9]) {
-            previewCards[9].querySelector('.preview-title').textContent = previewData.nailshop.title[lang];
-            previewCards[9].querySelector('.preview-description').textContent = previewData.nailshop.description[lang];
+            previewCards[9].querySelector('.preview-title').textContent = previewData.atelier_md.title[lang];
+            previewCards[9].querySelector('.preview-description').textContent = previewData.atelier_md.description[lang];
         }
         if (previewCards[10]) {
-            previewCards[10].querySelector('.preview-title').textContent = previewData.django_tiktok.title[lang];
-            previewCards[10].querySelector('.preview-description').textContent = previewData.django_tiktok.description[lang];
+            previewCards[10].querySelector('.preview-title').textContent = previewData.nailshop.title[lang];
+            previewCards[10].querySelector('.preview-description').textContent = previewData.nailshop.description[lang];
         }
         if (previewCards[11]) {
-            previewCards[11].querySelector('.preview-title').textContent = previewData.calendar_task.title[lang];
-            previewCards[11].querySelector('.preview-description').textContent = previewData.calendar_task.description[lang];
+            previewCards[11].querySelector('.preview-title').textContent = previewData.django_tiktok.title[lang];
+            previewCards[11].querySelector('.preview-description').textContent = previewData.django_tiktok.description[lang];
+        }
+        if (previewCards[12]) {
+            previewCards[12].querySelector('.preview-title').textContent = previewData.calendar_task.title[lang];
+            previewCards[12].querySelector('.preview-description').textContent = previewData.calendar_task.description[lang];
         }
     }
     document.querySelectorAll('.preview-overlay-text').forEach((el, index) => {
@@ -1101,6 +1127,17 @@ const previewData = {
         },
         images: [] // Автоматически из images-list.json
     },
+    baumaster_frankfurt: {
+        title: {
+            ru: 'Baumaster Frankfurt',
+            en: 'Baumaster Frankfurt'
+        },
+        description: {
+            ru: 'Современный корпоративный сайт строительной компании с интегрированной админ-панелью для управления контентом. Многоязычность, SEO оптимизация и интеграции с внешними сервисами.',
+            en: 'Modern corporate website for a construction company with integrated admin panel for content management. Multilingual support, SEO optimization and integrations with external services.'
+        },
+        images: [] // Автоматически из images-list.json (будет добавлено позже)
+    },
 
 };
 
@@ -1108,7 +1145,8 @@ const previewData = {
 function getProjectImages(projectId) {
     // Маппинг названий проектов на папки (если названия не совпадают)
     const folderMapping = {
-        'nomadsnews': 'nomads' // nomadsnews в previewData, но папка называется nomads
+        'nomadsnews': 'nomads', // nomadsnews в previewData, но папка называется nomads
+        'baumaster_frankfurt': 'baumaster-frankfurt' // baumaster_frankfurt в previewData, но папка называется baumaster-frankfurt
     };
     
     const folderName = folderMapping[projectId] || projectId;
@@ -1138,7 +1176,10 @@ async function openPreviewModal(projectId) {
     const sliderDots = document.getElementById('sliderDots');
     
     const project = previewData[projectId];
-    if (!project) return;
+    if (!project) {
+        console.error(`Проект ${projectId} не найден в previewData`);
+        return;
+    }
     
     modalTitle.textContent = project.title[currentLanguage];
     modalDescription.textContent = project.description[currentLanguage];
@@ -1147,6 +1188,7 @@ async function openPreviewModal(projectId) {
     const images = getProjectImages(projectId);
     
     if (images.length === 0) {
+        console.error(`Нет изображений для проекта: ${projectId}`);
         return;
     }
     
@@ -1255,6 +1297,7 @@ function updatePreviewCardImages() {
         'template_translate',
         'mded',
         'nomadsnews',
+        'baumaster_frankfurt',
         'mypawscharity',
         'viktoriia',
         'atelier_md',
