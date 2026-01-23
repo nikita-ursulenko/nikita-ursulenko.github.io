@@ -1,21 +1,4 @@
 {
-  "LinkFlow": [
-    "assets/images/site/LinkFlow/1.png",
-    "assets/images/site/LinkFlow/2.png",
-    "assets/images/site/LinkFlow/3.png"
-  ],
-  "NovaDash": [
-    "assets/images/site/NovaDash/1.png",
-    "assets/images/site/NovaDash/2.png",
-    "assets/images/site/NovaDash/3.png",
-    "assets/images/site/NovaDash/4.png",
-    "assets/images/site/NovaDash/5.png"
-  ],
-  "TastyCloud": [
-    "assets/images/site/TastyCloud/1.png",
-    "assets/images/site/TastyCloud/2.png",
-    "assets/images/site/TastyCloud/3.png"
-  ],
   "atelier_md": [
     "assets/images/site/atelier_md/slide1.webp",
     "assets/images/site/atelier_md/slide2.webp",
@@ -60,11 +43,6 @@
     "assets/images/site/calendar_task/slide6.webp",
     "assets/images/site/calendar_task/slide7.webp",
     "assets/images/site/calendar_task/slide8.webp"
-  ],
-  "converter-image": [
-    "assets/images/site/converter-image/Снимок экрана 2026-01-14 в 21.43.58.png",
-    "assets/images/site/converter-image/Снимок экрана 2026-01-14 в 21.44.10.png",
-    "assets/images/site/converter-image/Снимок экрана 2026-01-14 в 21.44.17.png"
   ],
   "django_tiktok": [
     "assets/images/site/django_tiktok/slide1.webp",
@@ -186,11 +164,29 @@
     "assets/images/site/sv_send/9.webp"
   ],
   "template_translate": [
-    "assets/images/site/template_translate/localhost_8000_ru_.webp",
-    "assets/images/site/template_translate/localhost_8000_ru_documentation.webp",
-    "assets/images/site/template_translate/localhost_8000_ru_examples.webp",
-    "assets/images/site/template_translate/localhost_8000_ru_installation.webp",
-    "assets/images/site/template_translate/localhost_8000_ru_route-faq.webp"
+    "assets/images/site/template_translate/1.webp",
+    "assets/images/site/template_translate/10.webp",
+    "assets/images/site/template_translate/11.webp",
+    "assets/images/site/template_translate/12.webp",
+    "assets/images/site/template_translate/13.webp",
+    "assets/images/site/template_translate/14.webp",
+    "assets/images/site/template_translate/15.webp",
+    "assets/images/site/template_translate/16.webp",
+    "assets/images/site/template_translate/17.webp",
+    "assets/images/site/template_translate/18.webp",
+    "assets/images/site/template_translate/19.webp",
+    "assets/images/site/template_translate/2.webp",
+    "assets/images/site/template_translate/20.webp",
+    "assets/images/site/template_translate/21.webp",
+    "assets/images/site/template_translate/22.webp",
+    "assets/images/site/template_translate/23.webp",
+    "assets/images/site/template_translate/3.webp",
+    "assets/images/site/template_translate/4.webp",
+    "assets/images/site/template_translate/5.webp",
+    "assets/images/site/template_translate/6.webp",
+    "assets/images/site/template_translate/7.webp",
+    "assets/images/site/template_translate/8.webp",
+    "assets/images/site/template_translate/9.webp"
   ],
   "viktoriia": [
     "assets/images/site/viktoriia/slide1.webp",
