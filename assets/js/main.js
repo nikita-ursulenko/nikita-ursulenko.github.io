@@ -12,25 +12,25 @@ const translations = {
         skills: 'Навыки',
         education: 'Образование',
         contact: 'Контакты',
-        
+
         // Hero Section
         heroTitle: 'Привет, я Никита Урсуленко',
         heroSubtitle: 'Full-stack разработчик | Python, JS, Django, WordPress',
         viewProjects: 'Посмотреть проекты',
         downloadCV: 'Скачать резюме',
         cvPath: 'assets/docs/Nikita_Ursulenco_RU.pdf',
-        
+
         // About Section
         aboutTitle: 'Обо мне',
         aboutText1: 'Привет! Я Никита Урсуленко, full-stack разработчик с более чем 4-летним опытом создания современных веб-приложений. Специализируюсь на Python/Django для backend-разработки и React/Next.js для frontend.',
         aboutText2: 'Мой опыт включает разработку корпоративных веб-сайтов на WordPress с использованием Advanced Custom Fields, создание REST API, интеграцию с внешними сервисами и разработку Telegram-ботов. Я стремлюсь к созданию качественного, масштабируемого кода и всегда изучаю новые технологии.',
         aboutText3: 'Когда не программирую, изучаю новые фреймворки, читаю техническую литературу или работаю над pet-проектами. Открыт для новых вызовов и интересных проектов!',
         keySkills: 'Ключевые навыки',
-        
+
         // Experience Section
         experienceTitle: 'Опыт работы',
         responsibilities: 'Ключевые обязанности',
-        
+
         // Experience Jobs
         job0Period: 'NOW',
         job0Title: 'Fullstack-разработчик (Frontend/Backend)',
@@ -39,7 +39,7 @@ const translations = {
         job0Resp2: 'Разработал backend-часть на PHP/Laravel (обработка данных, создание моделей, работа с API)',
         job0Resp3: 'Создал и интегрировал компоненты Vue.js с backend-логикой',
         job0Resp4: 'Работал с PostgreSQL и Docker в рамках ежедневного процесса разработки',
-        
+
         job1Period: '2025',
         job1Title: 'Web-разработчик (Проектная работа)',
         job1Company: 'Blazar.io',
@@ -47,7 +47,7 @@ const translations = {
         job1Resp2: 'Создал сайт на WordPress с использованием Advanced Custom Fields (ACF)',
         job1Resp3: 'Реализовал возможность добавления новых кастомных блоков, что упрощает управление контентом',
         job1Resp4: 'Выполнил весь цикл работ: от установки WordPress и подключения базы данных до финальной настройки',
-        
+
         job2Period: '2024 - 2025',
         job2Title: 'Full-Stack разработчик',
         job2Company: 'MoldExpo | Кишинёв, Молдова',
@@ -55,7 +55,7 @@ const translations = {
         job2Resp2: 'Разработал архитектуру приложения, работая с компонентами и модулями',
         job2Resp3: 'Интегрирован с базой данных и REST API',
         job2Resp4: 'Реализован адаптивный макет, оптимизация производительности и улучшения UX/UI',
-        
+
         job3Period: '2023',
         job3Title: 'Full-Stack разработчик',
         job3Company: 'TechNova Solutions | Москва',
@@ -64,136 +64,136 @@ const translations = {
         job3Resp3: 'Интегрированные стратегии торговли криптовалютой и автоматизация',
         job3Resp4: 'Оптимизированный UI/UX, реализованный адаптивный дизайн и повышенная производительность',
         job3Resp5: 'Разработаны мобильные приложения с использованием React Native и Expo',
-        
+
         job4Period: '2022 - 2023',
         job4Title: 'Frontend разработчик',
         job4Company: 'DigitalWave Agency | Минск',
         job4Resp1: 'Разработаны интерфейсы для целевых страниц и маркетинговых платформ с использованием React и Tailwind CSS',
         job4Resp2: 'Оптимизированный SEO и UX/UI, повышение скорости загрузки страницы',
         job4Resp3: 'Интегрированные API, настроенные анимации и интерактивные компоненты',
-        
+
         job5Period: '2021 - 2022',
         job5Title: 'Web-разработчик',
         job5Company: 'WebCore Technologies | Новосибирск',
         job5Resp1: 'Разработанные и поддерживаемые веб-сайты на WordPress (PHP, SCSS, SEO)',
         job5Resp2: 'Оптимизированная скорость загрузки и реализованный адаптивный дизайн для всех устройств',
         job5Resp3: 'Индивидуальные темы и плагины, разработка уникальной функциональности',
-        
+
         job6Period: '2021',
         job6Title: 'Backend разработчик',
         job6Company: 'DataFlow Systems | Москва',
         job6Resp1: 'Разработаны парсеры Telegram, боты и автоматизацию с использованием Python (Selenium, BeautifulSoup, Scrapy)',
         job6Resp2: 'Интегрированные API, работа с PostgreSQL и MySQL и обработанные данные',
         job6Resp3: 'Построены финансовые системы и платформы для криптовалютного арбитража',
-        
+
         // Projects Section
         projectsTitle: 'Мои проекты',
         technologies: 'Технологии',
         keyFeatures: 'Ключевые особенности',
         github: 'GitHub',
-        
+
         // Project descriptions
         project1Title: 'MDED',
         project1Desc: 'Кастомная WordPress-тема с современной архитектурой. Использует Timber/Twig для чистого кода и Tailwind CSS для стилизации.',
         project1Feature1: 'Чистая архитектура с разделением логики',
         project1Feature2: 'Быстрая разработка с готовыми компонентами',
         project1Feature3: 'Полная адаптивность под все устройства',
-        
+
         project2Title: 'Nomads',
         project2Desc: 'Адаптивный лендинг на WordPress с интерактивными формами и слайдерами. Оптимизирован для быстрой загрузки и SEO.',
         project2Feature1: 'Лёгкое редактирование контента через админку',
         project2Feature2: 'Адаптивный дизайн для всех экранов',
         project2Feature3: 'Интерактивные формы и слайдеры',
-        
+
         project3Title: 'venvArbitrage',
         project3Desc: 'Python-бот для автоматического криптоарбитража между биржами. Анализирует спреды и выполняет прибыльные сделки.',
         project3Feature1: 'Асинхронная обработка данных с бирж',
         project3Feature2: 'Удобный GUI для мониторинга',
         project3Feature3: 'Автоматический учёт комиссий и спредов',
-        
+
         project4Title: 'Calendar Task',
         project4Desc: 'Веб-календарь с системой авторизации и админ-панелью. Поддерживает различные виды отображения и управление задачами.',
         project4Feature1: 'Виды: день, неделя, месяц',
         project4Feature2: 'Система ролей пользователей',
         project4Feature3: 'Интерактивное управление событиями',
-        
+
         project5Title: 'KOTLIN-SaleOfApartments',
         project5Desc: 'Android-приложение для продажи квартир с удобной системой поиска. Включает фильтрацию и управление заявками.',
         project5Feature1: 'Продвинутая фильтрация объектов',
         project5Feature2: 'Система управления заявками',
         project5Feature3: 'Интуитивный мобильный интерфейс',
-        
+
         project6Title: 'Python-Parser-Telegram',
         project6Desc: 'Парсер участников Telegram-групп с возможностью сохранения данных. Удобный GUI для настройки и мониторинга процесса.',
         project6Feature1: 'Автоматическое сохранение данных',
         project6Feature2: 'Графический интерфейс для управления',
         project6Feature3: 'Экспорт результатов в различные форматы',
-        
+
         project7Title: 'Django-TikTok-SMM-Web',
         project7Desc: 'Веб-платформа для продвижения TikTok видео через Django. Система заказов, API интеграции и приём платежей.',
         project7Feature1: 'Система заказа продвижения',
         project7Feature2: 'Интеграция с внешними API',
         project7Feature3: 'Встроенная система платежей',
-        
+
         project8Title: 'React-MathNails',
         project8Desc: 'React-приложение для расчётов мастеров ногтевого сервиса. Помогает вести учёт материалов и рассчитывать стоимость услуг.',
         project8Feature1: 'Генерация детальных отчётов',
         project8Feature2: 'История всех операций',
         project8Feature3: 'Калькулятор стоимости услуг',
-        
+
         project9Title: 'MyPawsCharity',
         project9Desc: 'Сайт приюта для животных с системой пожертвований. Адаптивный дизайн, форма доната и галерея питомцев.',
         project9Feature1: 'Полная адаптивность под все устройства',
         project9Feature2: 'Интегрированная форма пожертвований',
         project9Feature3: 'Интерактивная галерея животных',
-        
+
         project10Title: 'MutUmzug',
         project10Desc: 'Веб-сайт для компании MUT Umzüge & Transport - профессиональные услуги переезда в Германии. Модульная архитектура с PHP компонентами и админ-панелью.',
         project10Feature1: 'Модульная архитектура с переиспользуемыми компонентами',
         project10Feature2: 'Админ-панель для управления конфигурацией',
         project10Feature3: 'SEO-оптимизация и адаптивный дизайн',
-        
+
         project11Title: 'CVFlow Buddy',
         project11Desc: 'Автоматизированная система для отправки CV на вакансии. AI-анализ резюме, автоматическая авторизация и массовая отправка CV на IT вакансии с помощью Playwright и Groq AI.',
         project11Feature1: 'AI-анализ резюме с помощью Groq AI (Llama 3.3 70B)',
         project11Feature2: 'Автоматическая авторизация и отправка CV на вакансии',
         project11Feature3: 'Планировщик задач и статистика отправок',
-        
+
         project12Title: 'Nail Mastery Hub',
         project12Desc: 'Онлайн-платформа для обучения маникюру и nail-дизайну. Полнофункциональная система управления курсами с интеграцией платежей Stripe, админ-панелью с dashboard и личным кабинетом для студентов.',
         project12Feature1: 'Система управления курсами с интеграцией платежей Stripe',
         project12Feature2: 'Полнофункциональная админ-панель с dashboard и статистикой',
         project12Feature3: 'Личный кабинет студентов с отслеживанием прогресса и сертификатами',
-        
+
         project13Title: 'PHP Multilang Template',
         project13Desc: 'Простой PHP шаблон для создания многоязычных веб-сайтов с поддержкой SEO оптимизации. Автоматическая генерация мета-тегов, Open Graph, Twitter Cards и JSON-LD структурированных данных.',
         project13Feature1: 'Поддержка неограниченного количества языков с красивыми URL',
         project13Feature2: 'Автоматическая генерация SEO мета-тегов и структурированных данных',
         project13Feature3: 'Безопасный вывод данных с защитой от XSS атак',
-        
+
         project14Title: 'Baumaster Frankfurt',
         project14Desc: 'Современный корпоративный сайт строительной компании с интегрированной админ-панелью для управления контентом. Многоязычность, SEO оптимизация и интеграции с внешними сервисами.',
         project14Feature1: 'Полнофункциональная админ-панель для управления контентом',
         project14Feature2: 'Многоязычность (русский, немецкий, английский) и SEO оптимизация',
         project14Feature3: 'Интеграции с Google Analytics, Maps и система тестирования',
-        
+
         // "Website Previews",
         preview10Title: "Превью сайтов",
         preview10Desc: "Государственный портал Министерства экономического развития Молдовы",
         preview10OverlayText: "Посмотреть превью",
         // Tech Stack Section
         techStackTitle: 'Технологический стек',
-        
+
         // Education Section
         educationTitle: 'Образование и сертификаты',
-        
+
         // Contact Section
         contactTitle: 'Связаться со мной',
         nameLabel: 'Имя',
         emailLabel: 'Email',
         messageLabel: 'Сообщение',
         sendMessage: 'Отправить сообщение',
-        
+
         // Footer
         allRightsReserved: '© 2025 Никита Урсуленко — Все права защищены'
     },
@@ -207,25 +207,25 @@ const translations = {
         skills: 'Skills',
         education: 'Education',
         contact: 'Contact',
-        
+
         // Hero Section
         heroTitle: 'Hi, I\'m Nikita Ursulenco',
         heroSubtitle: 'Full-stack Developer | Python, JS, Django, WordPress',
         viewProjects: 'View Projects',
         downloadCV: 'Download CV',
         cvPath: 'assets/docs/Nikita_Ursulenco_EN.pdf',
-        
+
         // About Section
         aboutTitle: 'About Me',
         aboutText1: 'Hello! I\'m Nikita Ursulenco, a full-stack developer with over 4 years of experience creating modern web applications. I specialize in Python/Django for backend development and React/Next.js for frontend.',
         aboutText2: 'My experience includes developing corporate websites on WordPress using Advanced Custom Fields, creating REST APIs, integrating with external services, and developing Telegram bots. I strive to create quality, scalable code and am always learning new technologies.',
         aboutText3: 'When I\'m not coding, I study new frameworks, read technical literature, or work on pet projects. I\'m open to new challenges and interesting projects!',
         keySkills: 'Key Skills',
-        
+
         // Experience Section
         experienceTitle: 'Work Experience',
         responsibilities: 'Key Responsibilities',
-        
+
         // Experience Jobs
         job0Period: 'NOW',
         job0Title: 'Frontend-Backend Developer',
@@ -234,7 +234,7 @@ const translations = {
         job0Resp2: 'Developed backend functionality with PHP/Laravel (data handling, models, APIs)',
         job0Resp3: 'Built and integrated Vue.js components with backend logic',
         job0Resp4: 'Worked with PostgreSQL and Docker as part of the daily development process',
-        
+
         job1Period: '2025',
         job1Title: 'Web Developer (Project Work)',
         job1Company: 'Blazar.io',
@@ -242,7 +242,7 @@ const translations = {
         job1Resp2: 'Created a WordPress site using Advanced Custom Fields (ACF)',
         job1Resp3: 'Implemented the ability to add new custom blocks, simplifying content management',
         job1Resp4: 'Completed the full development cycle: from WordPress installation and database connection to final configuration',
-        
+
         job2Period: '2024 - 2025',
         job2Title: 'Full-Stack Developer',
         job2Company: 'MoldExpo | Chișinău, Moldova',
@@ -250,7 +250,7 @@ const translations = {
         job2Resp2: 'Designed application architecture, working with components and modules',
         job2Resp3: 'Integrated with database and REST API',
         job2Resp4: 'Implemented responsive layout, performance optimization and UX/UI improvements',
-        
+
         job3Period: '2023',
         job3Title: 'Full-Stack Developer',
         job3Company: 'TechNova Solutions | Moscow',
@@ -259,122 +259,122 @@ const translations = {
         job3Resp3: 'Integrated cryptocurrency trading strategies and automation',
         job3Resp4: 'Optimized UI/UX, implemented responsive design and enhanced performance',
         job3Resp5: 'Developed mobile applications using React Native and Expo',
-        
+
         job4Period: '2022 - 2023',
         job4Title: 'Frontend Developer',
         job4Company: 'DigitalWave Agency | Minsk',
         job4Resp1: 'Developed interfaces for landing pages and marketing platforms using React and Tailwind CSS',
         job4Resp2: 'Optimized SEO and UX/UI, improved page loading speed',
         job4Resp3: 'Integrated APIs, configured animations and interactive components',
-        
+
         job5Period: '2021 - 2022',
         job5Title: 'Web Developer',
         job5Company: 'WebCore Technologies | Novosibirsk',
         job5Resp1: 'Developed and maintained WordPress websites (PHP, SCSS, SEO)',
         job5Resp2: 'Optimized loading speed and implemented responsive design for all devices',
         job5Resp3: 'Custom themes and plugins, developed unique functionality',
-        
+
         job6Period: '2021',
         job6Title: 'Backend Developer',
         job6Company: 'DataFlow Systems | Moscow',
         job6Resp1: 'Developed Telegram parsers, bots and automation using Python (Selenium, BeautifulSoup, Scrapy)',
         job6Resp2: 'Integrated APIs, worked with PostgreSQL and MySQL and processed data',
         job6Resp3: 'Built financial systems and platforms for cryptocurrency arbitrage',
-        
+
         // Projects Section
         projectsTitle: 'My Projects',
         technologies: 'Technologies',
         keyFeatures: 'Key Features',
         github: 'GitHub',
-        
+
         // Project descriptions
         project1Title: 'MDED',
         project1Desc: 'Custom WordPress theme with modern architecture. Uses Timber/Twig for clean code and Tailwind CSS for styling.',
         project1Feature1: 'Clean architecture with logic separation',
         project1Feature2: 'Fast development with ready-made components',
         project1Feature3: 'Full responsiveness for all devices',
-        
+
         project2Title: 'Nomads',
         project2Desc: 'Responsive WordPress landing page with interactive forms and sliders. Optimized for fast loading and SEO.',
         project2Feature1: 'Easy content editing through admin panel',
         project2Feature2: 'Responsive design for all screens',
         project2Feature3: 'Interactive forms and sliders',
-        
+
         project3Title: 'venvArbitrage',
         project3Desc: 'Python bot for automatic cryptocurrency arbitrage between exchanges. Analyzes spreads and executes profitable trades.',
         project3Feature1: 'Asynchronous data processing from exchanges',
         project3Feature2: 'Convenient GUI for monitoring',
         project3Feature3: 'Automatic accounting of fees and spreads',
-        
+
         project4Title: 'Calendar Task',
         project4Desc: 'Web calendar with authorization system and admin panel. Supports different display views and task management.',
         project4Feature1: 'Views: day, week, month',
         project4Feature2: 'User role system',
         project4Feature3: 'Interactive event management',
-        
+
         project5Title: 'KOTLIN-SaleOfApartments',
         project5Desc: 'Android application for apartment sales with convenient search system. Includes filtering and application management.',
         project5Feature1: 'Advanced object filtering',
         project5Feature2: 'Application management system',
         project5Feature3: 'Intuitive mobile interface',
-        
+
         project6Title: 'Python-Parser-Telegram',
         project6Desc: 'Telegram group member parser with data saving capability. Convenient GUI for setup and process monitoring.',
         project6Feature1: 'Automatic data saving',
         project6Feature2: 'Graphical interface for management',
         project6Feature3: 'Export results to various formats',
-        
+
         project7Title: 'Django-TikTok-SMM-Web',
         project7Desc: 'Web platform for TikTok video promotion via Django. Order system, API integrations and payment processing.',
         project7Feature1: 'Promotion order system',
         project7Feature2: 'Integration with external APIs',
         project7Feature3: 'Built-in payment system',
-        
+
         project8Title: 'React-MathNails',
         project8Desc: 'React application for nail service master calculations. Helps track materials and calculate service costs.',
         project8Feature1: 'Detailed report generation',
         project8Feature2: 'History of all operations',
         project8Feature3: 'Service cost calculator',
-        
+
         project9Title: 'MyPawsCharity',
         project9Desc: 'Animal shelter website with donation system. Responsive design, donation form and pet gallery.',
         project9Feature1: 'Full responsiveness for all devices',
         project9Feature2: 'Integrated donation form',
         project9Feature3: 'Interactive animal gallery',
-        
+
         project10Title: 'MutUmzug',
         project10Desc: 'Website for MUT Umzüge & Transport company - professional moving services in Germany. Modular architecture with PHP components and admin panel.',
         project10Feature1: 'Modular architecture with reusable components',
         project10Feature2: 'Admin panel for configuration management',
         project10Feature3: 'SEO optimization and responsive design',
-        
+
         project11Title: 'CVFlow Buddy',
         project11Desc: 'Automated system for CV submission on job vacancies. AI resume analysis, automatic authorization and bulk CV submission on IT vacancies using Playwright and Groq AI.',
         project11Feature1: 'AI resume analysis with Groq AI (Llama 3.3 70B)',
         project11Feature2: 'Automatic authorization and CV submission on vacancies',
         project11Feature3: 'Task scheduler and submission statistics',
-        
+
         project12Title: 'Nail Mastery Hub',
         project12Desc: 'Online platform for nail art and nail design education. Full-featured course management system with Stripe payment integration, admin panel with dashboard and student personal account.',
         project12Feature1: 'Course management system with Stripe payment integration',
         project12Feature2: 'Full-featured admin panel with dashboard and statistics',
         project12Feature3: 'Student personal account with progress tracking and certificates',
-        
+
         project13Title: 'PHP Multilang Template',
         project13Desc: 'Simple PHP template for creating multilingual websites with SEO optimization support. Automatic generation of meta tags, Open Graph, Twitter Cards and JSON-LD structured data.',
         project13Feature1: 'Support for unlimited languages with beautiful URLs',
         project13Feature2: 'Automatic generation of SEO meta tags and structured data',
         project13Feature3: 'Safe data output with XSS attack protection',
-        
+
         project14Title: 'Baumaster Frankfurt',
         project14Desc: 'Modern corporate website for a construction company with integrated admin panel for content management. Multilingual support, SEO optimization and integrations with external services.',
         project14Feature1: 'Full-featured admin panel for content management',
         project14Feature2: 'Multilingual support (Russian, German, English) and SEO optimization',
         project14Feature3: 'Integrations with Google Analytics, Maps and testing system',
-        
+
         // Tech Stack Section
         techStackTitle: 'Tech Stack',
-        
+
 
 
         preview10Title: "Website Previews",
@@ -382,14 +382,14 @@ const translations = {
         preview10OverlayText: "View Preview",
         // Education Section
         educationTitle: 'Education & Certifications',
-        
+
         // Contact Section
         contactTitle: 'Get in Touch',
         nameLabel: 'Name',
         emailLabel: 'Email',
         messageLabel: 'Message',
         sendMessage: 'Send Message',
-        
+
         // Footer
         allRightsReserved: '© 2025 Nikita Ursulenco — All Rights Reserved'
     }
@@ -407,7 +407,7 @@ function updateContent(lang) {
     document.querySelectorAll('a[href="#skills"]').forEach(el => el.textContent = t.skills);
     document.querySelectorAll('a[href="#education"]').forEach(el => el.textContent = t.education);
     document.querySelectorAll('a[href="#contact"]').forEach(el => el.textContent = t.contact);
-    
+
     // Update hero section
     document.querySelector('.hero-text h1').textContent = t.heroTitle;
 
@@ -421,8 +421,8 @@ function updateContent(lang) {
         downloadCvBtn.textContent = t.downloadCV;
         downloadCvBtn.href = t.cvPath;
         downloadCvBtn.setAttribute('download', 'Nikita_Ursulenco_CV.pdf'); // Это позволит браузеру сразу скачать файл, а не открывать его в новой вкладке. Имя файла можно задать тут.
-    }    
-    
+    }
+
     // Update section titles
     document.querySelector('#about .section-title').textContent = t.aboutTitle;
     document.querySelector('#experience .section-title').textContent = t.experienceTitle;
@@ -431,7 +431,7 @@ function updateContent(lang) {
     document.querySelector('#education .section-title').textContent = t.educationTitle;
     document.querySelector('#contact .section-title').textContent = t.contactTitle;
     document.querySelector('#previews .section-title').textContent = t.preview10Title;
-    
+
     // Update about section
     const aboutTexts = document.querySelectorAll('.about-text p');
     if (aboutTexts.length >= 3) {
@@ -439,15 +439,15 @@ function updateContent(lang) {
         aboutTexts[1].textContent = t.aboutText2;
         aboutTexts[2].textContent = t.aboutText3;
     }
-    
+
     const keySkillsTitle = document.querySelector('.skills-card h3');
     if (keySkillsTitle) keySkillsTitle.textContent = t.keySkills;
-    
+
     // Update experience section
     document.querySelectorAll('.responsibilities-title').forEach(el => {
         el.textContent = t.responsibilities;
     });
-    
+
     // Update experience jobs
     const experienceItems = document.querySelectorAll('.experience-item');
     if (experienceItems.length >= 7) {
@@ -462,7 +462,7 @@ function updateContent(lang) {
             job0Resps[2].textContent = t.job0Resp3;
             job0Resps[3].textContent = t.job0Resp4;
         }
-        
+
         // Job 1 (Blazar.io)
         experienceItems[1].querySelector('.experience-period').textContent = t.job1Period;
         experienceItems[1].querySelector('.experience-title').textContent = t.job1Title;
@@ -474,7 +474,7 @@ function updateContent(lang) {
             job1Resps[2].textContent = t.job1Resp3;
             job1Resps[3].textContent = t.job1Resp4;
         }
-        
+
         // Job 2 (MoldExpo)
         experienceItems[2].querySelector('.experience-period').textContent = t.job2Period;
         experienceItems[2].querySelector('.experience-title').textContent = t.job2Title;
@@ -486,7 +486,7 @@ function updateContent(lang) {
             job2Resps[2].textContent = t.job2Resp3;
             job2Resps[3].textContent = t.job2Resp4;
         }
-        
+
         // Job 3 (TechNova Solutions)
         experienceItems[3].querySelector('.experience-period').textContent = t.job3Period;
         experienceItems[3].querySelector('.experience-title').textContent = t.job3Title;
@@ -499,7 +499,7 @@ function updateContent(lang) {
             job3Resps[3].textContent = t.job3Resp4;
             job3Resps[4].textContent = t.job3Resp5;
         }
-        
+
         // Job 4 (DigitalWave Agency)
         experienceItems[4].querySelector('.experience-period').textContent = t.job4Period;
         experienceItems[4].querySelector('.experience-title').textContent = t.job4Title;
@@ -510,7 +510,7 @@ function updateContent(lang) {
             job4Resps[1].textContent = t.job4Resp2;
             job4Resps[2].textContent = t.job4Resp3;
         }
-        
+
         // Job 5 (WebCore Technologies)
         experienceItems[5].querySelector('.experience-period').textContent = t.job5Period;
         experienceItems[5].querySelector('.experience-title').textContent = t.job5Title;
@@ -521,7 +521,7 @@ function updateContent(lang) {
             job5Resps[1].textContent = t.job5Resp2;
             job5Resps[2].textContent = t.job5Resp3;
         }
-        
+
         // Job 6 (DataFlow Systems)
         experienceItems[6].querySelector('.experience-period').textContent = t.job6Period;
         experienceItems[6].querySelector('.experience-title').textContent = t.job6Title;
@@ -533,21 +533,21 @@ function updateContent(lang) {
             job6Resps[2].textContent = t.job6Resp3;
         }
     }
-    
+
     // Update projects section
     document.querySelectorAll('.tech-title').forEach(el => {
         el.textContent = t.technologies;
     });
-    
+
     document.querySelectorAll('.features-title').forEach(el => {
         el.textContent = t.keyFeatures;
     });
-    
+
     document.querySelectorAll('.project-link').forEach(el => {
         const githubText = el.querySelector('span:not(.github-icon)');
         if (githubText) githubText.textContent = t.github;
     });
-    
+
     // Update project cards
     const projectCards = document.querySelectorAll('.project-card');
     if (projectCards.length >= 14) {
@@ -560,7 +560,7 @@ function updateContent(lang) {
             project14Features[1].textContent = t.project14Feature2;
             project14Features[2].textContent = t.project14Feature3;
         }
-        
+
         // Project 2 - Nail Mastery Hub
         projectCards[1].querySelector('.project-title').lastChild.textContent = t.project12Title;
         projectCards[1].querySelector('.project-description').textContent = t.project12Desc;
@@ -570,7 +570,7 @@ function updateContent(lang) {
             project12Features[1].textContent = t.project12Feature2;
             project12Features[2].textContent = t.project12Feature3;
         }
-        
+
         // Project 3 - CVFlow Buddy
         projectCards[2].querySelector('.project-title').lastChild.textContent = t.project11Title;
         projectCards[2].querySelector('.project-description').textContent = t.project11Desc;
@@ -580,7 +580,7 @@ function updateContent(lang) {
             project11Features[1].textContent = t.project11Feature2;
             project11Features[2].textContent = t.project11Feature3;
         }
-        
+
         // Project 4 - MutUmzug
         projectCards[3].querySelector('.project-title').lastChild.textContent = t.project10Title;
         projectCards[3].querySelector('.project-description').textContent = t.project10Desc;
@@ -590,7 +590,7 @@ function updateContent(lang) {
             project10Features[1].textContent = t.project10Feature2;
             project10Features[2].textContent = t.project10Feature3;
         }
-        
+
         // Project 5 - PHP Multilang Template
         projectCards[4].querySelector('.project-title').lastChild.textContent = t.project13Title;
         projectCards[4].querySelector('.project-description').textContent = t.project13Desc;
@@ -600,7 +600,7 @@ function updateContent(lang) {
             project13Features[1].textContent = t.project13Feature2;
             project13Features[2].textContent = t.project13Feature3;
         }
-        
+
         // Project 6 - MDED
         projectCards[5].querySelector('.project-title').lastChild.textContent = t.project1Title;
         projectCards[5].querySelector('.project-description').textContent = t.project1Desc;
@@ -610,7 +610,7 @@ function updateContent(lang) {
             project1Features[1].textContent = t.project1Feature2;
             project1Features[2].textContent = t.project1Feature3;
         }
-        
+
         // Project 7 - NomadsNews
         projectCards[6].querySelector('.project-title').lastChild.textContent = t.project2Title;
         projectCards[6].querySelector('.project-description').textContent = t.project2Desc;
@@ -620,7 +620,7 @@ function updateContent(lang) {
             project2Features[1].textContent = t.project2Feature2;
             project2Features[2].textContent = t.project2Feature3;
         }
-        
+
         // Project 8 - venvArbitrage
         projectCards[7].querySelector('.project-title').lastChild.textContent = t.project3Title;
         projectCards[7].querySelector('.project-description').textContent = t.project3Desc;
@@ -630,7 +630,7 @@ function updateContent(lang) {
             project3Features[1].textContent = t.project3Feature2;
             project3Features[2].textContent = t.project3Feature3;
         }
-        
+
         // Project 9 - Calendar Task
         projectCards[8].querySelector('.project-title').lastChild.textContent = t.project4Title;
         projectCards[8].querySelector('.project-description').textContent = t.project4Desc;
@@ -640,7 +640,7 @@ function updateContent(lang) {
             project4Features[1].textContent = t.project4Feature2;
             project4Features[2].textContent = t.project4Feature3;
         }
-        
+
         // Project 10 - KOTLIN-SaleOfApartments
         projectCards[9].querySelector('.project-title').lastChild.textContent = t.project5Title;
         projectCards[9].querySelector('.project-description').textContent = t.project5Desc;
@@ -650,7 +650,7 @@ function updateContent(lang) {
             project5Features[1].textContent = t.project5Feature2;
             project5Features[2].textContent = t.project5Feature3;
         }
-        
+
         // Project 11 - Python-Parser-Telegram
         projectCards[10].querySelector('.project-title').lastChild.textContent = t.project6Title;
         projectCards[10].querySelector('.project-description').textContent = t.project6Desc;
@@ -660,7 +660,7 @@ function updateContent(lang) {
             project6Features[1].textContent = t.project6Feature2;
             project6Features[2].textContent = t.project6Feature3;
         }
-        
+
         // Project 12 - Django-TikTok-SMM-Web
         projectCards[11].querySelector('.project-title').lastChild.textContent = t.project7Title;
         projectCards[11].querySelector('.project-description').textContent = t.project7Desc;
@@ -670,7 +670,7 @@ function updateContent(lang) {
             project7Features[1].textContent = t.project7Feature2;
             project7Features[2].textContent = t.project7Feature3;
         }
-        
+
         // Project 13 - React-MathNails
         projectCards[12].querySelector('.project-title').lastChild.textContent = t.project8Title;
         projectCards[12].querySelector('.project-description').textContent = t.project8Desc;
@@ -680,16 +680,16 @@ function updateContent(lang) {
             project8Features[1].textContent = t.project8Feature2;
             project8Features[2].textContent = t.project8Feature3;
         }
-        
+
         // Project 14 - MyPawsCharity
         if (projectCards[13]) {
             projectCards[13].querySelector('.project-title').lastChild.textContent = t.project9Title;
             projectCards[13].querySelector('.project-description').textContent = t.project9Desc;
             const project9Features = projectCards[13].querySelectorAll('.features-list li');
-        if (project9Features.length >= 3) {
-            project9Features[0].textContent = t.project9Feature1;
-            project9Features[1].textContent = t.project9Feature2;
-            project9Features[2].textContent = t.project9Feature3;
+            if (project9Features.length >= 3) {
+                project9Features[0].textContent = t.project9Feature1;
+                project9Features[1].textContent = t.project9Feature2;
+                project9Features[2].textContent = t.project9Feature3;
             }
         }
     }
@@ -748,37 +748,37 @@ function updateContent(lang) {
             el.textContent = translations.ru[`preview${index + 1}OverlayText`] || "Посмотреть превью";
         }
     });
-    
+
     // Update contact form
     const nameLabel = document.querySelector('label[for="name"]');
     const emailLabel = document.querySelector('label[for="email"]');
     const messageLabel = document.querySelector('label[for="message"]');
     const submitBtn = document.querySelector('button[type="submit"]');
-    
+
     if (nameLabel) nameLabel.textContent = t.nameLabel;
     if (emailLabel) emailLabel.textContent = t.emailLabel;
     if (messageLabel) messageLabel.textContent = t.messageLabel;
     if (submitBtn) submitBtn.textContent = t.sendMessage;
-    
+
     // Update footer
     const footerText = document.querySelector('.footer-content p');
     if (footerText) footerText.textContent = t.allRightsReserved;
 }
 function switchLanguage(lang) {
     currentLanguage = lang;
-    
+
     // Update language buttons
     document.querySelectorAll('.lang-btn, .mobile-lang-btn').forEach(btn => {
         btn.classList.remove('active');
     });
-    
+
     document.querySelectorAll(`[onclick="switchLanguage('${lang}')"]`).forEach(btn => {
         btn.classList.add('active');
     });
-    
+
     // Update content
     updateContent(lang);
-    
+
     // Обновляем изображения в превью карточках после смены языка
     updatePreviewCardImages();
 }
@@ -922,7 +922,7 @@ function handleSubmit(event) {
     const name = formData.get('name');
     const email = formData.get('email');
     const message = formData.get('message');
-    
+
     // Simulate form submission
     alert(`Спасибо, ${name}! Ваше сообщение отправлено. Я свяжусь с вами в ближайшее время.`);
     event.target.reset();
@@ -951,14 +951,14 @@ let imagesListLoaded = false;
 // Функция для загрузки списка изображений
 async function loadImagesList() {
     if (imagesListLoaded) return imagesList;
-    
+
     try {
         // Определяем базовый путь - для GitHub Pages это может быть пусто или имя репозитория
         // Для локальной разработки используем относительный путь
         const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || window.location.hostname === '';
         const pathParts = window.location.pathname.split('/').filter(p => p);
         const basePath = isLocal ? '' : (pathParts.length > 0 && pathParts[0] !== 'index.html' ? '/' + pathParts[0] : '');
-        
+
         // Пробуем разные пути для JSON файла
         const paths = [
             basePath ? `${basePath}/assets/js/images-list.json` : '/assets/js/images-list.json',  // GitHub Pages с базовым путем
@@ -966,7 +966,7 @@ async function loadImagesList() {
             './assets/js/images-list.json',  // Локальная разработка (относительный)
             'assets/js/images-list.json'    // Относительный путь от корня
         ];
-        
+
         let loaded = false;
         for (const jsonPath of paths) {
             try {
@@ -982,11 +982,11 @@ async function loadImagesList() {
                 continue;
             }
         }
-        
+
         if (!loaded) {
             throw new Error('Не удалось загрузить ни по одному из путей: ' + paths.join(', '));
         }
-        
+
         return imagesList;
     } catch (error) {
         return {};
@@ -1138,6 +1138,39 @@ const previewData = {
         },
         images: [] // Автоматически из images-list.json (будет добавлено позже)
     },
+    image_flow: {
+        title: {
+            ru: 'ImageFlow',
+            en: 'ImageFlow'
+        },
+        description: {
+            ru: 'Утилита для конвертации и обработки изображений.',
+            en: 'Utility for image conversion and processing.'
+        },
+        images: []
+    },
+    restaurant_menu: {
+        title: {
+            ru: 'Restaurant Menu',
+            en: 'Restaurant Menu'
+        },
+        description: {
+            ru: 'Приложение меню ресторана на Angular.',
+            en: 'Restaurant menu application built with Angular.'
+        },
+        images: []
+    },
+    multilang_template: {
+        title: {
+            ru: 'Multi-language Template',
+            en: 'Multi-language Template'
+        },
+        description: {
+            ru: 'Шаблон для создания многоязычных сайтов с маршрутизацией.',
+            en: 'Template for creating multi-language websites with routing.'
+        },
+        images: []
+    },
 
 };
 
@@ -1148,19 +1181,19 @@ function getProjectImages(projectId) {
         'nomadsnews': 'nomads', // nomadsnews в previewData, но папка называется nomads
         'baumaster_frankfurt': 'baumaster-frankfurt' // baumaster_frankfurt в previewData, но папка называется baumaster-frankfurt
     };
-    
+
     const folderName = folderMapping[projectId] || projectId;
-    
+
     // Если есть автоматически загруженный список, используем его
     if (imagesList && imagesList[folderName] && imagesList[folderName].length > 0) {
         return imagesList[folderName];
     }
-    
+
     // Иначе используем встроенные данные из previewData (fallback)
     if (previewData[projectId] && previewData[projectId].images && previewData[projectId].images.length > 0) {
         return previewData[projectId].images;
     }
-    
+
     return [];
 }
 
@@ -1168,34 +1201,34 @@ function getProjectImages(projectId) {
 async function openPreviewModal(projectId) {
     // Загружаем список изображений, если еще не загружен
     await loadImagesList();
-    
+
     const modal = document.getElementById('previewModal');
     const modalTitle = document.getElementById('modalTitle');
     const modalDescription = document.getElementById('modalDescription');
     const sliderWrapper = document.getElementById('sliderWrapper');
     const sliderDots = document.getElementById('sliderDots');
-    
+
     const project = previewData[projectId];
     if (!project) {
         console.error(`Проект ${projectId} не найден в previewData`);
         return;
     }
-    
+
     modalTitle.textContent = project.title[currentLanguage];
     modalDescription.textContent = project.description[currentLanguage];
-    
+
     // Получаем изображения автоматически
     const images = getProjectImages(projectId);
-    
+
     if (images.length === 0) {
         console.error(`Нет изображений для проекта: ${projectId}`);
         return;
     }
-    
+
     // Clear existing slides and dots
     sliderWrapper.innerHTML = '';
     sliderDots.innerHTML = '';
-    
+
     // Create slides
     images.forEach((image, index) => {
         const slide = document.createElement('div');
@@ -1205,18 +1238,18 @@ async function openPreviewModal(projectId) {
         onerror="this.src=''; this.style.display='none';" 
         style="padding:1%;" loading="lazy">`;
         sliderWrapper.appendChild(slide);
-        
+
         // Create dot
         const dot = document.createElement('div');
         dot.className = `slider-dot ${index === 0 ? 'active' : ''}`;
         dot.onclick = () => goToSlide(index);
         sliderDots.appendChild(dot);
     });
-    
+
     totalSlides = images.length;
     currentSlide = 0;
     updateSlider();
-    
+
     modal.classList.add('active');
     document.body.style.overflow = 'hidden';
 }
@@ -1251,14 +1284,14 @@ function updateSlider() {
     const dots = document.querySelectorAll('.slider-dot');
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
-    
+
     sliderWrapper.style.transform = `translateX(-${currentSlide * 100}%)`;
-    
+
     // Update dots
     dots.forEach((dot, index) => {
         dot.classList.toggle('active', index === currentSlide);
     });
-    
+
     // Update navigation buttons
     prevBtn.disabled = currentSlide === 0;
     nextBtn.disabled = currentSlide === totalSlides - 1;
@@ -1284,11 +1317,11 @@ document.getElementById('previewModal').addEventListener('click', (e) => {
 // Функция для обновления изображений в превью карточках
 function updatePreviewCardImages() {
     const previewCards = document.querySelectorAll(".preview-card");
-    
+
     if (previewCards.length === 0) {
         return;
     }
-    
+
     // Маппинг projectId на индексы карточек (в порядке появления в HTML)
     const projectMapping = [
         'nails_course',
@@ -1305,12 +1338,12 @@ function updatePreviewCardImages() {
         'django_tiktok',
         'calendar_task'
     ];
-    
+
     previewCards.forEach((card, index) => {
         if (index < projectMapping.length) {
             const projectId = projectMapping[index];
             const images = getProjectImages(projectId);
-            
+
             if (images.length > 0) {
                 const img = card.querySelector('.preview-image img');
                 if (img) {
@@ -1329,48 +1362,48 @@ function updatePreviewCardImages() {
 
 // Загружаем список изображений при загрузке страницы
 document.addEventListener("DOMContentLoaded", async () => {
-  // Предзагружаем список изображений
-  const loaded = await loadImagesList();
-  
-  // Обновляем изображения в превью карточках после загрузки
-  if (loaded && Object.keys(imagesList).length > 0) {
-    updatePreviewCardImages();
-  }
-  
-  const previewCards = document.querySelectorAll(".preview-card");
+    // Предзагружаем список изображений
+    const loaded = await loadImagesList();
 
-  const updateHoverActive = () => {
-    if (window.innerWidth > 769) {
-      // Для экранов меньше 769px сбрасываем hover
-      previewCards.forEach(card => card.classList.remove("hover-active"));
-      return;
+    // Обновляем изображения в превью карточках после загрузки
+    if (loaded && Object.keys(imagesList).length > 0) {
+        updatePreviewCardImages();
     }
 
-    // Получаем все карточки, которые видны >= 70%
-    const visibleCards = Array.from(previewCards).filter(card => {
-      const rect = card.getBoundingClientRect();
-      const visibleHeight = Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, 0);
-      return visibleHeight / rect.height >= 0.7;
-    });
+    const previewCards = document.querySelectorAll(".preview-card");
 
-    // Сбрасываем hover у всех
-    previewCards.forEach(card => card.classList.remove("hover-active"));
+    const updateHoverActive = () => {
+        if (window.innerWidth > 769) {
+            // Для экранов меньше 769px сбрасываем hover
+            previewCards.forEach(card => card.classList.remove("hover-active"));
+            return;
+        }
 
-    // Если есть видимые, активируем последнюю (нижнюю) карточку
-    if (visibleCards.length > 0) {
-      const lastCard = visibleCards[visibleCards.length - 1];
-      lastCard.classList.add("hover-active");
-    }
-  };
+        // Получаем все карточки, которые видны >= 70%
+        const visibleCards = Array.from(previewCards).filter(card => {
+            const rect = card.getBoundingClientRect();
+            const visibleHeight = Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, 0);
+            return visibleHeight / rect.height >= 0.7;
+        });
 
-  const observer = new IntersectionObserver(() => {
-    updateHoverActive();
-  }, { threshold: [0.7] });
+        // Сбрасываем hover у всех
+        previewCards.forEach(card => card.classList.remove("hover-active"));
 
-  previewCards.forEach(card => observer.observe(card));
+        // Если есть видимые, активируем последнюю (нижнюю) карточку
+        if (visibleCards.length > 0) {
+            const lastCard = visibleCards[visibleCards.length - 1];
+            lastCard.classList.add("hover-active");
+        }
+    };
 
-  window.addEventListener("scroll", updateHoverActive);
-  window.addEventListener("resize", updateHoverActive);
+    const observer = new IntersectionObserver(() => {
+        updateHoverActive();
+    }, { threshold: [0.7] });
+
+    previewCards.forEach(card => observer.observe(card));
+
+    window.addEventListener("scroll", updateHoverActive);
+    window.addEventListener("resize", updateHoverActive);
 });
 
 
@@ -1395,7 +1428,7 @@ function initMatrix(canvasId) {
     const fontSize = 16;
     let columns = Math.floor(canvas.width / fontSize);
     const drops = [];
-    const colors = ['#1f6feb','#3574fc','#4b82fd','#6190fe','#779eff','#8dacff','#a3baff','#b9c8ff','#cfd6ff','#e5e4ff','#a371f7'];
+    const colors = ['#1f6feb', '#3574fc', '#4b82fd', '#6190fe', '#779eff', '#8dacff', '#a3baff', '#b9c8ff', '#cfd6ff', '#e5e4ff', '#a371f7'];
 
     for (let i = 0; i < columns; i++) {
         drops[i] = Math.random() * canvas.height / fontSize;
@@ -1440,10 +1473,10 @@ initMatrix('matrixCanvas2');
 
 
 // Дублируем элементы для бесшовной анимации
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const track = document.getElementById('techTrack');
     const items = track.innerHTML;
-    
+
     // Добавляем копию элементов для бесшовной анимации
     track.innerHTML = items + items;
 });
@@ -1463,24 +1496,24 @@ slider.addEventListener('mouseleave', () => {
 
 
 document.querySelectorAll('.verify-link').forEach(link => {
-  link.addEventListener('click', e => {
-    e.preventDefault();
-    const certUrl = link.dataset.certificate;
-    const modal = document.getElementById('certificateModal');
-    const frame = document.getElementById('certificateFrame');
-    frame.src = certUrl;
-    modal.style.display = 'flex';
-  });
+    link.addEventListener('click', e => {
+        e.preventDefault();
+        const certUrl = link.dataset.certificate;
+        const modal = document.getElementById('certificateModal');
+        const frame = document.getElementById('certificateFrame');
+        frame.src = certUrl;
+        modal.style.display = 'flex';
+    });
 });
 
 // закрытие
 document.querySelector('#certificateModal .close').onclick = () => {
-  document.getElementById('certificateModal').style.display = 'none';
-  document.getElementById('certificateFrame').src = '';
-};
-window.onclick = e => {
-  if (e.target.id === 'certificateModal') {
     document.getElementById('certificateModal').style.display = 'none';
     document.getElementById('certificateFrame').src = '';
-  }
+};
+window.onclick = e => {
+    if (e.target.id === 'certificateModal') {
+        document.getElementById('certificateModal').style.display = 'none';
+        document.getElementById('certificateFrame').src = '';
+    }
 };

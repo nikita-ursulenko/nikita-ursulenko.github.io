@@ -48,6 +48,11 @@
     "assets/images/site/django_tiktok/slide1.webp",
     "assets/images/site/django_tiktok/slide2.webp"
   ],
+  "image_flow": [
+    "assets/images/site/image_flow/Снимок экрана 2026-01-14 в 21.43.58.png",
+    "assets/images/site/image_flow/Снимок экрана 2026-01-14 в 21.44.10.png",
+    "assets/images/site/image_flow/Снимок экрана 2026-01-14 в 21.44.17.png"
+  ],
   "mded": [
     "assets/images/site/mded/site.webp",
     "assets/images/site/mded/slide1.webp",
@@ -55,6 +60,31 @@
     "assets/images/site/mded/slide3.webp",
     "assets/images/site/mded/slide4.webp",
     "assets/images/site/mded/slide5.webp"
+  ],
+  "multilang_template": [
+    "assets/images/site/multilang_template/1.webp",
+    "assets/images/site/multilang_template/10.webp",
+    "assets/images/site/multilang_template/11.webp",
+    "assets/images/site/multilang_template/12.webp",
+    "assets/images/site/multilang_template/13.webp",
+    "assets/images/site/multilang_template/14.webp",
+    "assets/images/site/multilang_template/15.webp",
+    "assets/images/site/multilang_template/16.webp",
+    "assets/images/site/multilang_template/17.webp",
+    "assets/images/site/multilang_template/18.webp",
+    "assets/images/site/multilang_template/19.webp",
+    "assets/images/site/multilang_template/2.webp",
+    "assets/images/site/multilang_template/20.webp",
+    "assets/images/site/multilang_template/21.webp",
+    "assets/images/site/multilang_template/22.webp",
+    "assets/images/site/multilang_template/23.webp",
+    "assets/images/site/multilang_template/3.webp",
+    "assets/images/site/multilang_template/4.webp",
+    "assets/images/site/multilang_template/5.webp",
+    "assets/images/site/multilang_template/6.webp",
+    "assets/images/site/multilang_template/7.webp",
+    "assets/images/site/multilang_template/8.webp",
+    "assets/images/site/multilang_template/9.webp"
   ],
   "mutumzug": [
     "assets/images/site/mutumzug/1.webp",
@@ -150,6 +180,13 @@
     "assets/images/site/nomads/slide5.webp",
     "assets/images/site/nomads/slide6.webp",
     "assets/images/site/nomads/slide7.webp"
+  ],
+  "restaurant_menu": [
+    "assets/images/site/restaurant_menu/Снимок экрана 2026-02-08 в 17.13.30.png",
+    "assets/images/site/restaurant_menu/Снимок экрана 2026-02-08 в 17.13.44.png",
+    "assets/images/site/restaurant_menu/Снимок экрана 2026-02-08 в 17.13.54.png",
+    "assets/images/site/restaurant_menu/Снимок экрана 2026-02-08 в 17.14.23.png",
+    "assets/images/site/restaurant_menu/Снимок экрана 2026-02-08 в 17.14.34.png"
   ],
   "sv_send": [
     "assets/images/site/sv_send/1.png",
