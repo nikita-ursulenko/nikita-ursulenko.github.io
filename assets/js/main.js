@@ -1160,17 +1160,7 @@ const previewData = {
         },
         images: []
     },
-    multilang_template: {
-        title: {
-            ru: 'Multi-language Template',
-            en: 'Multi-language Template'
-        },
-        description: {
-            ru: 'Шаблон для создания многоязычных сайтов с маршрутизацией.',
-            en: 'Template for creating multi-language websites with routing.'
-        },
-        images: []
-    },
+
 
 };
 
