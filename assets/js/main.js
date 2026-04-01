@@ -33,58 +33,69 @@ const translations = {
 
         // Experience Jobs
         job0Period: 'NOW',
-        job0Title: 'Fullstack-разработчик (Frontend/Backend)',
-        job0Company: 'SykorsMedia | Кишинёв, Молдова',
-        job0Resp1: 'Улучшил и расширил возможности веб-платформы: обновил UI/UX и реализовал новый функционал',
-        job0Resp2: 'Разработал backend-часть на PHP/Laravel (обработка данных, создание моделей, работа с API)',
-        job0Resp3: 'Создал и интегрировал компоненты Vue.js с backend-логикой',
-        job0Resp4: 'Работал с PostgreSQL и Docker в рамках ежедневного процесса разработки',
+        job0Title: 'Full Stack Engineer (Part-time / Remote)',
+        job0Company: 'BlazarLabs | Chișinău, Moldova',
+        job0Resp1: 'Поддержка и оптимизация: Доработка, багфиксинг и непрерывное улучшение функционала существующих мобильных и веб-приложений.',
+        job0Resp2: 'Интеграция платежей: Внедрение и настройка систем онлайн-платежей (payment gateways) для обеспечения безопасных транзакций.',
+        job0Resp3: 'Frontend и UI/UX: Разработка кроссплатформенных мобильных интерфейсов на React Native и JavaScript с упором на улучшение пользовательского опыта.',
+        job0Resp4: 'Backend и работа с данными: Настройка серверной логики, работа с базами данных реального времени и API с использованием Firebase и JSON.',
+        job0Resp5: 'Контроль версий: Управление кодом и контроль версий через GitHub.',
+        job0Resp6: 'Tech Stack: React Native, JavaScript, JSON, Firebase, UX/UI, GitHub',
 
-        job1Period: '2025',
-        job1Title: 'Web-разработчик (Проектная работа)',
-        job1Company: 'Blazar.io',
-        job1Resp1: 'Самостоятельно разработал дизайн и полностью сверстал государственный сайт для Молдовы',
-        job1Resp2: 'Создал сайт на WordPress с использованием Advanced Custom Fields (ACF)',
-        job1Resp3: 'Реализовал возможность добавления новых кастомных блоков, что упрощает управление контентом',
-        job1Resp4: 'Выполнил весь цикл работ: от установки WordPress и подключения базы данных до финальной настройки',
 
-        job2Period: '2024 - 2025',
-        job2Title: 'Full-Stack разработчик',
-        job2Company: 'MoldExpo | Кишинёв, Молдова',
-        job2Resp1: 'Разработано веб-приложение «Меню ресторана» с использованием Angular и TypeScript',
-        job2Resp2: 'Разработал архитектуру приложения, работая с компонентами и модулями',
-        job2Resp3: 'Интегрирован с базой данных и REST API',
-        job2Resp4: 'Реализован адаптивный макет, оптимизация производительности и улучшения UX/UI',
+        job1Period: '2026',
+        job1Title: 'Fullstack-разработчик (Frontend/Backend)',
+        job1Company: 'SykorsMedia | Кишинёв, Молдова',
+        job1Resp1: 'Улучшил и расширил возможности веб-платформы: обновил UI/UX и реализовал новый функционал',
+        job1Resp2: 'Разработал backend-часть на PHP/Laravel (обработка данных, создание моделей, работа с API)',
+        job1Resp3: 'Создал и интегрировал компоненты Vue.js с backend-логикой',
+        job1Resp4: 'Работал с PostgreSQL и Docker в рамках ежедневного процесса разработки',
 
-        job3Period: '2023',
+        job2Period: '2025',
+        job2Title: 'Web-разработчик (Проектная работа)',
+        job2Company: 'Blazar.io',
+        job2Resp1: 'Самостоятельно разработал дизайн и полностью сверстал государственный сайт для Молдовы',
+        job2Resp2: 'Создал сайт на WordPress с использованием Advanced Custom Fields (ACF)',
+        job2Resp3: 'Реализовал возможность добавления новых кастомных блоков, что упрощает управление контентом',
+        job2Resp4: 'Выполнил весь цикл работ: от установки WordPress и подключения базы данных до финальной настройки',
+
+        job3Period: '2024 - 2025',
         job3Title: 'Full-Stack разработчик',
-        job3Company: 'TechNova Solutions | Москва',
-        job3Resp1: 'Разработаны веб-приложения с использованием React (Next.js), Angular и TypeScript',
-        job3Resp2: 'Построенные серверные решения с Django, FastAPI и REST API',
-        job3Resp3: 'Интегрированные стратегии торговли криптовалютой и автоматизация',
-        job3Resp4: 'Оптимизированный UI/UX, реализованный адаптивный дизайн и повышенная производительность',
-        job3Resp5: 'Разработаны мобильные приложения с использованием React Native и Expo',
+        job3Company: 'MoldExpo | Кишинёв, Молдова',
+        job3Resp1: 'Разработано веб-приложение «Меню ресторана» с использованием Angular и TypeScript',
+        job3Resp2: 'Разработал архитектуру приложения, работая с компонентами и модулями',
+        job3Resp3: 'Интегрирован с базой данных и REST API',
+        job3Resp4: 'Реализован адаптивный макет, оптимизация производительности и улучшения UX/UI',
 
-        job4Period: '2022 - 2023',
-        job4Title: 'Frontend разработчик',
-        job4Company: 'DigitalWave Agency | Минск',
-        job4Resp1: 'Разработаны интерфейсы для целевых страниц и маркетинговых платформ с использованием React и Tailwind CSS',
-        job4Resp2: 'Оптимизированный SEO и UX/UI, повышение скорости загрузки страницы',
-        job4Resp3: 'Интегрированные API, настроенные анимации и интерактивные компоненты',
+        job4Period: '2023',
+        job4Title: 'Full-Stack разработчик',
+        job4Company: 'TechNova Solutions | Москва',
+        job4Resp1: 'Разработаны веб-приложения с использованием React (Next.js), Angular и TypeScript',
+        job4Resp2: 'Построенные серверные решения с Django, FastAPI и REST API',
+        job4Resp3: 'Интегрированные стратегии торговли криптовалютой и автоматизация',
+        job4Resp4: 'Оптимизированный UI/UX, реализованный адаптивный дизайн и повышенная производительность',
+        job4Resp5: 'Разработаны мобильные приложения с использованием React Native и Expo',
 
-        job5Period: '2021 - 2022',
-        job5Title: 'Web-разработчик',
-        job5Company: 'WebCore Technologies | Новосибирск',
-        job5Resp1: 'Разработанные и поддерживаемые веб-сайты на WordPress (PHP, SCSS, SEO)',
-        job5Resp2: 'Оптимизированная скорость загрузки и реализованный адаптивный дизайн для всех устройств',
-        job5Resp3: 'Индивидуальные темы и плагины, разработка уникальной функциональности',
+        job5Period: '2022 - 2023',
+        job5Title: 'Frontend разработчик',
+        job5Company: 'DigitalWave Agency | Минск',
+        job5Resp1: 'Разработаны интерфейсы для целевых страниц и маркетинговых платформ с использованием React и Tailwind CSS',
+        job5Resp2: 'Оптимизированный SEO и UX/UI, повышение скорости загрузки страницы',
+        job5Resp3: 'Интегрированные API, настроенные анимации и интерактивные компоненты',
 
-        job6Period: '2021',
-        job6Title: 'Backend разработчик',
-        job6Company: 'DataFlow Systems | Москва',
-        job6Resp1: 'Разработаны парсеры Telegram, боты и автоматизацию с использованием Python (Selenium, BeautifulSoup, Scrapy)',
-        job6Resp2: 'Интегрированные API, работа с PostgreSQL и MySQL и обработанные данные',
-        job6Resp3: 'Построены финансовые системы и платформы для криптовалютного арбитража',
+        job6Period: '2021 - 2022',
+        job6Title: 'Web-разработчик',
+        job6Company: 'WebCore Technologies | Новосибирск',
+        job6Resp1: 'Разработанные и поддерживаемые веб-сайты на WordPress (PHP, SCSS, SEO)',
+        job6Resp2: 'Оптимизированная скорость загрузки и реализованный адаптивный дизайн для всех устройств',
+        job6Resp3: 'Индивидуальные темы и плагины, разработка уникальной функциональности',
+
+        job7Period: '2021',
+        job7Title: 'Backend разработчик',
+        job7Company: 'DataFlow Systems | Москва',
+        job7Resp1: 'Разработаны парсеры Telegram, боты и автоматизацию с использованием Python (Selenium, BeautifulSoup, Scrapy)',
+        job7Resp2: 'Интегрированные API, работа с PostgreSQL и MySQL и обработанные данные',
+        job7Resp3: 'Построены финансовые системы и платформы для криптовалютного арбитража',
 
         // Projects Section
         projectsTitle: 'Мои проекты',
@@ -228,58 +239,69 @@ const translations = {
 
         // Experience Jobs
         job0Period: 'NOW',
-        job0Title: 'Frontend-Backend Developer',
-        job0Company: 'SykorsMedia | Chişinău, Moldova',
-        job0Resp1: 'Improved and extended web platforms: updated UI/UX and implemented new features',
-        job0Resp2: 'Developed backend functionality with PHP/Laravel (data handling, models, APIs)',
-        job0Resp3: 'Built and integrated Vue.js components with backend logic',
-        job0Resp4: 'Worked with PostgreSQL and Docker as part of the daily development process',
+        job0Title: 'Full Stack Engineer (Part-time / Remote)',
+        job0Company: 'BlazarLabs | Chișinău, Moldova',
+        job0Resp1: 'App Maintenance & Optimization: Maintained, debugged, and continuously improved mobile and web applications to ensure stable performance.',
+        job0Resp2: 'Payment Integration: Successfully integrated secure online payment gateways for seamless and reliable user transactions.',
+        job0Resp3: 'Frontend & UI/UX: Developed interactive and user-friendly mobile interfaces using React Native and JavaScript, focusing on UX/UI best practices.',
+        job0Resp4: 'Backend & Data Integration: Managed backend services, real-time databases, and API integrations using Firebase and JSON data structures.',
+        job0Resp5: 'Version Control: Utilized GitHub for efficient code management and collaborative development.',
+        job0Resp6: 'Tech Stack: React Native, JavaScript, JSON, Firebase, UX/UI, GitHub',
 
-        job1Period: '2025',
-        job1Title: 'Web Developer (Project Work)',
-        job1Company: 'Blazar.io',
-        job1Resp1: 'Independently designed and fully developed a government website for Moldova',
-        job1Resp2: 'Created a WordPress site using Advanced Custom Fields (ACF)',
-        job1Resp3: 'Implemented the ability to add new custom blocks, simplifying content management',
-        job1Resp4: 'Completed the full development cycle: from WordPress installation and database connection to final configuration',
 
-        job2Period: '2024 - 2025',
-        job2Title: 'Full-Stack Developer',
-        job2Company: 'MoldExpo | Chișinău, Moldova',
-        job2Resp1: 'Developed a "Restaurant Menu" web application using Angular and TypeScript',
-        job2Resp2: 'Designed application architecture, working with components and modules',
-        job2Resp3: 'Integrated with database and REST API',
-        job2Resp4: 'Implemented responsive layout, performance optimization and UX/UI improvements',
+        job1Period: '2026',
+        job1Title: 'Frontend-Backend Developer',
+        job1Company: 'SykorsMedia | Chişinău, Moldova',
+        job1Resp1: 'Improved and extended web platforms: updated UI/UX and implemented new features',
+        job1Resp2: 'Developed backend functionality with PHP/Laravel (data handling, models, APIs)',
+        job1Resp3: 'Built and integrated Vue.js components with backend logic',
+        job1Resp4: 'Worked with PostgreSQL and Docker as part of the daily development process',
 
-        job3Period: '2023',
+        job2Period: '2025',
+        job2Title: 'Web Developer (Project Work)',
+        job2Company: 'Blazar.io',
+        job2Resp1: 'Independently designed and fully developed a government website for Moldova',
+        job2Resp2: 'Created a WordPress site using Advanced Custom Fields (ACF)',
+        job2Resp3: 'Implemented the ability to add new custom blocks, simplifying content management',
+        job2Resp4: 'Completed the full development cycle: from WordPress installation and database connection to final configuration',
+
+        job3Period: '2024 - 2025',
         job3Title: 'Full-Stack Developer',
-        job3Company: 'TechNova Solutions | Moscow',
-        job3Resp1: 'Developed web applications using React (Next.js), Angular and TypeScript',
-        job3Resp2: 'Built server-side solutions with Django, FastAPI and REST API',
-        job3Resp3: 'Integrated cryptocurrency trading strategies and automation',
-        job3Resp4: 'Optimized UI/UX, implemented responsive design and enhanced performance',
-        job3Resp5: 'Developed mobile applications using React Native and Expo',
+        job3Company: 'MoldExpo | Chișinău, Moldova',
+        job3Resp1: 'Developed a "Restaurant Menu" web application using Angular and TypeScript',
+        job3Resp2: 'Designed application architecture, working with components and modules',
+        job3Resp3: 'Integrated with database and REST API',
+        job3Resp4: 'Implemented responsive layout, performance optimization and UX/UI improvements',
 
-        job4Period: '2022 - 2023',
-        job4Title: 'Frontend Developer',
-        job4Company: 'DigitalWave Agency | Minsk',
-        job4Resp1: 'Developed interfaces for landing pages and marketing platforms using React and Tailwind CSS',
-        job4Resp2: 'Optimized SEO and UX/UI, improved page loading speed',
-        job4Resp3: 'Integrated APIs, configured animations and interactive components',
+        job4Period: '2023',
+        job4Title: 'Full-Stack Developer',
+        job4Company: 'TechNova Solutions | Moscow',
+        job4Resp1: 'Developed web applications using React (Next.js), Angular and TypeScript',
+        job4Resp2: 'Built server-side solutions with Django, FastAPI and REST API',
+        job4Resp3: 'Integrated cryptocurrency trading strategies and automation',
+        job4Resp4: 'Optimized UI/UX, implemented responsive design and enhanced performance',
+        job4Resp5: 'Developed mobile applications using React Native and Expo',
 
-        job5Period: '2021 - 2022',
-        job5Title: 'Web Developer',
-        job5Company: 'WebCore Technologies | Novosibirsk',
-        job5Resp1: 'Developed and maintained WordPress websites (PHP, SCSS, SEO)',
-        job5Resp2: 'Optimized loading speed and implemented responsive design for all devices',
-        job5Resp3: 'Custom themes and plugins, developed unique functionality',
+        job5Period: '2022 - 2023',
+        job5Title: 'Frontend Developer',
+        job5Company: 'DigitalWave Agency | Minsk',
+        job5Resp1: 'Developed interfaces for landing pages and marketing platforms using React and Tailwind CSS',
+        job5Resp2: 'Optimized SEO and UX/UI, improved page loading speed',
+        job5Resp3: 'Integrated APIs, configured animations and interactive components',
 
-        job6Period: '2021',
-        job6Title: 'Backend Developer',
-        job6Company: 'DataFlow Systems | Moscow',
-        job6Resp1: 'Developed Telegram parsers, bots and automation using Python (Selenium, BeautifulSoup, Scrapy)',
-        job6Resp2: 'Integrated APIs, worked with PostgreSQL and MySQL and processed data',
-        job6Resp3: 'Built financial systems and platforms for cryptocurrency arbitrage',
+        job6Period: '2021 - 2022',
+        job6Title: 'Web Developer',
+        job6Company: 'WebCore Technologies | Novosibirsk',
+        job6Resp1: 'Developed and maintained WordPress websites (PHP, SCSS, SEO)',
+        job6Resp2: 'Optimized loading speed and implemented responsive design for all devices',
+        job6Resp3: 'Custom themes and plugins, developed unique functionality',
+
+        job7Period: '2021',
+        job7Title: 'Backend Developer',
+        job7Company: 'DataFlow Systems | Moscow',
+        job7Resp1: 'Developed Telegram parsers, bots and automation using Python (Selenium, BeautifulSoup, Scrapy)',
+        job7Resp2: 'Integrated APIs, worked with PostgreSQL and MySQL and processed data',
+        job7Resp3: 'Built financial systems and platforms for cryptocurrency arbitrage',
 
         // Projects Section
         projectsTitle: 'My Projects',
@@ -355,36 +377,35 @@ const translations = {
         project11Feature3: 'Task scheduler and submission statistics',
 
         project12Title: 'Nail Mastery Hub',
-        project12Desc: 'Online platform for nail art and nail design education. Full-featured course management system with Stripe payment integration, admin panel with dashboard and student personal account.',
+        project12Desc: 'Online platform for nail and nail design training. Full-featured course management system with Stripe payment integration, admin panel with dashboard and personal account for students.',
         project12Feature1: 'Course management system with Stripe payment integration',
         project12Feature2: 'Full-featured admin panel with dashboard and statistics',
-        project12Feature3: 'Student personal account with progress tracking and certificates',
+        project12Feature3: 'Personal account for students with progress tracking and certificates',
 
         project13Title: 'PHP Multilang Template',
-        project13Desc: 'Simple PHP template for creating multilingual websites with SEO optimization support. Automatic generation of meta tags, Open Graph, Twitter Cards and JSON-LD structured data.',
+        project13Desc: 'Simple PHP template for creating multi-language websites with SEO optimization support. Automatic generation of meta tags, Open Graph, Twitter Cards and JSON-LD structured data.',
         project13Feature1: 'Support for unlimited languages with beautiful URLs',
         project13Feature2: 'Automatic generation of SEO meta tags and structured data',
-        project13Feature3: 'Safe data output with XSS attack protection',
+        project13Feature3: 'Secure data output with protection against XSS attacks',
 
         project14Title: 'Baumaster Frankfurt',
-        project14Desc: 'Modern corporate website for a construction company with integrated admin panel for content management. Multilingual support, SEO optimization and integrations with external services.',
+        project14Desc: 'Modern corporate website for a construction company with an integrated admin panel for content management. Multi-language support, SEO optimization and integration with external services.',
         project14Feature1: 'Full-featured admin panel for content management',
-        project14Feature2: 'Multilingual support (Russian, German, English) and SEO optimization',
+        project14Feature2: 'Multi-language (Russian, German, English) and SEO optimization',
         project14Feature3: 'Integrations with Google Analytics, Maps and testing system',
 
+        // "Website Previews"
+        preview10Title: "Website Previews",
+        preview10Desc: "Government portal of the Ministry of Economic Development of Moldova",
+        preview10OverlayText: "View Preview",
         // Tech Stack Section
         techStackTitle: 'Tech Stack',
 
-
-
-        preview10Title: "Website Previews",
-        preview10Desc: "State portal of the Ministry of Economic Development of Moldova",
-        preview10OverlayText: "View Preview",
         // Education Section
-        educationTitle: 'Education & Certifications',
+        educationTitle: 'Education and Certificates',
 
         // Contact Section
-        contactTitle: 'Get in Touch',
+        contactTitle: 'Contact Me',
         nameLabel: 'Name',
         emailLabel: 'Email',
         messageLabel: 'Message',
@@ -395,10 +416,10 @@ const translations = {
     }
 };
 
-
 function updateContent(lang) {
     const t = translations[lang];
-    // Update navigation
+
+    // Navigation
     document.querySelectorAll('a[href="#home"]').forEach(el => el.textContent = t.home);
     document.querySelectorAll('a[href="#about"]').forEach(el => el.textContent = t.about);
     document.querySelectorAll('a[href="#experience"]').forEach(el => el.textContent = t.experience);
@@ -408,22 +429,14 @@ function updateContent(lang) {
     document.querySelectorAll('a[href="#education"]').forEach(el => el.textContent = t.education);
     document.querySelectorAll('a[href="#contact"]').forEach(el => el.textContent = t.contact);
 
-    // Update hero section
-    document.querySelector('.hero-text h1').textContent = t.heroTitle;
+    // Hero section
+    document.querySelector('.hero-content h1').textContent = t.heroTitle;
+    document.querySelector('.hero-content p').textContent = t.heroSubtitle;
+    document.querySelector('.btn-primary span').textContent = t.viewProjects;
+    document.querySelector('.btn-secondary span').textContent = t.downloadCV;
+    document.querySelector('.btn-secondary').href = t.cvPath;
 
-    document.querySelector('.hero-text p').textContent = t.heroSubtitle;
-    document.querySelector('.btn-primary').textContent = t.viewProjects;
-    document.querySelector('.btn-secondary').textContent = t.downloadCV;
-    const downloadCvBtn = document.querySelector('.btn-secondary'); // Или по id #downloadCvBtn
-
-    // Обновляем текст и ссылку на кнопку скачивания CV
-    if (downloadCvBtn) {
-        downloadCvBtn.textContent = t.downloadCV;
-        downloadCvBtn.href = t.cvPath;
-        downloadCvBtn.setAttribute('download', 'Nikita_Ursulenco_CV.pdf'); // Это позволит браузеру сразу скачать файл, а не открывать его в новой вкладке. Имя файла можно задать тут.
-    }
-
-    // Update section titles
+    // Section titles
     document.querySelector('#about .section-title').textContent = t.aboutTitle;
     document.querySelector('#experience .section-title').textContent = t.experienceTitle;
     document.querySelector('#projects .section-title').textContent = t.projectsTitle;
@@ -431,6 +444,7 @@ function updateContent(lang) {
     document.querySelector('#education .section-title').textContent = t.educationTitle;
     document.querySelector('#contact .section-title').textContent = t.contactTitle;
     document.querySelector('#previews .section-title').textContent = t.preview10Title;
+
 
     // Update about section
     const aboutTexts = document.querySelectorAll('.about-text p');
@@ -450,20 +464,23 @@ function updateContent(lang) {
 
     // Update experience jobs
     const experienceItems = document.querySelectorAll('.experience-item');
-    if (experienceItems.length >= 7) {
-        // Job 0 (SykorsMedia - newest)
+    if (experienceItems.length >= 8) {
+        // Job 0 (BlazarLabs - newest)
         experienceItems[0].querySelector('.experience-period').textContent = t.job0Period;
         experienceItems[0].querySelector('.experience-title').textContent = t.job0Title;
         experienceItems[0].querySelector('.experience-company').textContent = t.job0Company;
         const job0Resps = experienceItems[0].querySelectorAll('.responsibilities-list li');
-        if (job0Resps.length >= 4) {
+        if (job0Resps.length >= 6) {
             job0Resps[0].textContent = t.job0Resp1;
             job0Resps[1].textContent = t.job0Resp2;
             job0Resps[2].textContent = t.job0Resp3;
             job0Resps[3].textContent = t.job0Resp4;
+            job0Resps[4].textContent = t.job0Resp5;
+            job0Resps[5].textContent = t.job0Resp6;
         }
 
-        // Job 1 (Blazar.io)
+
+        // Job 1 (SykorsMedia)
         experienceItems[1].querySelector('.experience-period').textContent = t.job1Period;
         experienceItems[1].querySelector('.experience-title').textContent = t.job1Title;
         experienceItems[1].querySelector('.experience-company').textContent = t.job1Company;
@@ -475,7 +492,7 @@ function updateContent(lang) {
             job1Resps[3].textContent = t.job1Resp4;
         }
 
-        // Job 2 (MoldExpo)
+        // Job 2 (Blazar.io)
         experienceItems[2].querySelector('.experience-period').textContent = t.job2Period;
         experienceItems[2].querySelector('.experience-title').textContent = t.job2Title;
         experienceItems[2].querySelector('.experience-company').textContent = t.job2Company;
@@ -487,31 +504,32 @@ function updateContent(lang) {
             job2Resps[3].textContent = t.job2Resp4;
         }
 
-        // Job 3 (TechNova Solutions)
+        // Job 3 (MoldExpo)
         experienceItems[3].querySelector('.experience-period').textContent = t.job3Period;
         experienceItems[3].querySelector('.experience-title').textContent = t.job3Title;
         experienceItems[3].querySelector('.experience-company').textContent = t.job3Company;
         const job3Resps = experienceItems[3].querySelectorAll('.responsibilities-list li');
-        if (job3Resps.length >= 5) {
+        if (job3Resps.length >= 4) {
             job3Resps[0].textContent = t.job3Resp1;
             job3Resps[1].textContent = t.job3Resp2;
             job3Resps[2].textContent = t.job3Resp3;
             job3Resps[3].textContent = t.job3Resp4;
-            job3Resps[4].textContent = t.job3Resp5;
         }
 
-        // Job 4 (DigitalWave Agency)
+        // Job 4 (TechNova Solutions)
         experienceItems[4].querySelector('.experience-period').textContent = t.job4Period;
         experienceItems[4].querySelector('.experience-title').textContent = t.job4Title;
         experienceItems[4].querySelector('.experience-company').textContent = t.job4Company;
         const job4Resps = experienceItems[4].querySelectorAll('.responsibilities-list li');
-        if (job4Resps.length >= 3) {
+        if (job4Resps.length >= 5) {
             job4Resps[0].textContent = t.job4Resp1;
             job4Resps[1].textContent = t.job4Resp2;
             job4Resps[2].textContent = t.job4Resp3;
+            job4Resps[3].textContent = t.job4Resp4;
+            job4Resps[4].textContent = t.job4Resp5;
         }
 
-        // Job 5 (WebCore Technologies)
+        // Job 5 (DigitalWave Agency)
         experienceItems[5].querySelector('.experience-period').textContent = t.job5Period;
         experienceItems[5].querySelector('.experience-title').textContent = t.job5Title;
         experienceItems[5].querySelector('.experience-company').textContent = t.job5Company;
@@ -522,7 +540,7 @@ function updateContent(lang) {
             job5Resps[2].textContent = t.job5Resp3;
         }
 
-        // Job 6 (DataFlow Systems)
+        // Job 6 (WebCore Technologies)
         experienceItems[6].querySelector('.experience-period').textContent = t.job6Period;
         experienceItems[6].querySelector('.experience-title').textContent = t.job6Title;
         experienceItems[6].querySelector('.experience-company').textContent = t.job6Company;
@@ -531,6 +549,17 @@ function updateContent(lang) {
             job6Resps[0].textContent = t.job6Resp1;
             job6Resps[1].textContent = t.job6Resp2;
             job6Resps[2].textContent = t.job6Resp3;
+        }
+
+        // Job 7 (DataFlow Systems)
+        experienceItems[7].querySelector('.experience-period').textContent = t.job7Period;
+        experienceItems[7].querySelector('.experience-title').textContent = t.job7Title;
+        experienceItems[7].querySelector('.experience-company').textContent = t.job7Company;
+        const job7Resps = experienceItems[7].querySelectorAll('.responsibilities-list li');
+        if (job7Resps.length >= 3) {
+            job7Resps[0].textContent = t.job7Resp1;
+            job7Resps[1].textContent = t.job7Resp2;
+            job7Resps[2].textContent = t.job7Resp3;
         }
     }
 
