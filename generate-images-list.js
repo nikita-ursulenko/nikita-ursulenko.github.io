@@ -23,13 +23,29 @@ function getAllImages(folderPath, folderName) {
         if (!a.isDirectory() && b.isDirectory()) return 1;
         return a.name.localeCompare(b.name);
     });
+
+    const addedBasenames = new Set();
     
+    // Сначала ищем webp
     for (const item of items) {
         if (!item.isDirectory()) {
-            // Проверяем, является ли файл изображением
             const ext = path.extname(item.name).toLowerCase();
-            if (imageExtensions.includes(ext)) {
+            const basename = path.basename(item.name, ext);
+            if (ext === '.webp') {
                 images.push(`assets/images/site/${folderName}/${item.name}`);
+                addedBasenames.add(basename);
+            }
+        }
+    }
+
+    // Добавляем остальные, если нет webp
+    for (const item of items) {
+        if (!item.isDirectory()) {
+            const ext = path.extname(item.name).toLowerCase();
+            const basename = path.basename(item.name, ext);
+            if (imageExtensions.includes(ext) && ext !== '.webp' && !addedBasenames.has(basename)) {
+                images.push(`assets/images/site/${folderName}/${item.name}`);
+                addedBasenames.add(basename);
             }
         }
     }
