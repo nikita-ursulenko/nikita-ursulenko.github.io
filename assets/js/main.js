@@ -188,6 +188,13 @@ const translations = {
         project14Feature2: 'Многоязычность (русский, немецкий, английский) и SEO оптимизация',
         project14Feature3: 'Интеграции с Google Analytics, Maps и система тестирования',
 
+        projectimage_flowTitle: 'ImageFlow',
+        projectimage_flowDesc: 'Современное веб-приложение для конвертации, оптимизации и обработки изображений. Элегантное и мощное решение с красивым и интуитивным интерфейсом.',
+        projectimage_flowFeature1: '🔄 Пакетная конвертация форматов (WebP, PNG, JPG/JPEG) и создание ZIP-архивов',
+        projectimage_flowFeature2: '🎛️ Обработка: изменение размера, поворот (90°, 180°, 270°), оптимизация и сжатие',
+        projectimage_flowFeature3: '💎 Современный интуитивный дизайн с Vanilla JS, Node.js и Sharp',
+
+
         // "Website Previews",
         preview10Title: "Превью сайтов",
         preview10Desc: "Государственный портал Министерства экономического развития Молдовы",
@@ -394,6 +401,13 @@ const translations = {
         project14Feature2: 'Multi-language (Russian, German, English) and SEO optimization',
         project14Feature3: 'Integrations with Google Analytics, Maps and testing system',
 
+        projectimage_flowTitle: 'ImageFlow',
+        projectimage_flowDesc: 'Modern web application for converting, optimizing, and processing images. Elegant and powerful solution with a beautiful and intuitive interface.',
+        projectimage_flowFeature1: '🔄 Batch format conversion (WebP, PNG, JPG/JPEG) and ZIP archive creation',
+        projectimage_flowFeature2: '🎛️ Processing tools: resizing, rotation (90°, 180°, 270°), optimization and compression',
+        projectimage_flowFeature3: '💎 Modern intuitive interface with Vanilla JS, Node.js, and Sharp',
+
+
         // "Website Previews"
         preview10Title: "Website Previews",
         preview10Desc: "Government portal of the Ministry of Economic Development of Moldova",
@@ -579,196 +593,44 @@ function updateContent(lang) {
 
     // Update project cards
     const projectCards = document.querySelectorAll('.project-card');
-    if (projectCards.length >= 14) {
-        // Project 1 - Baumaster Frankfurt (newest)
-        projectCards[0].querySelector('.project-title').lastChild.textContent = t.project14Title;
-        projectCards[0].querySelector('.project-description').textContent = t.project14Desc;
-        const project14Features = projectCards[0].querySelectorAll('.features-list li');
-        if (project14Features.length >= 3) {
-            project14Features[0].textContent = t.project14Feature1;
-            project14Features[1].textContent = t.project14Feature2;
-            project14Features[2].textContent = t.project14Feature3;
-        }
-
-        // Project 2 - Nail Mastery Hub
-        projectCards[1].querySelector('.project-title').lastChild.textContent = t.project12Title;
-        projectCards[1].querySelector('.project-description').textContent = t.project12Desc;
-        const project12Features = projectCards[1].querySelectorAll('.features-list li');
-        if (project12Features.length >= 3) {
-            project12Features[0].textContent = t.project12Feature1;
-            project12Features[1].textContent = t.project12Feature2;
-            project12Features[2].textContent = t.project12Feature3;
-        }
-
-        // Project 3 - CVFlow Buddy
-        projectCards[2].querySelector('.project-title').lastChild.textContent = t.project11Title;
-        projectCards[2].querySelector('.project-description').textContent = t.project11Desc;
-        const project11Features = projectCards[2].querySelectorAll('.features-list li');
-        if (project11Features.length >= 3) {
-            project11Features[0].textContent = t.project11Feature1;
-            project11Features[1].textContent = t.project11Feature2;
-            project11Features[2].textContent = t.project11Feature3;
-        }
-
-        // Project 4 - MutUmzug
-        projectCards[3].querySelector('.project-title').lastChild.textContent = t.project10Title;
-        projectCards[3].querySelector('.project-description').textContent = t.project10Desc;
-        const project10Features = projectCards[3].querySelectorAll('.features-list li');
-        if (project10Features.length >= 3) {
-            project10Features[0].textContent = t.project10Feature1;
-            project10Features[1].textContent = t.project10Feature2;
-            project10Features[2].textContent = t.project10Feature3;
-        }
-
-        // Project 5 - PHP Multilang Template
-        projectCards[4].querySelector('.project-title').lastChild.textContent = t.project13Title;
-        projectCards[4].querySelector('.project-description').textContent = t.project13Desc;
-        const project13Features = projectCards[4].querySelectorAll('.features-list li');
-        if (project13Features.length >= 3) {
-            project13Features[0].textContent = t.project13Feature1;
-            project13Features[1].textContent = t.project13Feature2;
-            project13Features[2].textContent = t.project13Feature3;
-        }
-
-        // Project 6 - MDED
-        projectCards[5].querySelector('.project-title').lastChild.textContent = t.project1Title;
-        projectCards[5].querySelector('.project-description').textContent = t.project1Desc;
-        const project1Features = projectCards[5].querySelectorAll('.features-list li');
-        if (project1Features.length >= 3) {
-            project1Features[0].textContent = t.project1Feature1;
-            project1Features[1].textContent = t.project1Feature2;
-            project1Features[2].textContent = t.project1Feature3;
-        }
-
-        // Project 7 - NomadsNews
-        projectCards[6].querySelector('.project-title').lastChild.textContent = t.project2Title;
-        projectCards[6].querySelector('.project-description').textContent = t.project2Desc;
-        const project2Features = projectCards[6].querySelectorAll('.features-list li');
-        if (project2Features.length >= 3) {
-            project2Features[0].textContent = t.project2Feature1;
-            project2Features[1].textContent = t.project2Feature2;
-            project2Features[2].textContent = t.project2Feature3;
-        }
-
-        // Project 8 - venvArbitrage
-        projectCards[7].querySelector('.project-title').lastChild.textContent = t.project3Title;
-        projectCards[7].querySelector('.project-description').textContent = t.project3Desc;
-        const project3Features = projectCards[7].querySelectorAll('.features-list li');
-        if (project3Features.length >= 3) {
-            project3Features[0].textContent = t.project3Feature1;
-            project3Features[1].textContent = t.project3Feature2;
-            project3Features[2].textContent = t.project3Feature3;
-        }
-
-        // Project 9 - Calendar Task
-        projectCards[8].querySelector('.project-title').lastChild.textContent = t.project4Title;
-        projectCards[8].querySelector('.project-description').textContent = t.project4Desc;
-        const project4Features = projectCards[8].querySelectorAll('.features-list li');
-        if (project4Features.length >= 3) {
-            project4Features[0].textContent = t.project4Feature1;
-            project4Features[1].textContent = t.project4Feature2;
-            project4Features[2].textContent = t.project4Feature3;
-        }
-
-        // Project 10 - KOTLIN-SaleOfApartments
-        projectCards[9].querySelector('.project-title').lastChild.textContent = t.project5Title;
-        projectCards[9].querySelector('.project-description').textContent = t.project5Desc;
-        const project5Features = projectCards[9].querySelectorAll('.features-list li');
-        if (project5Features.length >= 3) {
-            project5Features[0].textContent = t.project5Feature1;
-            project5Features[1].textContent = t.project5Feature2;
-            project5Features[2].textContent = t.project5Feature3;
-        }
-
-        // Project 11 - Python-Parser-Telegram
-        projectCards[10].querySelector('.project-title').lastChild.textContent = t.project6Title;
-        projectCards[10].querySelector('.project-description').textContent = t.project6Desc;
-        const project6Features = projectCards[10].querySelectorAll('.features-list li');
-        if (project6Features.length >= 3) {
-            project6Features[0].textContent = t.project6Feature1;
-            project6Features[1].textContent = t.project6Feature2;
-            project6Features[2].textContent = t.project6Feature3;
-        }
-
-        // Project 12 - Django-TikTok-SMM-Web
-        projectCards[11].querySelector('.project-title').lastChild.textContent = t.project7Title;
-        projectCards[11].querySelector('.project-description').textContent = t.project7Desc;
-        const project7Features = projectCards[11].querySelectorAll('.features-list li');
-        if (project7Features.length >= 3) {
-            project7Features[0].textContent = t.project7Feature1;
-            project7Features[1].textContent = t.project7Feature2;
-            project7Features[2].textContent = t.project7Feature3;
-        }
-
-        // Project 13 - React-MathNails
-        projectCards[12].querySelector('.project-title').lastChild.textContent = t.project8Title;
-        projectCards[12].querySelector('.project-description').textContent = t.project8Desc;
-        const project8Features = projectCards[12].querySelectorAll('.features-list li');
-        if (project8Features.length >= 3) {
-            project8Features[0].textContent = t.project8Feature1;
-            project8Features[1].textContent = t.project8Feature2;
-            project8Features[2].textContent = t.project8Feature3;
-        }
-
-        // Project 14 - MyPawsCharity
-        if (projectCards[13]) {
-            projectCards[13].querySelector('.project-title').lastChild.textContent = t.project9Title;
-            projectCards[13].querySelector('.project-description').textContent = t.project9Desc;
-            const project9Features = projectCards[13].querySelectorAll('.features-list li');
-            if (project9Features.length >= 3) {
-                project9Features[0].textContent = t.project9Feature1;
-                project9Features[1].textContent = t.project9Feature2;
-                project9Features[2].textContent = t.project9Feature3;
+    projectCards.forEach(card => {
+        const id = card.getAttribute('data-project-id');
+        if (id) {
+            const titleStr = t[`project${id}Title`];
+            if (titleStr) {
+                const titleEl = card.querySelector('.project-title');
+                if (titleEl && titleEl.lastChild) titleEl.lastChild.textContent = titleStr;
+                const descEl = card.querySelector('.project-description');
+                if (descEl) descEl.textContent = t[`project${id}Desc`];
+                
+                const features = card.querySelectorAll('.features-list li');
+                if (features.length >= 3) {
+                    features[0].textContent = t[`project${id}Feature1`];
+                    features[1].textContent = t[`project${id}Feature2`];
+                    features[2].textContent = t[`project${id}Feature3`];
+                }
             }
         }
-    }
-    const previewCards = document.querySelectorAll('.preview-card');
+    });
 
-    if (previewCards.length > 0) {
-        // Preview cards translate text
-        previewCards[0].querySelector('.preview-title').textContent = previewData.nails_course.title[lang];
-        previewCards[0].querySelector('.preview-description').textContent = previewData.nails_course.description[lang];
-        previewCards[1].querySelector('.preview-title').textContent = previewData.sv_send.title[lang];
-        previewCards[1].querySelector('.preview-description').textContent = previewData.sv_send.description[lang];
-        previewCards[2].querySelector('.preview-title').textContent = previewData.mutumzug.title[lang];
-        previewCards[2].querySelector('.preview-description').textContent = previewData.mutumzug.description[lang];
-        previewCards[3].querySelector('.preview-title').textContent = previewData.template_translate.title[lang];
-        previewCards[3].querySelector('.preview-description').textContent = previewData.template_translate.description[lang];
-        previewCards[4].querySelector('.preview-title').textContent = previewData.mded.title[lang];
-        previewCards[4].querySelector('.preview-description').textContent = t.preview10Desc;
-        if (previewCards[5]) {
-            previewCards[5].querySelector('.preview-title').textContent = previewData.nomadsnews.title[lang];
-            previewCards[5].querySelector('.preview-description').textContent = previewData.nomadsnews.description[lang];
+    const previewCards = document.querySelectorAll('.preview-card');
+    previewCards.forEach(card => {
+        const id = card.getAttribute('data-preview-id');
+        if (id && previewData[id]) {
+            const pTitle = card.querySelector('.preview-title');
+            const pDesc = card.querySelector('.preview-description');
+            if (pTitle) pTitle.textContent = previewData[id].title[lang];
+            
+            if (pDesc) {
+                if (id === 'mded' && t.preview10Desc) {
+                    pDesc.textContent = t.preview10Desc;
+                } else {
+                    pDesc.textContent = previewData[id].description[lang];
+                }
+            }
         }
-        if (previewCards[6]) {
-            previewCards[6].querySelector('.preview-title').textContent = previewData.baumaster_frankfurt.title[lang];
-            previewCards[6].querySelector('.preview-description').textContent = previewData.baumaster_frankfurt.description[lang];
-        }
-        if (previewCards[7]) {
-            previewCards[7].querySelector('.preview-title').textContent = previewData.mypawscharity.title[lang];
-            previewCards[7].querySelector('.preview-description').textContent = previewData.mypawscharity.description[lang];
-        }
-        if (previewCards[8]) {
-            previewCards[8].querySelector('.preview-title').textContent = previewData.viktoriia.title[lang];
-            previewCards[8].querySelector('.preview-description').textContent = previewData.viktoriia.description[lang];
-        }
-        if (previewCards[9]) {
-            previewCards[9].querySelector('.preview-title').textContent = previewData.atelier_md.title[lang];
-            previewCards[9].querySelector('.preview-description').textContent = previewData.atelier_md.description[lang];
-        }
-        if (previewCards[10]) {
-            previewCards[10].querySelector('.preview-title').textContent = previewData.nailshop.title[lang];
-            previewCards[10].querySelector('.preview-description').textContent = previewData.nailshop.description[lang];
-        }
-        if (previewCards[11]) {
-            previewCards[11].querySelector('.preview-title').textContent = previewData.django_tiktok.title[lang];
-            previewCards[11].querySelector('.preview-description').textContent = previewData.django_tiktok.description[lang];
-        }
-        if (previewCards[12]) {
-            previewCards[12].querySelector('.preview-title').textContent = previewData.calendar_task.title[lang];
-            previewCards[12].querySelector('.preview-description').textContent = previewData.calendar_task.description[lang];
-        }
-    }
+    });
+
     document.querySelectorAll('.preview-overlay-text').forEach((el, index) => {
         // Можно подставлять по индексу, если разные карточки имеют разные тексты
         if (lang === 'en') {
@@ -1024,6 +886,18 @@ async function loadImagesList() {
 
 // Многоязычные данные
 const previewData = {
+    link_flow: {
+        title: {
+            ru: 'LinkFlow',
+            en: 'LinkFlow'
+        },
+        description: {
+            ru: 'Персональная мультиссылка-визитка для ваших проектов. Удобный способ делиться контактами, продуктами и медиафайлами на одной странице.',
+            en: 'Personal link-in-bio landing page for your projects. An easy way to share contacts, products, and media files on a single page.'
+        },
+        images: []
+    },
+    
     mded: {
         title: {
             ru: 'MDED Портал Правительства',
@@ -1173,8 +1047,8 @@ const previewData = {
             en: 'ImageFlow'
         },
         description: {
-            ru: 'Утилита для конвертации и обработки изображений.',
-            en: 'Utility for image conversion and processing.'
+            ru: 'Современное веб-приложение для конвертации, оптимизации и пакетной обработки изображений.',
+            en: 'Modern web application for converting, optimizing, and batch processing images.'
         },
         images: []
     },
@@ -1336,40 +1210,17 @@ document.getElementById('previewModal').addEventListener('click', (e) => {
 // Функция для обновления изображений в превью карточках
 function updatePreviewCardImages() {
     const previewCards = document.querySelectorAll(".preview-card");
+    if (previewCards.length === 0) return;
 
-    if (previewCards.length === 0) {
-        return;
-    }
-
-    // Маппинг projectId на индексы карточек (в порядке появления в HTML)
-    const projectMapping = [
-        'nails_course',
-        'sv_send',
-        'mutumzug',
-        'template_translate',
-        'mded',
-        'nomadsnews',
-        'baumaster_frankfurt',
-        'mypawscharity',
-        'viktoriia',
-        'atelier_md',
-        'nailshop',
-        'django_tiktok',
-        'calendar_task'
-    ];
-
-    previewCards.forEach((card, index) => {
-        if (index < projectMapping.length) {
-            const projectId = projectMapping[index];
-            const images = getProjectImages(projectId);
-
+    previewCards.forEach(card => {
+        const id = card.getAttribute('data-preview-id');
+        if (id) {
+            const images = getProjectImages(id);
             if (images.length > 0) {
                 const img = card.querySelector('.preview-image img');
                 if (img) {
-                    const oldSrc = img.src;
                     img.src = images[0];
-                    // Обновляем alt текст
-                    const project = previewData[projectId];
+                    const project = previewData[id];
                     if (project) {
                         img.alt = `${project.title[currentLanguage]} - Website preview`;
                     }
