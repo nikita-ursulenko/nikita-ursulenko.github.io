@@ -34,6 +34,14 @@
     "assets/images/site/baumaster-frankfurt/Снимок экрана 2026-01-08 в 19.21.39.webp",
     "assets/images/site/baumaster-frankfurt/Снимок экрана 2026-01-08 в 19.21.47.webp"
   ],
+  "beauty_parser": [
+    "assets/images/site/beauty_parser/1.webp",
+    "assets/images/site/beauty_parser/2.webp",
+    "assets/images/site/beauty_parser/3.webp",
+    "assets/images/site/beauty_parser/4.webp",
+    "assets/images/site/beauty_parser/5.webp",
+    "assets/images/site/beauty_parser/6.webp"
+  ],
   "calendar_task": [
     "assets/images/site/calendar_task/slide1.webp",
     "assets/images/site/calendar_task/slide2.webp",
@@ -172,6 +180,13 @@
     "assets/images/site/nomads/slide6.webp",
     "assets/images/site/nomads/slide7.webp"
   ],
+  "nova_dash": [
+    "assets/images/site/nova_dash/1.webp",
+    "assets/images/site/nova_dash/2.webp",
+    "assets/images/site/nova_dash/3.webp",
+    "assets/images/site/nova_dash/4.webp",
+    "assets/images/site/nova_dash/5.webp"
+  ],
   "restaurant_menu": [
     "assets/images/site/restaurant_menu/Снимок экрана 2026-02-08 в 17.13.30.webp",
     "assets/images/site/restaurant_menu/Снимок экрана 2026-02-08 в 17.13.44.webp",
@@ -190,6 +205,11 @@
     "assets/images/site/sv_send/7.webp",
     "assets/images/site/sv_send/8.webp",
     "assets/images/site/sv_send/9.webp"
+  ],
+  "tasty_cloud": [
+    "assets/images/site/tasty_cloud/1.webp",
+    "assets/images/site/tasty_cloud/2.webp",
+    "assets/images/site/tasty_cloud/3.webp"
   ],
   "template_translate": [
     "assets/images/site/template_translate/1.webp",

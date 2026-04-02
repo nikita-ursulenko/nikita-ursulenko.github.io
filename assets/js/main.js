@@ -886,6 +886,39 @@ async function loadImagesList() {
 
 // Многоязычные данные
 const previewData = {
+    beauty_parser: {
+        title: {
+            ru: 'BeautyParser',
+            en: 'BeautyParser'
+        },
+        description: {
+            ru: 'Аналитический инструмент для поиска и парсинга контактов в бьюти-индустрии. Сбор базы данных для маркетинга.',
+            en: 'Analytical tool for searching and parsing contacts in the beauty industry. Marketing database collection.'
+        },
+        images: []
+    },
+    tasty_cloud: {
+        title: {
+            ru: 'TastyCloud',
+            en: 'TastyCloud'
+        },
+        description: {
+            ru: 'Облачная платформа для хранения и обмена кулинарными рецептами. Удобный поиск и вдохновение.',
+            en: 'Cloud platform for storing and sharing culinary recipes. Convenient search and inspiration.'
+        },
+        images: []
+    },
+    nova_dash: {
+        title: {
+            ru: 'NovaDash',
+            en: 'NovaDash'
+        },
+        description: {
+            ru: 'Мощная панель управления для отслеживания бюджета, задач и личной эффективности. Всё в одном месте для полного контроля.',
+            en: 'Powerful dashboard for budget tracking, task management, and personal efficiency. All in one place for total control.'
+        },
+        images: []
+    },
     math_nails: {
         title: {
             ru: 'React-MathNails',
