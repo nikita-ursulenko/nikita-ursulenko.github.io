@@ -146,11 +146,11 @@ const translations = {
         project7Feature2: 'Интеграция с внешними API',
         project7Feature3: 'Встроенная система платежей',
 
-        project8Title: 'React-MathNails',
-        project8Desc: 'React-приложение для расчётов мастеров ногтевого сервиса. Помогает вести учёт материалов и рассчитывать стоимость услуг.',
-        project8Feature1: 'Генерация детальных отчётов',
-        project8Feature2: 'История всех операций',
-        project8Feature3: 'Калькулятор стоимости услуг',
+        project8Title: 'React-MathNails 🎨📊',
+        project8Desc: 'Инновационное мобильное приложение для мастеров ногтевого сервиса. Помогает управлять финансами, анализировать работу и организовывать учет клиентов.',
+        project8Feature1: '📊 Расчет процента и детальные отчеты за любой период',
+        project8Feature2: '💸 Учет долгов и автоматический перенос остатка',
+        project8Feature3: '📱 Кроссплатформенное приложение на React Native и Expo',
 
         project9Title: 'MyPawsCharity',
         project9Desc: 'Сайт приюта для животных с системой пожертвований. Адаптивный дизайн, форма доната и галерея питомцев.',
@@ -359,11 +359,11 @@ const translations = {
         project7Feature2: 'Integration with external APIs',
         project7Feature3: 'Built-in payment system',
 
-        project8Title: 'React-MathNails',
-        project8Desc: 'React application for nail service master calculations. Helps track materials and calculate service costs.',
-        project8Feature1: 'Detailed report generation',
-        project8Feature2: 'History of all operations',
-        project8Feature3: 'Service cost calculator',
+        project8Title: 'React-MathNails 🎨📊',
+        project8Desc: 'Innovative mobile app for nail technicians. Helps manage finances, analyze work, and organize client tracking.',
+        project8Feature1: '📊 Progress calculation and detailed reports for any period',
+        project8Feature2: '💸 Client debt tracking and automatic balance transfer',
+        project8Feature3: '📱 Cross-platform app built with React Native and Expo',
 
         project9Title: 'MyPawsCharity',
         project9Desc: 'Animal shelter website with donation system. Responsive design, donation form and pet gallery.',
@@ -886,6 +886,17 @@ async function loadImagesList() {
 
 // Многоязычные данные
 const previewData = {
+    math_nails: {
+        title: {
+            ru: 'React-MathNails',
+            en: 'React-MathNails'
+        },
+        description: {
+            ru: 'Инновационное мобильное приложение для мастеров ногтевого сервиса (iOS/Android/Site).',
+            en: 'Innovative mobile application for nail technicians (iOS/Android/Site).'
+        },
+        images: []
+    },
     link_flow: {
         title: {
             ru: 'LinkFlow',
