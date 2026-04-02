@@ -430,6 +430,27 @@ const translations = {
     }
 };
 
+/**
+ * Сортирует карточки внутри контейнера на основе атрибута data-priority.
+ * @param {string} containerSelector - Селектор контейнера.
+ * @param {string} cardSelector - Селектор карточек.
+ */
+function sortCards(containerSelector, cardSelector) {
+    const container = document.querySelector(containerSelector);
+    if (!container) return;
+
+    const cards = Array.from(container.querySelectorAll(cardSelector));
+
+    cards.sort((a, b) => {
+        const priorityA = parseInt(a.getAttribute('data-priority')) || 0;
+        const priorityB = parseInt(b.getAttribute('data-priority')) || 0;
+        return priorityB - priorityA; // Сортировка по убыванию (больший приоритет в начале)
+    });
+
+    // Очищаем контейнер и добавляем отсортированные карточки
+    cards.forEach(card => container.appendChild(card));
+}
+
 function updateContent(lang) {
     const t = translations[lang];
 
@@ -1393,6 +1414,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Добавляем копию элементов для бесшовной анимации
     track.innerHTML = items + items;
+
+    // Сортируем проекты и превью по приоритету
+    sortCards('.projects-grid', '.project-card');
+    sortCards('.previews-grid', '.preview-card');
 });
 
 // Пауза анимации при наведении
