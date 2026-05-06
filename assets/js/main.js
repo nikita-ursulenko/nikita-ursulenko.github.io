@@ -705,6 +705,13 @@ function switchLanguage(lang) {
 
     // Обновляем изображения в превью карточках после смены языка
     updatePreviewCardImages();
+
+    // Отслеживание смены языка в Google Analytics
+    if (typeof trackEvent === 'function') {
+        trackEvent('language_switch', {
+            'selected_language': lang
+        });
+    }
 }
 // Smooth scrolling for navigation links, with fixed header offset
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -1479,3 +1486,46 @@ window.onclick = e => {
         document.getElementById('certificateFrame').src = '';
     }
 };
+
+// --- Google Analytics Event Tracking ---
+function trackEvent(eventName, eventParams) {
+    if (typeof gtag === 'function') {
+        gtag('event', eventName, eventParams);
+        console.log(`[GA Event Tracked] ${eventName}:`, eventParams);
+    }
+}
+
+// 1. Отслеживание скачивания CV
+const downloadCvBtn = document.getElementById('downloadCvBtn');
+if (downloadCvBtn) {
+    downloadCvBtn.addEventListener('click', () => {
+        trackEvent('cv_download', {
+            'language': currentLanguage,
+            'file_name': currentLanguage === 'ru' ? 'Nikita_Ursulenco_RU.pdf' : 'Nikita_Ursulenco_EN.pdf'
+        });
+    });
+}
+
+// 2. Отслеживание кликов по кнопкам GitHub
+document.querySelectorAll('.project-link').forEach(link => {
+    link.addEventListener('click', (e) => {
+        const card = link.closest('.project-card');
+        const projectId = card ? card.getAttribute('data-project-id') || 'unknown_project' : 'unknown_project';
+        trackEvent('github_click', {
+            'project_id': projectId,
+            'url': link.href
+        });
+    });
+});
+
+// 3. Отслеживание кликов по карточкам превью
+document.querySelectorAll('.preview-card').forEach(card => {
+    // В index.html уже есть onclick="openPreviewModal(...)",
+    // поэтому мы добавляем дополнительный слушатель для аналитики.
+    card.addEventListener('click', () => {
+        const previewId = card.getAttribute('data-preview-id') || 'unknown_preview';
+        trackEvent('preview_open', {
+            'preview_id': previewId
+        });
+    });
+});
