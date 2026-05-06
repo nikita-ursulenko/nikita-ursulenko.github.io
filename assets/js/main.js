@@ -188,6 +188,12 @@ const translations = {
         project14Feature2: 'Многоязычность (русский, немецкий, английский) и SEO оптимизация',
         project14Feature3: 'Интеграции с Google Analytics, Maps и система тестирования',
 
+        projecttaskmanagerTitle: 'TaskManager',
+        projecttaskmanagerDesc: 'Современное и высокопроизводительное веб-приложение для управления задачами с Kanban-досками, безопасной авторизацией и надежным хранением данных.',
+        projecttaskmanagerFeature1: 'Интерактивный Kanban с Drag & Drop',
+        projecttaskmanagerFeature2: 'Интеграция с Supabase Auth и базой данных',
+        projecttaskmanagerFeature3: 'Оптимизированный UI с Next.js и Tailwind CSS v4',
+
         projectimage_flowTitle: 'ImageFlow',
         projectimage_flowDesc: 'Современное веб-приложение для конвертации, оптимизации и обработки изображений. Элегантное и мощное решение с красивым и интуитивным интерфейсом.',
         projectimage_flowFeature1: '🔄 Пакетная конвертация форматов (WebP, PNG, JPG/JPEG) и создание ZIP-архивов',
@@ -400,6 +406,12 @@ const translations = {
         project14Feature1: 'Full-featured admin panel for content management',
         project14Feature2: 'Multi-language (Russian, German, English) and SEO optimization',
         project14Feature3: 'Integrations with Google Analytics, Maps and testing system',
+
+        projecttaskmanagerTitle: 'TaskManager',
+        projecttaskmanagerDesc: 'Modern and high-performance task management web application with Kanban boards, secure authorization, and reliable data storage.',
+        projecttaskmanagerFeature1: 'Interactive Kanban with Drag & Drop',
+        projecttaskmanagerFeature2: 'Integration with Supabase Auth and database',
+        projecttaskmanagerFeature3: 'Optimized UI with Next.js and Tailwind CSS v4',
 
         projectimage_flowTitle: 'ImageFlow',
         projectimage_flowDesc: 'Modern web application for converting, optimizing, and processing images. Elegant and powerful solution with a beautiful and intuitive interface.',
@@ -907,6 +919,16 @@ async function loadImagesList() {
 
 // Многоязычные данные
 const previewData = {
+    taskmanager: {
+        title: {
+            ru: 'TaskManager',
+            en: 'TaskManager'
+        },
+        description: {
+            ru: 'Современное веб-приложение для управления задачами с Kanban-досками, Drag & Drop и безопасной авторизацией.',
+            en: 'Modern task management web application with Kanban boards, Drag & Drop, and secure authorization.'
+        }
+    },
     beauty_parser: {
         title: {
             ru: 'BeautyParser',
@@ -1137,7 +1159,8 @@ function getProjectImages(projectId) {
     // Маппинг названий проектов на папки (если названия не совпадают)
     const folderMapping = {
         'nomadsnews': 'nomads', // nomadsnews в previewData, но папка называется nomads
-        'baumaster_frankfurt': 'baumaster-frankfurt' // baumaster_frankfurt в previewData, но папка называется baumaster-frankfurt
+        'baumaster_frankfurt': 'baumaster-frankfurt', // baumaster_frankfurt в previewData, но папка называется baumaster-frankfurt
+        'taskmanager': 'TaskManager' // taskmanager в previewData, но папка называется TaskManager
     };
 
     const folderName = folderMapping[projectId] || projectId;

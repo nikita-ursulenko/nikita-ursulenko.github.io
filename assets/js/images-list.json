@@ -1,4 +1,13 @@
 {
+  "TaskManager": [
+    "assets/images/site/TaskManager/1.png",
+    "assets/images/site/TaskManager/2.png",
+    "assets/images/site/TaskManager/3.png",
+    "assets/images/site/TaskManager/4.png",
+    "assets/images/site/TaskManager/5.png",
+    "assets/images/site/TaskManager/6.png",
+    "assets/images/site/TaskManager/7.png"
+  ],
   "atelier_md": [
     "assets/images/site/atelier_md/slide1.webp",
     "assets/images/site/atelier_md/slide2.webp",
