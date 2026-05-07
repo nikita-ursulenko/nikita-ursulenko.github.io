@@ -926,6 +926,17 @@ async function loadImagesList() {
 
 // Многоязычные данные
 const previewData = {
+    "neonatal-care-grid": {
+        title: {
+            ru: 'Neonatal Care Grid',
+            en: 'Neonatal Care Grid'
+        },
+        description: {
+            ru: 'Современная клиническая информационная система для отделений реанимации новорожденных. Предоставляет инструменты для отслеживания пациентов, расчета жидкостей, планирования лечения и истории приема медикаментов.',
+            en: 'Modern clinical intelligence system for neonatal intensive care units. Provides tools for patient tracking, fluid calculations, treatment scheduling, and medication history.'
+        },
+        images: []
+    },
     taskmanager: {
         title: {
             ru: 'TaskManager',
@@ -1165,6 +1176,7 @@ const previewData = {
 function getProjectImages(projectId) {
     // Маппинг названий проектов на папки (если названия не совпадают)
     const folderMapping = {
+        'neonatal-care-grid': 'neonatal-care',
         'nomadsnews': 'nomads', // nomadsnews в previewData, но папка называется nomads
         'baumaster_frankfurt': 'baumaster-frankfurt', // baumaster_frankfurt в previewData, но папка называется baumaster-frankfurt
         'taskmanager': 'TaskManager' // taskmanager в previewData, но папка называется TaskManager
